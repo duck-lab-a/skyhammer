@@ -1,0 +1,5 @@
+Fixed: the infected standing on ground the nuke had levelled were treated as indoors, so strikes did not hit them and the AC-130 did not shoot at them. A building with no roof left now counts as outdoors.
+Changed (single player): the B-2's bombs go through roofs. They hit the infected inside buildings and up to three floors up, whatever the "indoor hits" option says. On a server the server's "indoor hits" setting still decides. Players indoors stay safe as before.
+--
+수정: 핵으로 날아간 건물 자리에 서 있는 감염체가 실내에 있는 것으로 처리돼서, 공습에 맞지 않고 AC-130도 쏘지 않던 문제를 고쳤습니다. 이제 지붕이 남지 않은 건물은 실외로 봅니다.
+변경(싱글플레이): B-2 폭탄이 지붕을 뚫습니다. "실내 피격" 옵션과 상관없이 건물 안과 위로 3개 층까지 감염체를 맞힙니다. 서버에서는 지금처럼 서버의 "실내 피격" 설정을 따릅니다. 건물 안의 플레이어는 예전처럼 안전합니다.

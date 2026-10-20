@@ -1,0 +1,17 @@
+=== Main (3813483790)
+- New: the A-10 Thunderbolt II, "Valkyrie Two-Six". Mark one point (sensor map or eyes-on) and it strafes a 30-tile line through it with its GAU-8: the pilot picks the direction that catches the most infected and never one that passes near you. 2 gun runs per sortie (1 to 10 in Mod Options); between runs, mark a new point or it flies the same line back. Its own 3D model and tab art with a shark mouth, a radio voice and the gun's roar arriving after the rounds land. Killstreak price 120. It can be turned off in the sandbox.
+- Changed: the terminal's tabs are now in price order: Apache, A-10, AC-130, B-2.
+- Changed: bigger explosions, sized to the real rounds (30mm, 40mm, rockets, 105mm, bombs). Looks only: damage, range and noise are unchanged, and the lights cost no more than before.
+--
+- 신규: A-10 썬더볼트 II "발키리 투-식스". 지점 하나를 찍으면(센서 지도 또는 육안) GAU-8로 그 지점을 지나는 30타일 직선을 기총소사합니다. 방향은 조종사가 좀비가 가장 많이 걸리는 쪽으로 정하며, 플레이어 근처를 지나는 방향은 고르지 않습니다. 출격당 2회(모드 옵션에서 1~10회). 소사 사이에 새로 찍으면 그곳으로, 아니면 같은 선을 반대로 다시 훑습니다. 상어 입 도장의 전용 3D 모델과 탭 그림, 무전 음성, 탄착 뒤에 들려오는 기관포 소리가 들어 있습니다. 킬스트릭 가격 120. 샌드박스에서 끌 수 있습니다.
+- 변경: 단말기 탭이 가격 순서로 바뀌었습니다: 아파치, A-10, AC-130, B-2.
+- 변경: 폭발 이펙트를 실제 탄종 크기에 맞춰 키웠습니다(30mm, 40mm, 로켓, 105mm, 폭탄). 보이는 것만 바뀌며 피해·범위·소음은 그대로이고, 조명 부담도 늘지 않습니다.
+
+=== Vanilla (3813973682)
+- New: the A-10 Thunderbolt II, "Valkyrie Two-Six". Mark one point (sensor map or eyes-on) and it strafes a 30-tile line through it with its GAU-8: the pilot picks the direction that catches the most infected and never one that passes near you. 2 gun runs per sortie (1 to 10 in Mod Options); between runs, mark a new point or it flies the same line back. Its shadow sweeps the ground, with its own radio voice and the gun's roar arriving after the rounds land. Killstreak price 120. It can be turned off in the sandbox. With air support PvP on, enemy players on the line are hit too.
+- Changed: the terminal's tabs are now in price order: Apache, A-10, AC-130, B-2.
+- Changed: bigger explosions, sized to the real rounds (30mm, 40mm, rockets, 105mm, bombs). Looks only: damage, range and noise are unchanged, and the lights cost no more than before.
+--
+- 신규: A-10 썬더볼트 II "발키리 투-식스". 지점 하나를 찍으면(센서 지도 또는 육안) GAU-8로 그 지점을 지나는 30타일 직선을 기총소사합니다. 방향은 조종사가 좀비가 가장 많이 걸리는 쪽으로 정하며, 플레이어 근처를 지나는 방향은 고르지 않습니다. 출격당 2회(모드 옵션에서 1~10회). 소사 사이에 새로 찍으면 그곳으로, 아니면 같은 선을 반대로 다시 훑습니다. 지면을 훑고 지나가는 그림자와 무전 음성, 탄착 뒤에 들려오는 기관포 소리가 들어 있습니다. 킬스트릭 가격 120. 샌드박스에서 끌 수 있습니다. 항공 지원 PvP를 켜면 소사선 위의 적 플레이어도 맞습니다.
+- 변경: 단말기 탭이 가격 순서로 바뀌었습니다: 아파치, A-10, AC-130, B-2.
+- 변경: 폭발 이펙트를 실제 탄종 크기에 맞춰 키웠습니다(30mm, 40mm, 로켓, 105mm, 폭탄). 보이는 것만 바뀌며 피해·범위·소음은 그대로이고, 조명 부담도 늘지 않습니다.

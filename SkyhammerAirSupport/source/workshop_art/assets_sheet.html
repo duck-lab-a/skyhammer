@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Skyhammer asset sheet</title>
+<style>
+  :root {
+    --bg: #0e1114; --panel: #161a1e; --line: #2b3238; --amber: #f2a33a; --cream: #efe4cc;
+    --cyan: #3cc8ea; --red: #e5533d; --green: #6fdc8c; --muted: #8b959d; --dim: #59636b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 1200px; background: var(--bg); color: var(--cream);
+    font-family: "Bahnschrift", "Malgun Gothic", sans-serif; }
+  body.ko { font-family: "Bahnschrift", "Malgun Gothic", sans-serif; }
+  .mono { font-family: Consolas, "Malgun Gothic", monospace; }
+  .sheet { padding: 56px 56px 48px;
+    background:
+      repeating-linear-gradient(0deg, rgba(255,255,255,.018) 0 1px, transparent 1px 4px),
+      radial-gradient(1200px 600px at 50% 0, #1b2127 0, var(--bg) 70%); }
+  .top { display: flex; justify-content: space-between; align-items: flex-end;
+    border-bottom: 2px solid var(--amber); padding-bottom: 18px; margin-bottom: 40px; }
+  .top h1 { font-size: 60px; letter-spacing: 3px; color: var(--amber); font-weight: 700; line-height: 1; }
+  .top .sub { margin-top: 10px; font-size: 22px; color: var(--cream); letter-spacing: 1px; }
+  .top .tag { font-size: 15px; color: var(--cyan); letter-spacing: 3px; text-align: right; line-height: 1.7; }
+
+  .card { position: relative; background: var(--panel); border: 1px solid var(--line);
+    margin-bottom: 40px; padding: 30px 32px 32px; }
+  .card::before { content: ""; position: absolute; left: -1px; top: -1px; width: 140px; height: 4px; background: var(--amber); }
+  .card::after { content: ""; position: absolute; right: -1px; bottom: -1px; width: 60px; height: 4px; background: var(--cyan); }
+  .head { display: flex; align-items: baseline; gap: 18px; margin-bottom: 4px; }
+  .num { font-size: 15px; color: var(--cyan); letter-spacing: 3px; }
+  .call { font-size: 15px; color: var(--muted); letter-spacing: 3px; }
+  .title { font-size: 46px; font-weight: 700; letter-spacing: 1px; color: var(--cream); }
+  .title b { color: var(--amber); }
+  .craft { font-size: 19px; color: var(--muted); margin: 2px 0 22px; letter-spacing: 1px; }
+  .body { display: grid; grid-template-columns: 500px 1fr; gap: 30px; }
+
+  .box { position: relative; border: 1px solid var(--line); background: #0f1316; }
+  .box .lbl { position: absolute; left: 10px; top: 8px; font-size: 12px; color: var(--dim); letter-spacing: 2px; }
+  .box .lbr { position: absolute; right: 10px; top: 8px; font-size: 12px; color: var(--dim); letter-spacing: 2px; }
+  .schem { height: 190px; }
+  .pattern { height: 300px; margin-top: 14px; }
+  .box svg { display: block; width: 100%; height: 100%; }
+
+  .specs { list-style: none; }
+  .specs li { display: grid; grid-template-columns: 150px 1fr; gap: 14px; padding: 12px 0;
+    border-bottom: 1px solid var(--line); font-size: 19px; line-height: 1.4; }
+  .specs li:first-child { padding-top: 2px; }
+  .specs .k { color: var(--amber); font-size: 14px; letter-spacing: 2px; padding-top: 4px; }
+  .specs .v { color: var(--cream); }
+  .specs .v small { display: block; font-size: 15px; color: var(--muted); margin-top: 2px; }
+  .radio { margin-top: 18px; border-left: 3px solid var(--cyan); background: rgba(60,200,234,.06);
+    padding: 12px 16px; }
+  .radio .who { font-size: 12px; color: var(--cyan); letter-spacing: 3px; margin-bottom: 4px; }
+  .radio .say { font-size: 18px; color: var(--cream); font-style: italic; }
+  .ko .radio .say { font-style: normal; }
+
+  .foot { display: flex; justify-content: space-between; border-top: 1px solid var(--line);
+    padding-top: 16px; font-size: 16px; color: var(--muted); }
+  .foot .mono { color: var(--dim); letter-spacing: 2px; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="top">
+    <div>
+      <h1>SKYHAMMER</h1>
+      <div class="sub" data-t="sub"></div>
+    </div>
+    <div class="tag mono">AEGIS CONTROL<br>AIR SUPPORT TERMINAL<br>OH-07 // ONLINE</div>
+  </div>
+  <div id="cards"></div>
+  <div class="foot">
+    <span data-t="foot"></span>
+    <span class="mono">SKYHAMMER AIR SUPPORT</span>
+  </div>
+</div>
+
+<script>
+const lang = new URLSearchParams(location.search).get("lang") || "en";
+document.body.classList.add(lang);
+
+const T = {
+  en: {
+    sub: "Air support assets // default loadout",
+    foot: "Default values shown. Every number can be changed in Mod Options.",
+    schem: "SCHEMATIC", pattern: "FIRE PATTERN", top: "TOP-DOWN",
+    cards: [
+      { num: "WEAPON 01", call: "CALLSIGN  BANSHEE TWO-ONE", title: "<b>40MM</b> CANNON", craft: "AC-130 Gunship",
+        specs: [
+          ["TARGETING", "Automatic", "Nearest infected first, then the next one"],
+          ["RANGE", "30 tiles around you", "Outdoors, on your floor"],
+          ["AMMO", "60 rounds", "A burst every 10 seconds"],
+          ["CONTROL", "Hold / resume fire", "From the terminal, at any time"],
+        ],
+        who: "GUNS", say: "Hostiles closing on the survivor. Engaging." },
+      { num: "WEAPON 02", call: "CALLSIGN  BANSHEE TWO-ONE", title: "<b>105MM</b> HOWITZER", craft: "AC-130 Gunship",
+        specs: [
+          ["TARGETING", "You mark the point", "On the sensor map, or eyes-on in 3D"],
+          ["SALVO", "4 rounds per mission", "2 missions per sortie (8 rounds)"],
+          ["LIMIT", "Open ground only", "Roofs stop the rounds (option)"],
+          ["NOISE", "Loud", "Draws the infected nearby"],
+        ],
+        who: "GUNS", say: "Target marked. Four rounds, one-oh-five. Firing." },
+      { num: "WEAPON 03", call: "CALLSIGN  TITAN ZERO-ONE", title: "<b>B-2</b> CARPET STRIKE", craft: "B-2 Bomber",
+        specs: [
+          ["PAYLOAD", "20 heavy bombs", "Spread over a 30-tile radius"],
+          ["BLAST", "Sure kill within 9 tiles", "Damage out to 14 tiles"],
+          ["STRIKES", "1 per sortie", "Mark the center within 2 minutes"],
+          ["NOISE", "Very loud", "Draws the infected from far away"],
+        ],
+        who: "TITAN", say: "Target accepted. Weapons release. Bombs away." },
+    ],
+    sortie: ["Arrives 30 s · on station 3 min · rearm 30 min", "Same aircraft as the 40mm · shared sortie", "Arrives 90 s · rearm 60 min"],
+  },
+  ko: {
+    sub: "지원 기체 제원 // 기본 설정",
+    foot: "기본값 기준입니다. 모든 수치는 모드 옵션에서 바꿀 수 있습니다.",
+    schem: "SCHEMATIC", pattern: "FIRE PATTERN", top: "TOP-DOWN",
+    cards: [
+      { num: "WEAPON 01", call: "CALLSIGN  밴시 투-원", title: "<b>40MM</b> 기관포", craft: "AC-130 건쉽",
+        specs: [
+          ["TARGETING", "자동 조준", "가까운 좀비부터, 쓰러지면 다음 표적"],
+          ["RANGE", "주변 30타일", "실외, 플레이어와 같은 층"],
+          ["AMMO", "60발", "10초마다 점사"],
+          ["CONTROL", "사격 중지 / 재개", "단말기에서 언제든지"],
+        ],
+        who: "GUNS", say: "생존자에게 적 접근 중. 교전 개시." },
+      { num: "WEAPON 02", call: "CALLSIGN  밴시 투-원", title: "<b>105MM</b> 곡사포", craft: "AC-130 건쉽",
+        specs: [
+          ["TARGETING", "직접 지점 지정", "센서 지도 또는 3D 육안 지정"],
+          ["SALVO", "1회 4발", "출격당 2회 (총 8발)"],
+          ["LIMIT", "개활지만 가능", "지붕 아래는 불가 (옵션)"],
+          ["NOISE", "큼", "주변 좀비를 끌어들임"],
+        ],
+        who: "GUNS", say: "표적 확인. 105mm 4발, 발사." },
+      { num: "WEAPON 03", call: "CALLSIGN  타이탄 제로-원", title: "<b>B-2</b> 융단폭격", craft: "B-2 폭격기",
+        specs: [
+          ["PAYLOAD", "대형 폭탄 20발", "반경 30타일에 고르게 투하"],
+          ["BLAST", "9타일 안 확실 처치", "14타일까지 피해"],
+          ["STRIKES", "출격당 1회", "도착 후 2분 안에 중심 지정"],
+          ["NOISE", "매우 큼", "먼 곳의 좀비까지 끌어들임"],
+        ],
+        who: "TITAN", say: "표적 확인. 무장 투하. 폭탄 투하 완료." },
+    ],
+    sortie: ["도착 30초 · 체공 3분 · 쿨타임 30분", "40mm와 같은 기체 · 출격 공유", "도착 90초 · 쿨타임 60분"],
+  },
+}[lang];
+
+// Same line art as Skyhammer_AircraftDiagram.lua (100 x 40 area)
+const AC130 = [
+  [3,27,6,24,10,23,14,19,24,18,38,18,61,20,77,19,83,15,86,3,90,3,90,21,97,24,91,26,79,27,67,30,22,30,8,29,3,27],
+  [13,23,16,20,23,20,23,24,13,24,13,23],[18,20,18,24],[24,19,28,23,28,29],
+  [32,19,44,15,53,15,65,22,47,23,32,19],[41,20,47,32,54,32,53,24],[76,23,91,20,98,21,85,26,76,23],
+  [82,17,88,7,88,21],[7,27,69,27,78,24],[33,25,37,25,37,28,33,28,33,25],[58,23,62,23,62,27,58,27,58,23],
+  [44,16,49,16,49,20,44,20,44,16],[46,12,46,24],[44,14,48,22],[53,19,59,19,59,23,53,23,53,19],
+  [55,14,55,27],[53,16,57,25],[37,27,32,31],[35,26,30,29],[12,31,17,31],[66,31,72,31],
+];
+const B2 = [
+  [50,4,97,28,83,29,78,25,72,30,65,27,59,34,50,30,41,34,35,27,28,30,22,25,17,29,3,28,50,4],
+  [50,4,50,30],[50,8,40,21,41,34],[50,8,60,21,59,34],[3,28,40,21,50,25,60,21,97,28],
+  [21,23,33,24,28,30],[79,23,67,24,72,30],[45,12,48,10,52,10,55,12,52,15,48,15,45,12],
+  [40,20,43,18,43,25,40,25,40,20],[60,20,57,18,57,25,60,25,60,20],[33,16,35,27],[67,16,65,27],
+];
+
+function schematic(kind, mark) {
+  const lines = kind === "b2" ? B2 : AC130;
+  const W = 500, H = 190, s = 4.2, ox = (W - 100 * s) / 2, oy = (H - 40 * s) / 2 + 6;
+  let g = "";
+  for (let x = 20; x < W; x += 20) g += `<line x1="${x}" y1="0" x2="${x}" y2="${H}" stroke="#ffffff" stroke-opacity=".035"/>`;
+  for (let y = 10; y < H; y += 20) g += `<line x1="0" y1="${y}" x2="${W}" y2="${y}" stroke="#ffffff" stroke-opacity=".035"/>`;
+  const path = lines.map(p => "M" + p.reduce((a, v, i) => a + (i % 2 ? "," : (i ? " L" : "")) + (i % 2 ? (oy + v * s).toFixed(1) : (ox + v * s).toFixed(1)), "")).join(" ");
+  let hl = "";
+  if (mark === "gun40") hl = `<circle cx="${ox + 46 * s}" cy="${oy + 33 * s}" r="9" fill="none" stroke="#f2a33a" stroke-width="2"/>`;
+  if (mark === "gun105") hl = `<circle cx="${ox + 55 * s}" cy="${oy + 33 * s}" r="12" fill="none" stroke="#f2a33a" stroke-width="2"/>`;
+  return `<svg viewBox="0 0 ${W} ${H}">${g}
+    <path d="${path}" fill="none" stroke="#3cc8ea" stroke-opacity=".25" stroke-width="7" stroke-linejoin="round"/>
+    <path d="${path}" fill="none" stroke="#efe4cc" stroke-width="1.8" stroke-linejoin="round"/>${hl}</svg>`;
+}
+
+// deterministic noise so every render is identical
+let seed = 7;
+const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+
+function thermalBg(W, H) {
+  let s = `<rect width="${W}" height="${H}" fill="#0b1a1f"/>`;
+  for (let i = 0; i < 9; i++) {
+    const x = rnd() * W, y = rnd() * H, w = 40 + rnd() * 80, h = 30 + rnd() * 60;
+    s += `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="#16313a" opacity=".7"/>`;
+  }
+  for (let x = 0; x < W; x += 25) s += `<line x1="${x}" y1="0" x2="${x}" y2="${H}" stroke="#3cc8ea" stroke-opacity=".05"/>`;
+  for (let y = 0; y < H; y += 25) s += `<line x1="0" y1="${y}" x2="${W}" y2="${y}" stroke="#3cc8ea" stroke-opacity=".05"/>`;
+  return s;
+}
+const zed = (x, y, hot) => `<circle cx="${x}" cy="${y}" r="3.2" fill="${hot ? "#ffffff" : "#bfeaf4"}" opacity="${hot ? 1 : .75}"/>`;
+const blast = (x, y, r, a = 1) =>
+  `<circle cx="${x}" cy="${y}" r="${r}" fill="#f2a33a" fill-opacity="${.13 * a}" stroke="#f2a33a" stroke-opacity="${.85 * a}" stroke-width="1.5"/>
+   <circle cx="${x}" cy="${y}" r="${r * .35}" fill="#ffd28a" fill-opacity="${.55 * a}"/>`;
+const player = (x, y) => `<circle cx="${x}" cy="${y}" r="6" fill="#6fdc8c"/><circle cx="${x}" cy="${y}" r="11" fill="none" stroke="#6fdc8c" stroke-opacity=".5"/>`;
+const marker = (x, y) => `<g stroke="#e5533d" stroke-width="2" fill="none"><path d="M${x} ${y - 12} L${x + 12} ${y} L${x} ${y + 12} L${x - 12} ${y} Z"/><line x1="${x - 20}" y1="${y}" x2="${x - 14}" y2="${y}"/><line x1="${x + 14}" y1="${y}" x2="${x + 20}" y2="${y}"/></g>`;
+const label = (x, y, t, c = "#8b959d", a = "start") => `<text x="${x}" y="${y}" fill="${c}" font-size="12" font-family="Consolas, 'Malgun Gothic'" letter-spacing="1.5" text-anchor="${a}">${t}</text>`;
+
+function pattern(kind) {
+  const W = 500, H = 300, cx = W / 2, cy = H / 2 + 8;
+  let s = thermalBg(W, H);
+  if (kind === "gun40") {
+    const R = 120; // 30 tiles
+    s += `<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="#3cc8ea" stroke-opacity=".55" stroke-dasharray="6 6"/>`;
+    s += label(cx + R * .72, cy - R * .72 - 6, "30");
+    const z = [];
+    for (let i = 0; i < 26; i++) { const a = rnd() * 6.283, d = 40 + rnd() * 170; z.push([cx + Math.cos(a) * d, cy + Math.sin(a) * d * .8, d]); }
+    z.sort((a, b) => a[2] - b[2]);
+    z.forEach(([x, y, d], i) => {
+      if (d > R) { s += zed(x, y, false); return; }
+      if (i < 4) {
+        s += `<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="#f2a33a" stroke-opacity=".35" stroke-dasharray="3 4"/>`;
+        s += blast(x, y, 9, 1 - i * .18);
+        s += label(x + 12, y - 8, "0" + (i + 1), "#f2a33a");
+      } else s += zed(x, y, true);
+    });
+    s += player(cx, cy);
+  } else if (kind === "gun105") {
+    const mx = cx + 40, my = cy - 10;
+    for (let i = 0; i < 30; i++) { const a = rnd() * 6.283, d = rnd() * 150; s += zed(mx + Math.cos(a) * d * 1.3, my + Math.sin(a) * d * .75, d < 70); }
+    const hits = [[-22, -14], [18, -20], [-10, 20], [28, 14]];
+    hits.forEach(([dx, dy], i) => { s += blast(mx + dx, my + dy, 26, 1); s += label(mx + dx, my + dy + 4, String(i + 1), "#0e1114", "middle"); });
+    s += marker(mx, my);
+    s += player(70, H - 50);
+    s += `<line x1="70" y1="${H - 50}" x2="${mx - 14}" y2="${my + 6}" stroke="#6fdc8c" stroke-opacity=".35" stroke-dasharray="4 5"/>`;
+    s += label(mx + 60, my - 44, "x4", "#f2a33a");
+  } else {
+    const R = 125; // 30 tiles
+    for (let i = 0; i < 70; i++) { const a = rnd() * 6.283, d = rnd() * 175; s += zed(cx + Math.cos(a) * d * 1.25, cy + Math.sin(a) * d * .78, true); }
+    s += `<circle cx="${cx}" cy="${cy}" r="${R}" fill="#e5533d" fill-opacity=".05" stroke="#e5533d" stroke-opacity=".7" stroke-dasharray="8 6" stroke-width="1.5"/>`;
+    // 20 bombs on a sunflower spread, the even fill the mod uses
+    for (let i = 0; i < 20; i++) {
+      const r = R * .92 * Math.sqrt((i + .5) / 20), a = i * 2.39996;
+      s += blast(cx + Math.cos(a) * r, cy + Math.sin(a) * r, 20, .9);
+    }
+    s += marker(cx, cy);
+    s += label(cx + R * .72 + 6, cy - R * .72 - 4, "30");
+    s += label(16, H - 14, "x20", "#f2a33a");
+  }
+  return `<svg viewBox="0 0 ${W} ${H}">${s}</svg>`;
+}
+
+document.querySelectorAll("[data-t]").forEach(e => { e.textContent = T[e.dataset.t]; });
+
+const kinds = [["ac130", "gun40"], ["ac130", "gun105"], ["b2", "b2"]];
+document.getElementById("cards").innerHTML = T.cards.map((c, i) => `
+  <div class="card">
+    <div class="head"><span class="num mono">${c.num}</span><span class="call mono">${c.call}</span></div>
+    <div class="title">${c.title}</div>
+    <div class="craft">${c.craft} &nbsp;<span style="color:#59636b">|</span>&nbsp; ${T.sortie[i]}</div>
+    <div class="body">
+      <div>
+        <div class="box schem"><span class="lbl mono">${T.schem}</span><span class="lbr mono">${kinds[i][0] === "b2" ? "B-2" : "AC-130"}</span>${schematic(kinds[i][0], kinds[i][1])}</div>
+        <div class="box pattern"><span class="lbl mono" style="z-index:1">${T.pattern}</span><span class="lbr mono" style="z-index:1">${T.top}</span>${pattern(kinds[i][1])}</div>
+      </div>
+      <div>
+        <ul class="specs">${c.specs.map(([k, v, n]) => `<li><span class="k mono">${k}</span><span class="v">${v}<small>${n}</small></span></li>`).join("")}</ul>
+        <div class="radio"><div class="who mono">RADIO // ${c.who}</div><div class="say">"${c.say}"</div></div>
+      </div>
+    </div>
+  </div>`).join("");
+</script>
+</body>
+</html>

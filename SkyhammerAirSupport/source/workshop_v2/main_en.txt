@@ -1,0 +1,116 @@
+[h1]The sky has your back.[/h1]
+Call an [b]AH-64 Apache[/b], an [b]A-10 Warthog[/b], an [b]AC-130 gunship[/b] and a [b]B-2 bomber[/b] over the radio, once you have earned them. Every call is voiced and subtitled, targets are marked on a thermal sensor map, and the aircraft fly overhead in 3D.
+
+[b]Single player only.[/b] Made for Build 42.21.
+For [b]multiplayer[/b], or to play without ZombieBuddy and Viewpoint, use the [b][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813973682]Vanilla Edition[/url][/b].
+
+[h1]How to use[/h1]
+[img]https://i.ibb.co/TqwXqmRb/main-05-terminal.jpg[/img]
+[olist]
+[*]Turn on the [b]air support radio[/b] and keep it on you.
+[*]Press [b]K[/b] or right-click the radio to open the terminal.
+[*]Pick a tab and press [b]CALL[/b].
+[*]For the 105mm, the A-10 and the B-2, mark the target on the sensor map or in the game view ([b]EYES-ON[/b]).
+[/olist]
+
+[h1]Air support[/h1]
+[img]https://i.ibb.co/Q3HH5r28/SUPPORT-STRIP.png[/img]
+
+[h2]Hellhound One-One - AH-64 Apache[/h2]
+[img]https://i.ibb.co/3YMwDTQ6/main-01-apache.jpg[/img]
+[list]
+[*]Escorts you, firing 30mm at nearby infected.
+[*]Rocket salvos into big groups, never near you.
+[*][b]Illumination flares[/b]: light up a marked spot without drawing infected.
+[/list]
+
+[h2]Valkyrie Two-Six - A-10[/h2]
+[img]https://i.ibb.co/tSskgH5/main-02-a10.jpg[/img]
+[list]
+[*][b]GAU-8 gun runs[/b]: mark one point and the pilot strafes a 40-tile line through it, choosing the direction that catches the most infected, never one that passes near you.
+[*]Between runs, mark a new point or it flies the line back.
+[*][b]Napalm[/b] on the same sortie: mark a point and a 40-tile strip goes up in flames.
+[/list]
+
+[h2]Banshee Two-One - AC-130[/h2]
+[img]https://i.ibb.co/vvwSHpV9/main-03-ac130.jpg[/img]
+[list]
+[*][b]40mm[/b]: fires on its own at the infected around you, or where you aim it. Hold and resume fire from the terminal.
+[*][b]105mm[/b]: drops shells where you mark.
+[/list]
+
+[h2]Titan Zero-One - B-2[/h2]
+[img]https://i.ibb.co/n8mqjjPM/main-04-b2-nuke.jpg[/img]
+[list]
+[*][b]Heavy bombs[/b] carpet the area you mark.
+[*]The blasts draw infected from far away.
+[*][b]Tactical nuke[/b] (pick it with the weapon button before calling): mark a spot 60-300 tiles away; 15 s later every infected within 140 tiles dies.
+[/list]
+
+[h2]Fallout[/h2]
+[img]https://i.ibb.co/jPXGhQW1/fallout-small-en.png[/img]
+[list]
+[*]The nuke leaves fallout behind. Ground zero stays radioactive for days, and the longer you hang around the sicker you get. Stay too long and it can kill you even after you get out.
+[*]Wear a hazmat suit or a gas mask with a filter. Prussian Blue capsules flush it out faster, but they won't save you if you stay in there.
+[*]NPCs get sick too.
+[/list]
+
+[h2]Good to know[/h2]
+[list]
+[*]Shots and blasts only hit infected [b]outdoors[/b] (unless "Blasts reach indoors" is on). The B-2's bombs go through roofs, up to three floors.
+[*]All timers run in [b]real time[/b] and stop while the game is paused.
+[*]Friendly [b]Bandits[/b] and [b]A-Life[/b] NPCs are never hit and show in green on the sensor map.
+[/list]
+
+[h1]Killstreak mode[/h1]
+[b]Points, not cooldowns[/b]: every infected you kill yourself is a point (air support kills earn none), and points call the aircraft (Apache 80, A-10 120, AC-130 150, B-2 300, nuke 600). Recall before arrival for a refund. Turn it on in the sandbox or Mod Options.
+[img]https://i.ibb.co/n8jjJ5Z4/vanilla-05-killstreak-420.jpg[/img]
+
+[h1]Earn your air support[/h1]
+New games start with a short quest (sandbox [b]Air support unlock[/b]). The key is one [b]relay[/b]: a satellite dish on a wall + a military ham radio within 6 squares + generator power. Right-click the dish, then call Aegis Control (air support HQ) on the [b]air support radio[/b] and all four aircraft are yours.
+[img]https://i.ibb.co/Y7N1j60z/relay-420.jpg[/img]
+Press [b]K[/b] for the quest log. Don't want the quest? Pick [b]Any two-way radio[/b] in the sandbox.
+
+[h1]Vanilla Edition (multiplayer)[/h1]
+[b][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813973682]Skyhammer Air Support - Vanilla Edition[/url][/b]: the same air support with no other mod needed. The aircraft show as shadows on the ground instead of 3D models, and it plays in [b]multiplayer[/b] (experimental). Enable only one of the two editions.
+
+[h1]Add-ons[/h1]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3816298691][img]https://i.ibb.co/CpnQxMGT/addon-thor-280.jpg[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3815899202][img]https://i.ibb.co/b5kHQzVs/addon-odin-280.jpg[/img][/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813821529][img]https://i.ibb.co/N6W4FDP3/addon-wraith-280.jpg[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813870006][img]https://i.ibb.co/3msLnrWx/addon-operator-280.jpg[/img][/url]
+[b]THOR - highly recommended![/b] A tungsten rod from orbit, 50-tile kill radius: the biggest strike in the series.
+[b]ODIN[/b]: a giant robot dropped from orbit. [b]Wraith Team[/b]: five operators fight beside you for 2 minutes (needs [b]Bandits[/b]). [b]Wraith Operator[/b]: an occupation, start as a Wraith Team operator (standalone). Add-ons: either edition, single player only.
+
+[h1]Settings[/h1]
+[table]
+[tr][th]Default[/th][th]Arrival / on station / cooldown[/th][th]Ammo[/th][/tr]
+[tr][td]Apache[/td][td]20 s / 3 min / 45 min[/td][td]180 × 30mm, 8 rockets[/td][/tr]
+[tr][td]A-10[/td][td]20 s / until its runs are flown / 40 min[/td][td]2 gun runs, 1 napalm[/td][/tr]
+[tr][td]AC-130[/td][td]20 s / 3 min / 30 min[/td][td]60 × 40mm, 8 × 105mm[/td][/tr]
+[tr][td]B-2[/td][td]30 s / 2 min / 60 min[/td][td]20 bombs or 1 nuke[/td][/tr]
+[/table]
+These, plus ranges, 3D aircraft and sound volumes, can be changed in [b]Mod Options[/b]. Each aircraft can be turned off in the [b]sandbox[/b].
+Optional: [b]craters[/b] (off, permanent on the map), [b]blasts reach indoors[/b] (off), [b]protect the player[/b] (on), [b]strikes damage vehicles[/b] (on).
+
+[h1]Requirements[/h1]
+[list]
+[*][b]ZombieBuddy[/b] 2.3.0+ (3D aircraft; approve its Java prompt)
+[*][b]Viewpoint[/b]
+[/list]
+
+[h1]Compatibility[/h1]
+[list]
+[*][b]Highly compatible[/b]: played with about 80 mods with no conflicts found.
+[/list]
+
+[h1]FAQ[/h1]
+[list]
+[*][b]Existing save?[/b] Yes. A save that already used air support keeps working on any radio; the quest starts in new games.
+[*][b]Terminal won't open?[/b] The radio must be on and have battery. With the quest on, only the air support radio opens it.
+[*][b]No aircraft in the sky?[/b] Check ZombieBuddy's Java approval and the 3D aircraft option.
+[/list]
+
+[h1]Credits[/h1]
+Inspired by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3791733763]Dark Zone Fire Support[/url] (Raven Bloodqueen) and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3787424467]Shadowcopter[/url] (qwerto). Thank you!
+Sounds: rubberduck, BigSoundBank (CC0), Celestial SFX, Chatterbox & Piper TTS. 3D models and Java: MIT. Artwork: AI-generated.
+
+Found a bug? Please report it in Discussions.

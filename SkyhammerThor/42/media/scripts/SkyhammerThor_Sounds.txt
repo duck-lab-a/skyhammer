@@ -1,0 +1,146 @@
+module Base
+{
+    sound SHT_Thunder
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/sht_thunder_1.wav, distanceMin = 300, distanceMax = 2000, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer_thor/sht_thunder_2.wav, distanceMin = 300, distanceMax = 2000, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHT_Streak
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/sht_streak_1.wav, distanceMin = 120, distanceMax = 1200, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer_thor/sht_streak_2.wav, distanceMin = 120, distanceMax = 1200, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHT_Impact
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/sht_impact_1.wav, distanceMin = 400, distanceMax = 3000, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer_thor/sht_impact_2.wav, distanceMin = 400, distanceMax = 3000, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHT_Debris
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/sht_debris.wav, distanceMin = 80, distanceMax = 700, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ThorCall
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_thorcall.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ThorCallAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_thorcallack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ThorOnStation
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_thoronstation.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ThorMark
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_thormark.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ThorMarkAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_thormarkack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ThorAuthorize
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_thorauthorize.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ThorRelease
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_thorrelease.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ThorTerminal
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_thorterminal.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ThorImpact
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_thorimpact.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ThorBda
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_thorbda.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ThorNext
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_thornext.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ThorDanger
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_thordanger.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ThorWindowClosed
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_thorwindowclosed.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ThorRtb
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_thorrtb.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ThorRtbAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_thorrtback.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_PtsThor
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_thor/shv_ptsthor.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+}

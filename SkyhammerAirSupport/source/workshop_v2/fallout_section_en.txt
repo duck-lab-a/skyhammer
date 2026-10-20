@@ -1,0 +1,7 @@
+[h2]Fallout[/h2]
+[img]https://i.ibb.co/jPXGhQW1/fallout-small-en.png[/img]
+[list]
+[*]The nuke leaves fallout behind. Ground zero stays radioactive for days, and the longer you hang around the sicker you get. Stay too long and it can kill you even after you get out.
+[*]Wear a hazmat suit or a gas mask with a filter. Prussian Blue capsules flush it out faster, but they won't save you if you stay in there.
+[*]NPCs get sick too.
+[/list]

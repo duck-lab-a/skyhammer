@@ -1,0 +1,53 @@
+[EN]
+New support: Hellhound One-One (AH-64 Apache)
+- Escorts you for 3 minutes: 30mm chain gun bursts, and rocket salvos into the biggest group of infected that is clear of you.
+- 3D Apache in the sky with spinning rotors and a turret that tracks its target; you hear its rotor from its approach until it has flown off.
+- New radio lines, rotor / 30mm / rocket sounds.
+- Options: arrival, time on station, cooldown, ammo, burst interval, range, rockets, rockets per salvo, time between salvos, smallest group for rockets.
+
+3D B-2
+- Once you mark a strike, a 3D B-2 crosses the target along the line the bombs fall on, then flies off.
+
+Terminal
+- New tab order: Apache, AC-130, B-2 (the Wraith Team add-on adds its tab first).
+- The AC-130's 40mm and 105mm are now one tab.
+- Aircraft pictures replace the line drawings.
+- A long name drops to a smaller font instead of running past the panel.
+- The terminal uses whichever carried two-way radio is on and has power.
+- Large UI fonts in a small window no longer push text into the buttons.
+
+Mod Options
+- Apache, AC-130, B-2 in that order.
+- 3D aircraft: separate flight height and size for the Apache, the AC-130 and the B-2.
+- New helicopter rotor volume; "Mute the engines" now only mutes the AC-130.
+
+Other
+- Friendly Bandits companions are never hit and show in green on the sensor map.
+- New add-on: Skyhammer Air Support - Wraith Team (needs Bandits).
+
+[KO]
+새 지원: 헬하운드 원-원 (AH-64 아파치)
+- 3분 동안 호위: 30mm 점사, 플레이어에게서 떨어진 가장 큰 좀비 무리에 로켓 일제 사격.
+- 로터가 돌고 포탑이 표적을 따라가는 3D 아파치. 날아올 때부터 떠날 때까지 로터 소리가 들립니다.
+- 새 무전 대사, 로터·30mm·로켓 효과음.
+- 옵션: 도착, 체공, 쿨타임, 탄약, 점사 간격, 교전 범위, 로켓 수, 일제 사격당 로켓, 일제 사격 간격, 로켓 최소 무리.
+
+3D B-2
+- 폭격 지점을 지정하면 3D B-2가 폭탄이 떨어지는 방향으로 표적 위를 한 번 지나간 뒤 이탈.
+
+단말기
+- 탭 순서: 아파치, AC-130, B-2 (레이스 팀 애드온을 쓰면 특수부대 탭이 맨 앞).
+- AC-130의 40mm와 105mm를 한 탭으로 합침.
+- 선 도식 대신 기체 그림 표시.
+- 긴 이름은 작은 글꼴로 바뀌어 칸 밖으로 넘치지 않음.
+- 무전기를 여러 개 지녀도 켜져 있고 배터리가 있는 무전기를 사용.
+- 큰 글꼴과 작은 창에서도 글자가 버튼에 겹치지 않음.
+
+모드 옵션
+- 아파치, AC-130, B-2 순서로 정리.
+- 3D 기체: 아파치, AC-130, B-2의 비행 높이·크기를 따로 설정.
+- 헬기 로터음 볼륨 추가. '엔진음 끄기'는 이제 AC-130에만 적용.
+
+기타
+- Bandits 아군 동료는 사격에 맞지 않고 센서 지도에 초록색으로 표시.
+- 새 애드온: Skyhammer Air Support - Wraith Team (Bandits 필요).

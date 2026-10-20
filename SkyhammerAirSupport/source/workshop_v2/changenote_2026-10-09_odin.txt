@@ -1,0 +1,17 @@
+=== Main (3813483790)
+- New: Mod Options switch "Apache 3D model (normal view)" to turn the Apache's 3D model off; with it off you see its shadow only.
+- New: support for the new ODIN add-on (a combat robot dropped from orbit): add-on map marks and weapon buttons, effects, its own sensor feed and terminal colours, and its drop camera in Viewpoint's 3D view.
+- Fixed: radio lines could pile up and play many seconds late (or out of order) after calling and recalling quickly. A new call or recall now replaces the old exchange still waiting, and add-on replies that waited too long are skipped.
+--
+- 신규: 모드 옵션에 "아파치 3D 모델 (기본 시점)" 켜기/끄기를 추가했습니다. 끄면 그림자만 보입니다.
+- 신규: 새 애드온 ODIN(궤도에서 떨어지는 전투 로봇) 지원: 애드온용 지도 지정과 무기 버튼, 이펙트, 자체 센서 지도와 단말기 색, Viewpoint 3D 화면의 낙하 카메라 연출.
+- 수정: 호출과 복귀를 빠르게 반복하면 무전 대사가 쌓여 몇 초씩 늦게(또는 순서가 꼬여) 나오던 문제를 고쳤습니다. 새 호출이나 복귀가 아직 나오지 않은 이전 대사를 대신하고, 너무 오래 기다린 애드온 대답은 건너뜁니다.
+
+=== Vanilla (3813973682)
+- New: Mod Options switch "Apache 3D model (normal view)" to turn the Apache's 3D model off; with it off you see its shadow only.
+- New: support for the new ODIN add-on (a combat robot dropped from orbit): add-on map marks and weapon buttons, effects, its own sensor feed and terminal colours.
+- Fixed: radio lines could pile up and play many seconds late (or out of order) after calling and recalling quickly. A new call or recall now replaces the old exchange still waiting, and add-on replies that waited too long are skipped.
+--
+- 신규: 모드 옵션에 "아파치 3D 모델 (기본 시점)" 켜기/끄기를 추가했습니다. 끄면 그림자만 보입니다.
+- 신규: 새 애드온 ODIN(궤도에서 떨어지는 전투 로봇) 지원: 애드온용 지도 지정과 무기 버튼, 이펙트, 자체 센서 지도와 단말기 색.
+- 수정: 호출과 복귀를 빠르게 반복하면 무전 대사가 쌓여 몇 초씩 늦게(또는 순서가 꼬여) 나오던 문제를 고쳤습니다. 새 호출이나 복귀가 아직 나오지 않은 이전 대사를 대신하고, 너무 오래 기다린 애드온 대답은 건너뜁니다.

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>shApacheFly</m_Name>
+	<m_Priority>175</m_Priority>
+	<m_ConditionPriority>175</m_ConditionPriority>
+	<m_AnimName>SH_ApacheFly</m_AnimName>
+	<m_BlendTime>0.00</m_BlendTime>
+	<m_Looped>true</m_Looped>
+	<m_Conditions>
+		<m_Name>shApache</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

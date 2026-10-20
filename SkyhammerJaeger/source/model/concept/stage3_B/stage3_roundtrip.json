@@ -1,0 +1,20 @@
+{
+  "imported_from": "SH_Jaeger.glb",
+  "import_succeeded": true,
+  "skin_mesh_count": 1,
+  "bone_count": 39,
+  "action_names": [
+    "J_Idle",
+    "J_Walk",
+    "J_Drop",
+    "J_Stomp",
+    "J_Punch",
+    "J_CannonOut",
+    "J_CannonFire",
+    "J_CannonIn",
+    "J_FinalCharge",
+    "J_FinalFire",
+    "J_Lift"
+  ],
+  "preview_source": "reimported_final_glb"
+}

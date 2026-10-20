@@ -1,0 +1,51 @@
+{
+  "triangles": 16238,
+  "vertices": 48714,
+  "bbox_min_xyz": [
+    -8.751385688781738,
+    -0.9549999833106995,
+    -8.149999618530273
+  ],
+  "bbox_max_xyz": [
+    8.751385688781738,
+    3.549999952316284,
+    8.149999618530273
+  ],
+  "dimensions_xyz": [
+    17.502771377563477,
+    4.504999935626984,
+    16.299999237060547
+  ],
+  "part_triangles": {
+    "0": 15310,
+    "1": 928
+  },
+  "components": {
+    "fuselage": 1664,
+    "canopy": 404,
+    "main_wings": 532,
+    "landing_gear_sponsons": 816,
+    "pylons": 192,
+    "engine_nacelles": 3256,
+    "horizontal_tail": 276,
+    "twin_vertical_tails": 172,
+    "GAU8_mount": 128,
+    "GAU8_rotating_bundle": 928,
+    "shark_mouth_paint": 7846,
+    "underside_panels": 24
+  },
+  "barrel_axis_origin_xyz": [
+    -0.18,
+    -0.46,
+    7.56
+  ],
+  "barrel_axis_direction_xyz": [
+    0,
+    0,
+    1
+  ],
+  "axes": "+X starboard, +Y up, +Z nose",
+  "units": "1 model unit = 1 meter = 1 game tile",
+  "shark_mouth": "original surface-conforming vertex-color paint; requested by user",
+  "stage": "mesh review; shadow/art/JAR not finalized"
+}

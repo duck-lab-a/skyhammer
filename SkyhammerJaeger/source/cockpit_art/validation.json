@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "PNG_size_limit_bytes": 1500000,
+  "files": {
+    "SJ_Cockpit_Visor.png": {
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "bytes": 587312,
+      "sha256": "f3cd027a647c3a14e781a3cf4f8b4ebc54aad3ec870489cd1f7120bff4a0d61a",
+      "alpha_min": 0,
+      "alpha_max": 255
+    },
+    "SJ_Cockpit_Glass.png": {
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "bytes": 22755,
+      "sha256": "9dd266d8faa656065b34a5a27d2ed330e2edade8c524a177bc619c955b3b1b3f",
+      "alpha_min": 0,
+      "alpha_max": 20
+    },
+    "SJ_Cockpit_HUD.png": {
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "bytes": 17543,
+      "sha256": "b359cac1fc4d7446a4d0d44f2f256df567d7910b17e18361e7404ce65d02ce34",
+      "alpha_min": 0,
+      "alpha_max": 208
+    },
+    "SJ_Cockpit_Emblem.png": {
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "bytes": 47245,
+      "sha256": "a6c895c0bffc9fa240c068afada1d9d84960accef6a436f261c25af4aead48bc",
+      "alpha_min": 0,
+      "alpha_max": 255
+    }
+  },
+  "straight_alpha": true,
+  "glass_max_opacity": 0.0784313725490196,
+  "center_visor_completely_transparent": true,
+  "center_visor_test_rect": [
+    480,
+    300,
+    960,
+    500
+  ],
+  "text_and_digits": "None; geometric paths only, no text objects or raster text calls",
+  "original_design": true,
+  "regions": {
+    "sync": {
+      "rect": {
+        "x": 242,
+        "y": 374,
+        "w": 244,
+        "h": 232
+      },
+      "HUD_interior_empty": true,
+      "visor_interior_clear": true
+    },
+    "reactor": {
+      "rect": {
+        "x": 1534,
+        "y": 340,
+        "w": 84,
+        "h": 372
+      },
+      "HUD_interior_empty": true,
+      "visor_interior_clear": true
+    },
+    "status": {
+      "rect": {
+        "x": 652,
+        "y": 877,
+        "w": 616,
+        "h": 45
+      },
+      "HUD_interior_empty": true,
+      "visor_interior_clear": true
+    },
+    "warning": {
+      "rect": {
+        "x": 806,
+        "y": 182,
+        "w": 308,
+        "h": 32
+      },
+      "HUD_interior_empty": true,
+      "visor_interior_clear": true
+    }
+  },
+  "highres_visor_compression": {
+    "bytes": 1435926,
+    "rgb_step": 2
+  },
+  "preview_background": "Procedural dark background, no external imagery",
+  "aspect_ratio_tests": [
+    "16:9",
+    "16:10",
+    "21:9"
+  ],
+  "game_code_modified": false
+}

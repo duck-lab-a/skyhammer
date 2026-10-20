@@ -1,0 +1,4 @@
+=== Main (3813483790)
+- Changed: future Viewpoint updates no longer switch the 3D aircraft and cockpit scenes off by themselves. At start-up the mod now checks that the parts of Viewpoint it uses are still there, and only turns the 3D view off if one of them has changed. ZombieBuddy will ask once more to approve the updated Skyhammer Java.
+--
+- 변경: 앞으로 Viewpoint가 업데이트되어도 3D 항공기와 조종석 연출이 저절로 꺼지지 않습니다. 게임을 시작할 때 모드가 사용하는 Viewpoint 기능이 그대로 있는지 확인하고, 그중 바뀐 것이 있을 때만 3D를 끕니다. ZombieBuddy가 바뀐 스카이해머 Java 승인을 한 번 더 물어봅니다.

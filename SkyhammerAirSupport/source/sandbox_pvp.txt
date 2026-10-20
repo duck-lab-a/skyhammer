@@ -1,0 +1,87 @@
+option Skyhammer.PvP
+{
+    type = boolean,
+    default = false,
+    page = Skyhammer,
+    translation = Skyhammer_PvP,
+}
+
+option Skyhammer.PvPCallMode
+{
+    type = enum,
+    numValues = 2,
+    default = 1,
+    page = Skyhammer,
+    translation = Skyhammer_PvPCallMode,
+}
+
+option Skyhammer.PvPGroup
+{
+    type = enum,
+    numValues = 5,
+    default = 4,
+    page = Skyhammer,
+    translation = Skyhammer_PvPGroup,
+}
+
+option Skyhammer.PvPAutoFire
+{
+    type = boolean,
+    default = true,
+    page = Skyhammer,
+    translation = Skyhammer_PvPAutoFire,
+}
+
+option Skyhammer.PvPKillPoints
+{
+    type = integer,
+    min = 0,
+    max = 100,
+    default = 10,
+    page = Skyhammer,
+    translation = Skyhammer_PvPKillPoints,
+}
+
+option Skyhammer.PvPApacheArmor
+{
+    type = integer,
+    min = 10,
+    max = 400,
+    default = 120,
+    page = Skyhammer,
+    translation = Skyhammer_PvPApacheArmor,
+}
+
+option Skyhammer.PvPSelfTest
+{
+    type = boolean,
+    default = false,
+    page = Skyhammer,
+    translation = Skyhammer_PvPSelfTest,
+}
+
+option Skyhammer.EnableNuke
+{
+    type = boolean,
+    default = false,
+    page = Skyhammer,
+    translation = Skyhammer_EnableNuke,
+}
+
+option Skyhammer.NukePvP
+{
+    type = boolean,
+    default = false,
+    page = Skyhammer,
+    translation = Skyhammer_NukePvP,
+}
+
+option Skyhammer.NukeCooldownMin
+{
+    type = integer,
+    min = 10,
+    max = 1440,
+    default = 120,
+    page = Skyhammer,
+    translation = Skyhammer_NukeCooldownMin,
+}

@@ -1,0 +1,13 @@
+Radio overhaul:
+- New voices for Aegis Control and every aircrew (Chatterbox TTS): low, calm, clipped, like real crews.
+- Real aircraft radio sound: the cockpit noise under the voice (AC-130 props, A-10 and B-2 jets, Apache rotor), hard compression, key click and squelch.
+- Lines rewritten in real brevity terms: cleared hot, cease fire, Winchester, bingo, RTB, tally, bombs away and more.
+- The AC-130 now has a TV (sensor) operator who calls the kills: "Good kill, good kill", "Good shot. Target down". The Apache crew calls its kills too. Only kills their own fire made, not too often, and only when the radio is free.
+Fixed: when the nuke levels buildings (the "Strikes leave craters" option), bodies and items on the upper floors no longer stay floating in the air; they fall to the floor below.
+--
+무전 전면 개편:
+- 이지스 관제와 모든 승무원의 목소리를 새로 만들었습니다(Chatterbox TTS). 실제 승무원처럼 낮고 침착하게, 짧게 끊어 말합니다.
+- 실제 항공기 무전 소리: 목소리 아래 깔리는 조종석 소음(AC-130 프로펠러, A-10·B-2 제트, 아파치 로터), 강한 압축, 송신 딸깍·스켈치 소리.
+- 대사를 실제 무전 용어로 다시 썼습니다: 사격 허가, 사격 중지, 탄약 소진(Winchester), 연료 한계(Bingo), 복귀(RTB), 표적 확인(Tally), 폭탄 투하 등.
+- AC-130에 킬을 외치는 TV(센서) 운용사가 생겼습니다: "Good kill, good kill", "Good shot. Target down". 아파치 승무원도 킬을 외칩니다. 자기 사격으로 잡았을 때만, 너무 자주는 아니게, 무전이 비어 있을 때만 말합니다.
+수정: 핵이 건물을 지울 때("폭격 지점 지형 변화" 옵션) 위층에 있던 시체와 아이템이 공중에 떠 있던 문제를 고쳤습니다. 이제 아래층 바닥으로 떨어집니다.

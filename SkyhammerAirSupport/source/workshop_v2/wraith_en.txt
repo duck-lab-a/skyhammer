@@ -1,0 +1,61 @@
+[h1]Boots on the ground.[/h1]
+An add-on for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813483790]Skyhammer Air Support[/url]: a new terminal tab that calls [b]Wraith Six[/b], a five-man special operations team flown in by [b]Ferryman Three-Two[/b].
+
+Works with either edition of Skyhammer: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813483790]Viewpoint[/url] or [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813973682]Vanilla[/url].
+
+[b]Single player only.[/b] Made for Build 42.21.
+
+[img]https://i.ibb.co/hFJz5wft/TEXT-ADDON-aegis-gasmask.png[/img]
+
+[h1]How it works[/h1]
+[img]https://i.ibb.co/N2JzTYMV/terminal-wraith.png[/img]
+[olist]
+[*]Open the Skyhammer terminal and pick the [b]WRAITH / TEAM[/b] tab.
+[*]Press [b]CALL[/b]. A helicopter drops five operators at a landing zone near you.
+[*]For [b]2 minutes[/b] they move with you in a [b]diamond formation[/b] (point, flanks, rear) and fight the infected. [b]REGROUP[/b] pulls them in right around you, [b]SPREAD OUT[/b] puts them back in the diamond.
+[*]When time is up or you press [b]RECALL[/b], the helicopter flies them out.
+[/olist]
+[img]https://i.ibb.co/Nd0srDPF/wraith-01-team.jpg[/img]
+[img]https://i.ibb.co/VcsNNbf9/wraith-02-ferryman.jpg[/img]
+
+[h1]Good to know[/h1]
+[list]
+[*][b]The infected cannot kill them.[/b] An operator [b]you[/b] shoot or hit is pulled out on the spot.
+[*]Own black tactical suit with the Wraith Team shoulder patch, and their own gear set: helmet, quad NVG, headset, neoprene hood, gas mask with a comms unit (side filter, or a hose to a filter pack on the back), plate carrier; M16 with red dot and laser, pistol and knife. No other gear mod needed.
+[*][b]Suppressed[/b] rifles and pistols: quiet shots that draw far fewer infected.
+[*]Short tactical callouts instead of the Bandits voices and swearing.
+[*]Skyhammer's aircraft never hit them; green on the sensor map.
+[*]The team and its landing zone carry over a save and reload.
+[/list]
+
+[h1]Settings[/h1]
+Arrival [b]60 s[/b], on the ground [b]2 min[/b], cooldown [b]60 min[/b]. Change them in Mod Options ("Skyhammer - Wraith Team"). Real time; stops while paused.
+In Skyhammer's [b]killstreak mode[/b] the team costs [b]50 points[/b] instead of a cooldown, the cheapest support.
+
+[h1]Requirements[/h1]
+[list]
+[*]Skyhammer Air Support, either edition: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813483790]Viewpoint Edition[/url] (with ZombieBuddy and Viewpoint) or [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813973682]Vanilla Edition[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3268487204]Bandits[/url]
+[/list]
+Load this add-on after them.
+[b]Note:[/b] Steam lists both Skyhammer editions as required items, but you only need [b]one[/b] of them. Subscribe to the one you play with and enable only that one; you can skip the other.
+
+[h1]FAQ[/h1]
+[list]
+[*][b]The tab says it needs Bandits?[/b] Enable Bandits and restart.
+[*][b]Existing save?[/b] Yes.
+[*][b]More hostile bandits?[/b] No. The team only appears when you call it.
+[*][b]Drove far away?[/b] They can't follow a car; anyone left behind is picked up when that area loads again.
+[*][b]Multiplayer?[/b] No. The Vanilla Edition plays online, but this add-on stays off there.
+[*][b]All black? That's not tactical.[/b] You're right, it isn't. Real teams wear camo that matches the ground. The Wraith Team wears black purely because it looks cool. That's the whole reason.
+[/list]
+
+[h1]Credits[/h1]
+[list]
+[*]Companion NPCs: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3268487204]Bandits[/url] by Slayer.
+[*]Tactical advice: [b]hades-84[/b] (HUNK), whose comments shaped the Wraith Team's gear: the gas mask with a side filter or a hose to a back-mounted filter pack, its comms unit, the neoprene hood and the suppressors. Thank you, HUNK!
+[*]Voices: Piper TTS (bryce, john - public domain; joe - CC0). Helicopter and suppressed shots synthesized. UI: English, Korean, Simplified Chinese.
+[*]Wraith gear 3D model made for this mod. Artwork: AI-generated.
+[/list]
+
+Found a bug? Please report it in the Discussions tab.

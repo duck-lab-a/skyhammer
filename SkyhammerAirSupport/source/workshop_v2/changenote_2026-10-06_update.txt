@@ -1,0 +1,63 @@
+===== 바닐라 에디션 (먼저 업로드) =====
+
+- New: Killstreak mode. Instead of waiting out cooldowns, infected you kill yourself earn points and each sortie costs points (Apache 80, AC-130 150, B-2 300). Kills by Skyhammer's own aircraft don't count. Recall before arrival for a refund. The terminal shows your points and each price, and the points you earn pop up over your head (can be turned off). The sandbox fixes the mode for the server or leaves it to each player's Mod Options, and sets the price multiplier.
+- New: the AC-130's 40mm can be aimed by hand ("40MM AIM" on the terminal): each click fires a short burst where you point, on top of its own fire. The gunner confirms by radio.
+- New: air support PvP (experimental, sandbox "Air support PvP", off by default), call-of-duty style:
+  - Every call costs killstreak points, and everyone plays by the default combat values (Mod Options can't change arrival, ammo, bombs and so on).
+  - Earned support is deadly: the 105mm, the B-2 and the gunner's aimed 40mm kill what they catch in the open. The Apache hunts players on its own after a 2-second warning; stand still under it and you go down, only running gives you a chance.
+  - Shoot an enemy Apache down: aim at its shadow with your gun (about two rifle magazines; sandbox "PvP: Apache armour"). Downed, it goes home and you get 40 points.
+  - Enemy aircraft inbound and strike warnings. Indoors is always safe.
+  - Players on the same side (faction, safehouse, either, or an Extraction Mode hideout) are safe from each other; the server's PvP setting, non-PvP zones and your own safehouse are respected. The server decides every hit.
+  - An enemy player killed by your own hand earns 10 points. A "lone test" option lets an admin check it alone.
+- New sandbox options: turn the Apache, the AC-130 and the B-2 on or off one by one, so the server admin decides which aircraft are available. An aircraft that is off cannot be called and its tab is hidden in the terminal.
+- Ferryman (Wraith Team add-on) now casts its own UH-60 Black Hawk shadow instead of the Apache's.
+- The terminal now carries the Wraith Team's REGROUP / SPREAD OUT orders (update the add-on too).
+--
+- 신규: 킬스트릭 모드. 쿨타임을 기다리는 대신, 직접 잡은 좀비가 포인트로 쌓이고 출격마다 포인트를 씁니다(아파치 80, AC-130 150, B-2 300). 스카이해머 기체가 잡은 좀비는 포인트가 되지 않습니다. 도착 전에 귀환시키면 포인트를 돌려받습니다. 단말기에 보유 포인트와 기체별 가격이 나오고, 얻은 포인트가 머리 위에 뜹니다(끌 수 있음). 샌드박스에서 서버 전체 모드를 고정하거나 각자 모드 옵션에서 고르게 할 수 있고, 가격 배율도 정합니다.
+- 신규: AC-130 40mm 직접 조준(단말기 "40MM 직접 조준"). 자동 사격과 별도로, 클릭할 때마다 가리킨 곳에 짧은 점사를 쏩니다. 사수가 무전으로 응답합니다.
+- 신규: 항공 지원 PvP(실험적, 샌드박스 "항공 지원 PvP", 기본 꺼짐), 콜 오브 듀티 방식:
+  - 모든 호출은 킬스트릭 포인트를 쓰고, 전투 수치는 모두 기본값입니다(모드 옵션으로 도착 시간·탄약·폭탄 수 등을 바꿀 수 없음).
+  - 어렵게 얻은 만큼 강합니다: 105mm, B-2, 사수가 직접 조준한 40mm는 개활지에 있는 플레이어를 확실히 잡습니다. 아파치는 2초 경보 후 스스로 플레이어를 노리고, 가만히 있으면 쓰러지며 뛰어야만 피할 수 있습니다.
+  - 적 아파치 격추: 그림자를 향해 총을 쏘면 됩니다(소총 탄창 두 개 정도, 샌드박스 "PvP: 아파치 내구도"). 격추되면 귀환하고 쏜 사람은 40포인트를 얻습니다.
+  - 적 기체 접근 알림과 폭격 경보. 실내는 언제나 안전합니다.
+  - 같은 편(팩션, 세이프하우스, 둘 중 하나, Extraction Mode 은신처)끼리는 안전하고, 서버의 PvP 설정·비PvP 구역·자기 세이프하우스를 따릅니다. 피해는 모두 서버가 판정합니다.
+  - 적 플레이어를 직접 잡으면 10포인트. 관리자가 혼자 확인할 수 있는 "혼자 테스트" 옵션이 있습니다.
+- 새 샌드박스 옵션: 아파치, AC-130, B-2를 하나씩 켜고 끌 수 있습니다. 서버 관리자가 쓸 기체를 정합니다. 꺼진 기체는 부를 수 없고 단말기에서 탭이 사라집니다.
+- 페리맨(레이스 팀 애드온)의 그림자가 아파치 대신 UH-60 블랙호크 모양으로 바뀌었습니다.
+- 단말기에 레이스 팀의 "모여 / 흩어져" 명령 버튼이 들어갑니다(애드온도 함께 업데이트하세요).
+
+
+===== 본편 (나중에 업로드) =====
+
+- New: Killstreak mode. Instead of waiting out cooldowns, infected you kill yourself earn points and each sortie costs points (Apache 80, AC-130 150, B-2 300). Kills by Skyhammer's own aircraft don't count. Recall before arrival for a refund. The terminal shows your points and each price, and the points you earn pop up over your head (can be turned off). Pick the mode in Mod Options, or fix it in the sandbox, which also sets the price multiplier.
+- New sandbox options: turn the Apache, the AC-130 and the B-2 on or off one by one. An aircraft that is off cannot be called and its tab is hidden in the terminal.
+- Ferryman (Wraith Team add-on) is now a real UH-60 Black Hawk in the 3D sky, with both cabin doors open, instead of a borrowed Apache. Its ground shadow matches.
+- New: the AC-130's 40mm can be aimed by hand ("40MM AIM" on the terminal): each click fires a short burst where you point, on top of its own fire. The gunner confirms by radio.
+- The terminal now carries the Wraith Team's REGROUP / SPREAD OUT orders (update the add-on too).
+- Korean text: "edition" wording in the single-player-only notice.
+--
+- 신규: 킬스트릭 모드. 쿨타임을 기다리는 대신, 직접 잡은 좀비가 포인트로 쌓이고 출격마다 포인트를 씁니다(아파치 80, AC-130 150, B-2 300). 스카이해머 기체가 잡은 좀비는 포인트가 되지 않습니다. 도착 전에 귀환시키면 포인트를 돌려받습니다. 단말기에 보유 포인트와 기체별 가격이 나오고, 얻은 포인트가 머리 위에 뜹니다(끌 수 있음). 모드 옵션에서 고르거나 샌드박스에서 고정할 수 있고, 샌드박스에서 가격 배율도 정합니다.
+- 새 샌드박스 옵션: 아파치, AC-130, B-2를 하나씩 켜고 끌 수 있습니다. 꺼진 기체는 부를 수 없고 단말기에서 탭이 사라집니다.
+- 페리맨(레이스 팀 애드온)이 빌려 쓰던 아파치 대신, 양쪽 캐빈 문이 열린 UH-60 블랙호크로 3D 하늘에 나타납니다. 지면 그림자도 같이 바뀌었습니다.
+- 신규: AC-130 40mm 직접 조준(단말기 "40MM 직접 조준"). 자동 사격과 별도로, 클릭할 때마다 가리킨 곳에 짧은 점사를 쏩니다. 사수가 무전으로 응답합니다.
+- 단말기에 레이스 팀의 "모여 / 흩어져" 명령 버튼이 들어갑니다(애드온도 함께 업데이트하세요).
+- 싱글플레이 전용 안내 문구를 "에디션"으로 고쳤습니다.
+
+
+===== 레이스 팀 애드온 =====
+
+- New gear, thanks to hades-84's tactical advice: a neoprene hood and a gas mask with a comms unit. Three operators carry a side-mounted filter, two a hose to a filter and blower pack on the back, so nothing gets in the way of the rifle stock. Still all black (rule of cool).
+- Fixed: the gear was worn back to front and sat off the head, leaving bare heads showing.
+- The team now wears its own black tactical suit with the Wraith Team patch on the left shoulder, instead of the SWAT suit.
+- Wraith rifles now carry a red dot sight and a laser.
+- Rifles and pistols are suppressed: a quieter shot that draws far fewer infected (about 25 tiles for the rifle instead of 150).
+- Killstreak mode (Skyhammer): the team costs 50 points, the cheapest support.
+- New: REGROUP / SPREAD OUT on the terminal's Wraith tab. Regroup pulls the team in right around you (good indoors and in tight spots); Spread Out puts them back in the diamond. Needs this Skyhammer update.
+--
+- hades-84 님의 전술 조언을 반영한 새 장비: 네오프렌 후드와 통신 장치를 단 방독면. 대원 셋은 옆 필터, 둘은 등 뒤 필터·송풍기 팩에 잇는 호스를 써서 소총 개머리판에 걸리지 않습니다. 색은 여전히 올블랙입니다(멋 때문).
+- 수정: 장비가 앞뒤로 뒤집혀 입혀지고 머리에서 어긋나 맨머리가 보이던 문제.
+- 대원들이 SWAT 복장 대신, 왼쪽 어깨에 레이스 팀 패치를 단 전용 검은 전술복을 입습니다.
+- 레이스 대원 소총에 레드 도트 사이트와 레이저를 달았습니다.
+- 소총과 권총에 소음기 효과: 총소리가 작아지고 좀비가 훨씬 덜 몰려옵니다(소총 기준 150칸 → 약 25칸).
+- 킬스트릭 모드(스카이해머): 레이스 팀은 50포인트로, 가장 저렴한 지원입니다.
+- 신규: 단말기 레이스 탭에 "모여 / 흩어져" 버튼. 모여는 팀을 플레이어 바로 곁으로 불러 모으고(실내나 좁은 곳에 좋음), 흩어져는 다시 다이아몬드 대형으로 펼칩니다. 이번 스카이해머 업데이트가 필요합니다.

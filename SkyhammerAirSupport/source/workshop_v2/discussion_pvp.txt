@@ -1,0 +1,66 @@
+[게시 위치]
+바닐라 에디션(3813973682) 토론 탭. 멀티플레이는 바닐라 에디션만 지원하므로.
+
+[제목]
+[Planned] PvP mode: ideas and feedback
+
+[본문]
+[h1]Planned: PvP mode[/h1]
+Nothing here is final and there is no release date yet. Ideas and server experiences are very welcome below!
+
+[b]Right now[/b]
+Air support is PvE only. The guns and bombs only hit the infected, and other players never take damage from your air support.
+
+[b]Decided so far[/b]
+[list]
+[*]Each request (aircraft or weapon) becomes a one-time use, like a killstreak.
+[*]Which requests you can call depends on your kills. Bigger strikes need more kills.
+[/list]
+
+[b]Ideas being considered[/b]
+[list]
+[*]An optional sandbox setting, off by default, that follows the server's own PvP settings.
+[*]Your group is never targeted (suggested by Ex Ossibus Fumus), probably using the game's factions.
+[*]Only strikes you aim yourself (105mm, B-2) can hurt players. The automatic guns (40mm, Apache) would only hunt the infected.
+[*]Players under a strike get a warning and hear the incoming rounds, so there is time to take cover. Indoors stays safe.
+[*]A laser designator to mark targets, and the target can see the laser dot.
+[*]A relay for each faction, so cutting the enemy's power or breaking their dish shuts down their air support.
+[/list]
+
+[b]Open questions[/b]
+[olist]
+[*]Should infected kills count, or only player kills?
+[*]Should your kills reset when you die?
+[*]How many kills should each request cost?
+[*]Should the automatic guns (40mm, Apache) be left out of PvP entirely?
+[/olist]
+
+[h1]PvP 모드 예정[/h1]
+아직 확정된 것은 없고 출시 시기도 정해지지 않았습니다. 아이디어와 서버 운영 경험을 댓글로 남겨 주세요!
+
+[b]지금은[/b]
+항공 지원은 PvE 전용입니다. 총탄과 폭탄은 좀비만 맞히고, 다른 플레이어는 내 항공 지원에 피해를 입지 않습니다.
+
+[b]정해진 것[/b]
+[list]
+[*]킬스트릭처럼 요청(기체나 무장)마다 한 번씩만 쓸 수 있습니다.
+[*]처치 수에 따라 부를 수 있는 요청이 달라집니다. 큰 공격일수록 처치가 더 많이 필요합니다.
+[/list]
+
+[b]검토 중인 아이디어[/b]
+[list]
+[*]샌드박스 옵션으로 켜고 끄며 기본은 꺼짐입니다. 서버의 PvP 설정을 그대로 따릅니다.
+[*]내 그룹은 공격하지 않습니다(Ex Ossibus Fumus 님 제안). 게임의 팩션 기능을 쓸 생각입니다.
+[*]직접 조준하는 공격(105mm, B-2)만 플레이어에게 피해를 줍니다. 자동 사격(40mm, 아파치)은 좀비만 노립니다.
+[*]공격 지역의 플레이어에게 경보가 가고 포탄 낙하음이 들려서 숨을 시간이 있습니다. 실내는 안전합니다.
+[*]표적을 찍는 레이저 지시기. 표적이 된 쪽에서도 레이저 점이 보입니다.
+[*]팩션마다 중계소를 두어, 상대의 전기를 끊거나 위성 안테나를 부수면 그쪽 항공 지원이 끊깁니다.
+[/list]
+
+[b]의견을 듣고 싶은 것[/b]
+[olist]
+[*]좀비 처치도 셀까요, 플레이어 처치만 셀까요?
+[*]죽으면 처치 수를 초기화할까요?
+[*]요청마다 처치가 몇 번 필요할까요?
+[*]자동 사격(40mm, 아파치)은 PvP에서 아예 뺄까요?
+[/olist]

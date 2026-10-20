@@ -1,0 +1,63 @@
+[h1]A hammer from orbit.[/h1]
+An add-on for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813483790]Skyhammer Air Support[/url]: a new terminal tab that links to [b]Asgard[/b], the orbital station, and its weapon satellite [b]THOR-1[/b]. Mark a point, wait for [b]Hammer Actual[/b] to authorize the release, and a tungsten rod falls from orbit. Based on "Rods from God" (Project Thor), a real kinetic weapon concept.
+
+Works with [b]both editions[/b] of Skyhammer: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813483790]Viewpoint[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813973682]Vanilla[/url].
+[b]Single player only.[/b] Made for Build 42.21.
+
+[quote][h2]The last resort.[/h2]Everything within 50 tiles dies, indoors too. It is meant to be overkill, but you can tone it down in Mod Options: kill radius, levelling radius, impact shake, mark range and more.[/quote]
+
+[h1]How it works[/h1]
+[img]https://i.ibb.co/W4GQRX3Y/TEXT-ADDON-thor.png[/img]
+[img]https://i.ibb.co/QF8fLYCk/2026-10-09-173437.png[/img]
+[olist]
+[*]Open the Skyhammer terminal and pick the [b]THOR[/b] tab. The terminal switches to Asgard's uplink, and the sensor map zooms out to fit the blast.
+[*]Press [b]CALL[/b]. THOR-1 moves over your grid in [b]45 s[/b] and holds a [b]3-minute[/b] strike window.
+[*]Mark the target on the sensor map (up to [b]150 tiles[/b] away, even past the ground the game has loaded) or eyes-on. Asgard Control confirms, Hammer Actual authorizes, the rod is away: [b]seven seconds[/b] to impact.
+[*]Everything within the kill radius ([b]50 tiles[/b]) dies, most of the next 15 tiles too, and the shockwave throws down what stands up to 30 tiles beyond. The blast is heard from far away.
+[/olist]
+
+[h1]Strike scene[/h1]
+From "rod away" you see Asgard's view from orbit: THOR-1 letting the rod go. In the [b]Viewpoint Edition[/b]'s 3D view the camera then rides the rod down onto the target, and your view shakes with the impact. In the Vanilla Edition you get the orbit view. A click skips it; Mod Options can turn it off.
+[img]https://i.ibb.co/W80dwdK/2026-10-09-173449.png[/img]
+[img]https://i.ibb.co/Y4g31MMh/2026-10-09-173522.png[/img]
+[img]https://i.ibb.co/jvpqL0pk/2026-10-09-173500.png[/img]
+
+[h1]Levelling[/h1]
+With Skyhammer's [b]"Strikes leave craters"[/b] option on, the rod levels everything built within [b]50 tiles[/b] (10 to 100 in Mod Options) and burns the ground around it. Walls, doors, furniture and upper floors are gone; items on the floor stay. Parts of the area not loaded yet are levelled when you get there.
+[b]This changes your map for good.[/b] Leave the craters option off if you don't want that.
+
+[h1]Good to know[/h1]
+[list]
+[*]It reaches indoors and every floor (option). Friendly [b]Bandits[/b] companions are spared.
+[*]You are hurt only with Skyhammer's "protect the player" option off; a mark within 65 tiles of you is then refused. With levelling on, a mark inside the levelling radius (plus 3 tiles) is refused.
+[*]A rod already away still lands, even if you recall THOR-1 or reload the save.
+[*][b]Light.[/b] Nothing runs until you call it. The strike's work (the kills, the levelling) is spread over time so the game does not stall, and the add-on replaces no vanilla file or code.
+[/list]
+
+[h1]Settings[/h1]
+Mod Options ("Skyhammer - THOR"): arrival [b]45 s[/b], strike window [b]3 min[/b], cooldown [b]90 min[/b], rods ([b]1[/b], up to 3), kill radius ([b]50[/b], 25 to 60), mark range ([b]150[/b]), impact noise ([b]150[/b]), levelling radius ([b]50[/b]), strike scene, impact shake, reaches indoors, start fires (off). Real time; stops while paused.
+In Skyhammer's [b]killstreak mode[/b] THOR costs [b]500 points[/b] instead of a cooldown.
+
+[h1]Requirements[/h1]
+[list]
+[*]Skyhammer Air Support, either edition, [b]updated to its latest version[/b] (the map zoom-out and the impact shake need it): [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813483790]Viewpoint Edition[/url] (with ZombieBuddy and Viewpoint) or [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813973682]Vanilla Edition[/url]
+[/list]
+Load this add-on after it.
+[b]Note:[/b] Steam lists both Skyhammer editions as required items, but you only need [b]one[/b] of them. Subscribe to the one you play with and enable only that one.
+
+[h1]FAQ[/h1]
+[list]
+[*][b]Existing save?[/b] Yes.
+[*][b]No camera dive or shake?[/b] Those need the Viewpoint Edition and Viewpoint's 3D view. Elsewhere you get the orbit view only.
+[*][b]Nothing was levelled?[/b] Turn on Skyhammer's "Strikes leave craters" option.
+[*][b]Multiplayer?[/b] No. The Vanilla Edition plays online, but this add-on stays off there.
+[/list]
+
+[h1]Credits[/h1]
+[list]
+[*]Voices: Piper TTS (kristin - Asgard Control, john - Hammer Actual; both public domain).
+[*]Sounds: rubberduck - 25 CC0 bang / firework SFX (CC0), edited; others synthesized.
+[*]Artwork: AI-generated. UI: English, Korean, Simplified Chinese.
+[/list]
+
+Found a bug? Please report it in the Discussions tab.

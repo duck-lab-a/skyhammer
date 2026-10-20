@@ -1,0 +1,7 @@
+- New: strikes damage vehicles. The AC-130's 105mm, the A-10's gun run, the B-2's bombs and the tactical nuke now damage nearby vehicles: the closest are wrecked (flat tyres, smashed glass, a dead engine, so they will not drive), farther ones get flat tyres, cracked glass and dents. Sandbox option "Strikes damage vehicles" (on by default).
+- Changed: the 105mm's fireball and earth column linger a little longer; the first moment of the blast is the same.
+- Optimized: blasts and napalm fire make less work every frame while they are on screen.
+--
+- 추가: 공습이 차량을 파손합니다. AC-130의 105mm, A-10 기총 소사, B-2 폭탄과 전술핵이 근처 차량을 부숩니다. 가장 가까운 차는 완파되고(타이어 펑크, 유리 박살, 엔진 고장으로 운행 불가), 조금 먼 차는 타이어 펑크, 유리 금, 찌그러짐이 생깁니다. 샌드박스 옵션 "공습이 차량을 파손"(기본 켜짐).
+- 변경: 105mm 폭발의 불꽃과 흙기둥이 조금 더 오래 남습니다. 폭발 첫 순간은 그대로입니다.
+- 최적화: 폭발과 네이팜 불길이 화면에 있을 때 매 프레임 작업을 줄였습니다.

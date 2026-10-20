@@ -1,0 +1,27 @@
+module Skyhammer
+{
+    imports
+    {
+        Base
+    }
+
+    /* The nuke's fallout (radiation): Prussian Blue, a real drug that speeds caesium out of the
+       body. Taken like the game's own pills (a bottle of ten); what a capsule does is
+       Skyhammer_RadiationMeds / Skyhammer_RadiationClient's. Vanilla pill bottle models, its own
+       blue icon (Codex's, source/icon_candidates/codex). Found where Skyhammer_RadiationLoot puts it. */
+    item PrussianBlue
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        Icon = SH_PrussianBlue,
+        Medical = true,
+        Tooltip = Tooltip_SH_PrussianBlue,
+        UseDelta = 0.1,
+        UseWhileEquipped = false,
+        StaticModel = PillBottle,
+        WorldStaticModel = PillBottleGround,
+        Tags = base:consumable,
+        OnEat = SkyhammerRad_TakeBlue,
+    }
+}

@@ -1,0 +1,35 @@
+module WraithGear
+{
+ item Respirator
+ {
+  DisplayName = Wraith Respirator,
+  ItemType = base:clothing,
+  DisplayCategory = ProtectiveGear,
+  BodyLocation = base:maskeyes,
+  ClothingItem = Wraith_Respirator,
+  Icon = GasMask,
+  BloodLocation = Head;Neck,
+  Weight = 0.7,
+  BiteDefense = 30,
+  ScratchDefense = 50,
+  CanHaveHoles = false,
+  Insulation = 0.5,
+  WindResistance = 0.6,
+ }
+ item RespiratorHose
+ {
+  DisplayName = Wraith Respirator (Hose),
+  ItemType = base:clothing,
+  DisplayCategory = ProtectiveGear,
+  BodyLocation = base:maskeyes,
+  ClothingItem = Wraith_RespiratorHose,
+  Icon = GasMask,
+  BloodLocation = Head;Neck,
+  Weight = 0.7,
+  BiteDefense = 30,
+  ScratchDefense = 50,
+  CanHaveHoles = false,
+  Insulation = 0.5,
+  WindResistance = 0.6,
+ }
+}

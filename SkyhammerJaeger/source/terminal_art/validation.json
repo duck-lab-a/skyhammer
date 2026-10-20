@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "art": {
+    "source": "Approved thumbnail v6, user-requested replacement of Cycles render",
+    "generation": "built-in image_gen",
+    "file": "C:\\Users\\user\\Zomboid\\mods\\SkyhammerJaeger\\42\\media\\ui\\SH_Art_Odin.png",
+    "size": [
+      512,
+      210
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      12,
+      7,
+      500,
+      205
+    ],
+    "transparent_pixels": 29387,
+    "partial_alpha_pixels": 1578,
+    "partial_alpha_only_on_silhouette_edge": true,
+    "transparent_rgb_zero": true,
+    "removed_isolated_specks": 0,
+    "bloom": false,
+    "floor_shadow": false,
+    "user_approved_partial_arm_lower_body_crop": true
+  },
+  "icon": {
+    "file": "C:\\Users\\user\\Zomboid\\mods\\SkyhammerJaeger\\42\\media\\ui\\SH_Icon_Odin.png",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "background_opaque_as_requested": true,
+    "original_cyan_bracket_pixels_preserved": true,
+    "silhouette": "Original ODIN model front J_Idle frame 0",
+    "silhouette_color_rgb": [
+      244,
+      244,
+      238
+    ]
+  },
+  "source_assets_unchanged": true,
+  "references_read_only": [
+    "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupport\\42\\media\\ui\\SH_Art_Apache.png",
+    "C:\\Users\\user\\Zomboid\\mods\\SkyhammerWraith\\42\\media\\ui\\SH_Art_Team.png",
+    "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupport\\42\\media\\ui\\SH_Icon_B2.png"
+  ],
+  "game_code_modified": false
+}

@@ -1,0 +1,1022 @@
+module Base
+{
+    sound SH_40mm_Report
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_40mm_report_1.wav, distanceMin = 40, distanceMax = 420, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_40mm_report_2.wav, distanceMin = 40, distanceMax = 420, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_40mm_report_3.wav, distanceMin = 40, distanceMax = 420, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_40mm_report_4.wav, distanceMin = 40, distanceMax = 420, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_40mm_Impact
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_40mm_impact_1.wav, distanceMin = 18, distanceMax = 200, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_40mm_impact_2.wav, distanceMin = 18, distanceMax = 200, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_40mm_impact_3.wav, distanceMin = 18, distanceMax = 200, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_40mm_impact_4.wav, distanceMin = 18, distanceMax = 200, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_105_Report
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_105_report_1.wav, distanceMin = 60, distanceMax = 650, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_105_report_2.wav, distanceMin = 60, distanceMax = 650, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_105_report_3.wav, distanceMin = 60, distanceMax = 650, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_105_Impact
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_105_impact_1.wav, distanceMin = 35, distanceMax = 380, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_105_impact_2.wav, distanceMin = 35, distanceMax = 380, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_105_impact_3.wav, distanceMin = 35, distanceMax = 380, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_Bomb_Impact
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_bomb_impact_1.wav, distanceMin = 140, distanceMax = 900, reverbFactor = 0, volume = 1.6, }
+        clip { file = media/sound/skyhammer/sh_bomb_impact_2.wav, distanceMin = 140, distanceMax = 900, reverbFactor = 0, volume = 1.6, }
+        clip { file = media/sound/skyhammer/sh_bomb_impact_3.wav, distanceMin = 140, distanceMax = 900, reverbFactor = 0, volume = 1.6, }
+        clip { file = media/sound/skyhammer/sh_bomb_impact_4.wav, distanceMin = 140, distanceMax = 900, reverbFactor = 0, volume = 1.6, }
+    }
+    sound SH_B2_Flyover
+    {
+        category = Object,
+        loop = true,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_b2_flyover.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_Incoming
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_incoming_1.wav, distanceMin = 8, distanceMax = 200, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_incoming_2.wav, distanceMin = 8, distanceMax = 200, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_incoming_3.wav, distanceMin = 8, distanceMax = 200, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_Engine_Loop
+    {
+        category = Object,
+        loop = true,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_engine_loop.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_Rotor_Loop
+    {
+        category = Object,
+        loop = true,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_rotor_loop.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_30mm_Burst
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_30mm_burst_1.wav, distanceMin = 40, distanceMax = 380, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_30mm_burst_2.wav, distanceMin = 40, distanceMax = 380, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_30mm_burst_3.wav, distanceMin = 40, distanceMax = 380, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_30mm_Impact
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_30mm_impact_1.wav, distanceMin = 15, distanceMax = 160, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_30mm_impact_2.wav, distanceMin = 15, distanceMax = 160, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_30mm_impact_3.wav, distanceMin = 15, distanceMax = 160, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_Rocket_Launch
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_rocket_launch_1.wav, distanceMin = 40, distanceMax = 320, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_rocket_launch_2.wav, distanceMin = 40, distanceMax = 320, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_rocket_launch_3.wav, distanceMin = 40, distanceMax = 320, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_Rocket_Impact
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_rocket_impact_1.wav, distanceMin = 30, distanceMax = 320, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_rocket_impact_2.wav, distanceMin = 30, distanceMax = 320, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_rocket_impact_3.wav, distanceMin = 30, distanceMax = 320, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_GAU8
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_gau8_1.wav, distanceMin = 160, distanceMax = 1000, reverbFactor = 0, volume = 1.6, }
+        clip { file = media/sound/skyhammer/sh_gau8_2.wav, distanceMin = 160, distanceMax = 1000, reverbFactor = 0, volume = 1.6, }
+    }
+    sound SH_A10_Flyby
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_a10_flyby.wav, distanceMin = 60, distanceMax = 700, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_Nuke_Incoming
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_nuke_incoming.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_Nuke_Siren
+    {
+        category = Object,
+        loop = true,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_nuke_siren.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_Nuke_Flash
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_nuke_flash.wav, distanceMin = 200, distanceMax = 2000, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_Nuke_Blast
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_nuke_blast.wav, distanceMin = 400, distanceMax = 3000, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_Napalm_Whoosh
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_napalm_whoosh_1.wav, distanceMin = 25, distanceMax = 400, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer/sh_napalm_whoosh_2.wav, distanceMin = 25, distanceMax = 400, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_Napalm_Loop
+    {
+        category = Object,
+        loop = true,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_napalm_loop.wav, distanceMin = 12, distanceMax = 160, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunCall
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_guncall.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunCallAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_guncallack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunOnStation
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunonstation.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunReady
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunready.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunEngage
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunengage.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunHold
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunhold.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunHoldAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunholdack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunResume
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunresume.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunResumeAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunresumeack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunDry
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gundry.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunBingo
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunbingo.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunRtb
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunrtb.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunRtbAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunrtback.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_HeMark
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_hemark.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_HeShot
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_heshot.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunAimMark
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunaimmark.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunAimShot
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunaimshot.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_HeDone
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_hedone.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_HeDry
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_hedry.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_Cancel
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_cancel.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_Indoor
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_indoor.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_HeBusy
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_hebusy.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_B2Call
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_b2call.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_B2CallAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_b2callack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_B2OnStation
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_b2onstation.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_B2Mark
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_b2mark.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_B2Release
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_b2release.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_B2Danger
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_b2danger.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_B2Done
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_b2done.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_B2Busy
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_b2busy.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_B2Bingo
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_b2bingo.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_B2Rtb
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_b2rtb.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_B2RtbAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_b2rtback.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_Rearming
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_rearming.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_PtsApache
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_ptsapache.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_PtsGun
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_ptsgun.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_PtsB2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_ptsb2.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_NotReady
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_notready.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_Busy
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_busy.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_Need3D
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_need3d.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_TooFar
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_toofar.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheCall
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apachecall.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheCallAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apachecallack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheOnStation
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apacheonstation.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheEngage
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apacheengage.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheRockets
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apacherockets.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheHold
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apachehold.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheHoldAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apacheholdack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheResume
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apacheresume.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheResumeAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apacheresumeack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_FlareMark
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_flaremark.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_FlareAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_flareack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_FlareOut
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_flareout.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheDry
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apachedry.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheBingo
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apachebingo.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheRtb
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apachertb.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheRtbAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apachertback.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheTakingFire
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apachetakingfire.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheShotDown
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apacheshotdown.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheGoodKill
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apachegoodkill.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheGoodKill2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apachegoodkill2.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_ApacheGoodKillGroup
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_apachegoodkillgroup.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunContactGroup
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_guncontactgroup.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunPilotSteady
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunpilotsteady.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunWorking
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunworking.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunOrbitWatch
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunorbitwatch.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunSensorTrack
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunsensortrack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunKeepScanning
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunkeepscanning.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunQuietSector
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunquietsector.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunHoldOverwatch
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunholdoverwatch.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunOneMinute
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunoneminute.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunBreakOrbit
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunbreakorbit.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunGoodKill
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gungoodkill.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunGoodKill2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gungoodkill2.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunGoodKill3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gungoodkill3.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunGoodKillGroup
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gungoodkillgroup.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_QBroadcast1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_qbroadcast1.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_QBroadcast2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_qbroadcast2.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_QBroadcast3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_qbroadcast3.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_QRelayUp
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_qrelayup.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_QRelayDark
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_qrelaydark.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_QRelayLost
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_qrelaylost.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_QContact1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_qcontact1.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_QContact2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_qcontact2.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_QContact3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_qcontact3.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_QContact4
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_qcontact4.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_QContact5
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_qcontact5.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10Call
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10call.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10CallAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10callack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10OnStation
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10onstation.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10Mark
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10mark.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10RollIn
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10rollin.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10Guns
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10guns.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10Off
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10off.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10Copy
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10copy.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10ReAttack
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10reattack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10DangerClose
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10dangerclose.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10Hold
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10hold.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10Winchester
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10winchester.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10Standby
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10standby.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10Bingo
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10bingo.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10Rtb
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10rtb.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_A10RtbAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_a10rtback.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_PtsA10
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_ptsa10.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_NukeMark
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_nukemark.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_NukeAsk
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_nukeask.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_NukeAuth
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_nukeauth.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_NukeAway
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_nukeaway.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_NukeDone
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_nukedone.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_NukeDanger
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_nukedanger.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_NukeCooldown
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_nukecooldown.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_NukeOffOption
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_nukeoffoption.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_NukeOffServer
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_nukeoffserver.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_NukeTooFar
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_nuketoofar.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_NukeNoSortie
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_nukenosortie.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_RadAfterBlast
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_radafterblast.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_RadEnter
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_radenter.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_RadClear
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_radclear.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_NapalmIn
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_napalmin.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_NapalmAway
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_napalmaway.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_NapalmDone
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_napalmdone.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+}

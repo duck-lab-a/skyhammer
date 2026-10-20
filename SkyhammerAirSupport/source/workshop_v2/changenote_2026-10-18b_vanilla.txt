@@ -1,0 +1,5 @@
+Fix: napalm no longer leaves real fires burning for minutes. The infected it sets alight used to light the ground they stood on (the game's own fire spread); now they don't, unless "Napalm starts real fire" is on (single player). In multiplayer the napalm never spreads real fire.
+Fix: the tactical nuke's EMP option (single player) no longer throws an error at the blast; running engines in range now stop as intended.
+--
+수정: 네이팜이 몇 분씩 타는 진짜 불을 남기지 않습니다. 불붙은 감염자가 서 있던 바닥에 게임 자체의 불 번짐으로 불이 옮겨붙던 문제로, 이제는 "네이팜이 진짜 불을 붙임" 옵션(싱글 전용)을 켰을 때만 번집니다. 멀티에서는 네이팜이 진짜 불을 번지게 하지 않습니다.
+수정: 전술핵의 EMP 옵션(싱글 전용)이 폭발 순간 오류를 내던 문제를 고쳤습니다. 범위 안의 시동 걸린 차량이 이제 제대로 멈춥니다.

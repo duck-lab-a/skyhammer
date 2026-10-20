@@ -1,0 +1,296 @@
+module Base
+{
+    sound SJ_Fall
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/sj_fall_1.wav, distanceMin = 30, distanceMax = 300, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer_odin/sj_fall_2.wav, distanceMin = 30, distanceMax = 300, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SJ_Rise
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/sj_rise.wav, distanceMin = 30, distanceMax = 300, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SJ_Land
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/sj_land_1.wav, distanceMin = 40, distanceMax = 400, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer_odin/sj_land_2.wav, distanceMin = 40, distanceMax = 400, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SJ_Step
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/sj_step_1.wav, distanceMin = 10, distanceMax = 90, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer_odin/sj_step_2.wav, distanceMin = 10, distanceMax = 90, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SJ_Stomp
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/sj_stomp_1.wav, distanceMin = 25, distanceMax = 260, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer_odin/sj_stomp_2.wav, distanceMin = 25, distanceMax = 260, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SJ_Punch
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/sj_punch.wav, distanceMin = 20, distanceMax = 220, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SJ_CannonOut
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/sj_cannon_out.wav, distanceMin = 8, distanceMax = 90, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SJ_Cannon
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/sj_cannon_1.wav, distanceMin = 40, distanceMax = 420, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer_odin/sj_cannon_2.wav, distanceMin = 40, distanceMax = 420, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SJ_CannonHit
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/sj_cannon_hit_1.wav, distanceMin = 35, distanceMax = 380, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer_odin/sj_cannon_hit_2.wav, distanceMin = 35, distanceMax = 380, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SJ_Charge
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/sj_charge.wav, distanceMin = 30, distanceMax = 300, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SJ_Final
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/sj_final.wav, distanceMin = 60, distanceMax = 600, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SJ_OrbitLock
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/sj_orbit_lock.wav, distanceMin = 40, distanceMax = 400, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SJ_Orbit
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/sj_orbit.wav, distanceMin = 80, distanceMax = 900, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinCall
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odincall.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinCallAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odincallack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinDropMark
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odindropmark.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinDropAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odindropack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinDropBad
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odindropbad.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinDropAuto
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odindropauto.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinLanded
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinlanded.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinTimeUp
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odintimeup.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinRtb
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinrtb.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinRtbAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinrtback.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinGone
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odingone.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinOrbitMark
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinorbitmark.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinOrbitAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinorbitack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinOrbitFire
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinorbitfire.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinOrbitBad
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinorbitbad.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinCannonFire
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odincannonfire.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinMoveMark
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinmovemark.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinMoveAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinmoveack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinFollow
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinfollow.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinFinalReady
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinfinalready.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinFinalCall
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinfinalcall.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinFinalAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinfinalack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinFinalAuto
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinfinalauto.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinFinalFire
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinfinalfire.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinRegroup
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinregroup.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinStomp
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinstomp.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_OdinPunch
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_odinpunch.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_PtsOdin
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_odin/shv_ptsodin.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+}

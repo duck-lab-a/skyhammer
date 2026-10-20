@@ -1,0 +1,41 @@
+=== Main (Viewpoint Edition) ===
+- New: A-10 napalm, on the same sortie as its gun runs. Mark a point and four canisters set a 40-tile strip on fire for 30 seconds; the infected caught in it burn and fall. Mod Options: napalm runs per sortie (1, 0-4) and burn time.
+- New: B-2 tactical nuke (B61). Pick it with the B-2's weapon button before the call and mark a point 60-300 tiles away. A 15-second siren countdown and the warhead falling, then the flash, the shockwave and a mushroom cloud: every infected within 140 tiles dies. The B-2 then rearms for 2 hours by default, set in Mod Options (600 points in killstreak mode). With Strikes leave craters on, everything within 50 tiles is levelled (single player). Can be switched off in Mod Options.
+- New: the ground shakes when a 105mm round, a B-2 bomb or the nuke lands near you. Mod Options: Impact shake (0 turns it off).
+- New in Mod Options: 105mm rounds per sortie (8) and per mark (2, was a fixed 4).
+- Changed: the A-10's gun run covers more ground (40-tile line; sure kill within 5 tiles, most out to 8). The GAU-8 is louder.
+- Changed: the B-2's bombs now fall visibly from the bomber.
+- Changed: the aircraft arrive sooner by default (Apache, A-10 and AC-130 20 s, B-2 30 s).
+- Changed: radio calls for the nuke and the napalm use real brevity; an urgent call cuts in at once.
+- Changed: the terminal's mark buttons carry the weapon's name, icon and colour.
+- New sounds: real recordings (BigSoundBank, CC0) for the siren, the nuke and the napalm.
+--
+- 신규: A-10 네이팜. 기총소사와 같은 출격에 실립니다. 지점을 찍으면 캐니스터 4개가 40타일 띠를 30초간 불태우고, 그 안의 좀비는 타서 쓰러집니다. 모드 옵션: 출격당 네이팜 횟수(1회, 0~4회)와 연소 시간.
+- 신규: B-2 전술핵(B61). 요청 전에 B-2 무장 버튼으로 고르고, 60~300타일 떨어진 곳을 찍습니다. 15초 사이렌 카운트다운과 탄두 낙하 뒤 섬광, 충격파, 버섯구름: 140타일 안의 좀비가 모두 죽습니다. 이후 B-2 재무장은 기본 2시간이며 모드 옵션에서 바꿀 수 있습니다(킬스트릭은 600포인트). '폭격 지점 지형 변화'를 켜면 50타일 안을 모두 평탄화합니다(싱글플레이). 모드 옵션에서 끌 수 있습니다.
+- 신규: 105mm 포탄, B-2 폭탄, 전술핵이 가까이 떨어지면 화면이 흔들립니다. 모드 옵션: 착탄 진동(0이면 꺼짐).
+- 신규 모드 옵션: 105mm 출격당 탄약(8발)과 지정 1회당 발 수(2발, 기존 4발 고정).
+- 변경: A-10 기총소사 범위 확대(40타일 직선, 5타일 안 확실히 처치, 8타일까지 대부분 처치). GAU-8 소리가 커졌습니다.
+- 변경: B-2 폭탄이 기체에서 떨어지는 모습이 보입니다.
+- 변경: 기본 도착 시간 단축(아파치, A-10, AC-130 20초, B-2 30초).
+- 변경: 전술핵과 네이팜 무전이 실제 교신 투로 바뀌었고, 긴급 무전은 바로 끼어듭니다.
+- 변경: 단말기의 지정 버튼에 무장 이름, 아이콘, 색이 붙었습니다.
+- 신규 소리: 사이렌, 전술핵, 네이팜에 실제 녹음(BigSoundBank, CC0)을 썼습니다.
+
+=== Vanilla Edition ===
+- New: A-10 napalm, on the same sortie as its gun runs. Mark a point and four canisters set a 40-tile strip on fire for 30 seconds; the infected caught in it burn and fall. Mod Options: napalm runs per sortie (1, 0-4) and burn time.
+- New: B-2 tactical nuke (B61). Pick it with the B-2's weapon button before the call and mark a point 60-300 tiles away. A 15-second siren countdown and the warhead falling, then the flash, the shockwave and a mushroom cloud: every infected within 140 tiles dies. The B-2 then rearms for 2 hours by default, set in Mod Options (600 points in killstreak mode). With Strikes leave craters on, everything within 50 tiles is levelled (single player). Single player: Mod Options. Online it is off unless the server's sandbox allows it (Tactical nuke available; hurting players is a separate option, off by default).
+- New in Mod Options: 105mm rounds per sortie (8) and per mark (2, was a fixed 4).
+- Changed: the A-10's gun run covers more ground (40-tile line; sure kill within 5 tiles, most out to 8). The GAU-8 is louder.
+- Changed: the aircraft arrive sooner by default (Apache, A-10 and AC-130 20 s, B-2 30 s).
+- Changed: radio calls for the nuke and the napalm use real brevity; an urgent call cuts in at once.
+- Changed: the terminal's mark buttons carry the weapon's name, icon and colour.
+- New sounds: real recordings (BigSoundBank, CC0) for the siren, the nuke and the napalm.
+--
+- 신규: A-10 네이팜. 기총소사와 같은 출격에 실립니다. 지점을 찍으면 캐니스터 4개가 40타일 띠를 30초간 불태우고, 그 안의 좀비는 타서 쓰러집니다. 모드 옵션: 출격당 네이팜 횟수(1회, 0~4회)와 연소 시간.
+- 신규: B-2 전술핵(B61). 요청 전에 B-2 무장 버튼으로 고르고, 60~300타일 떨어진 곳을 찍습니다. 15초 사이렌 카운트다운과 탄두 낙하 뒤 섬광, 충격파, 버섯구름: 140타일 안의 좀비가 모두 죽습니다. 이후 B-2 재무장은 기본 2시간이며 모드 옵션에서 바꿀 수 있습니다(킬스트릭은 600포인트). '폭격 지점 지형 변화'를 켜면 50타일 안을 모두 평탄화합니다(싱글플레이). 싱글플레이는 모드 옵션, 멀티플레이는 서버 샌드박스에서 허용해야 쓸 수 있습니다(플레이어 피해는 별도 옵션, 기본 꺼짐).
+- 신규 모드 옵션: 105mm 출격당 탄약(8발)과 지정 1회당 발 수(2발, 기존 4발 고정).
+- 변경: A-10 기총소사 범위 확대(40타일 직선, 5타일 안 확실히 처치, 8타일까지 대부분 처치). GAU-8 소리가 커졌습니다.
+- 변경: 기본 도착 시간 단축(아파치, A-10, AC-130 20초, B-2 30초).
+- 변경: 전술핵과 네이팜 무전이 실제 교신 투로 바뀌었고, 긴급 무전은 바로 끼어듭니다.
+- 변경: 단말기의 지정 버튼에 무장 이름, 아이콘, 색이 붙었습니다.
+- 신규 소리: 사이렌, 전술핵, 네이팜에 실제 녹음(BigSoundBank, CC0)을 썼습니다.

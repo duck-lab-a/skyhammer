@@ -1,0 +1,33 @@
+[제목]
+Planned: Air support unlock quest
+
+[본문]
+[h1]Planned: Air support unlock quest[/h1]
+Plans can change. Suggestions are welcome below!
+
+[b]Earn your air support (quest unlock)[/b]
+Right now a radio is all you need, which makes the support too strong for how easy it is to get. Support will have to be earned instead:
+[olist]
+[*][b]Catch the broadcast[/b]: Aegis Control is calling for survivors on the radio. Listening starts the quest.
+[*][b]Find the manual[/b]: an Aegis signal manual, found at military sites, teaches you to build the air support radio.
+[*][b]Set up a relay[/b]: put a satellite dish and a military ham radio together, power them with a generator and bring the relay online.
+[*][b]Build the air support radio[/b]: rare electronics (military walkie-talkie, transmitter, scanner module, amplifier).
+[*][b]Make contact[/b]: call Aegis on the new radio. The Apache, AC-130 and B-2 all become available.
+[/olist]
+If the relay loses power, support goes offline until you fix it. If the dish or the ham radio is lost, the relay is gone.
+Sandbox options will keep the current "any radio" play, or let the air support radio work without a relay, and can make support take longer the farther you are from a relay.
+
+[h1]항공 지원 해금 퀘스트 업데이트 예정[/h1]
+계획은 바뀔 수 있습니다. 아이디어는 댓글로 남겨 주세요!
+
+[b]항공 지원 해금 (퀘스트)[/b]
+지금은 무전기만 있으면 바로 지원을 부를 수 있어서, 얻기 쉬운 데 비해 너무 강합니다. 앞으로는 직접 얻어내야 쓸 수 있게 바뀝니다.
+[olist]
+[*][b]방송 포착[/b]: 무전기로 생존자를 찾는 이지스 컨트롤의 방송을 들으면 퀘스트가 시작됩니다.
+[*][b]교범 확보[/b]: 군 시설에서 이지스 통신 교범을 찾으면 항공 지원 무전기 제작법을 배웁니다.
+[*][b]중계소 가동[/b]: 위성 안테나와 군용 아마추어 무선통신기를 함께 두고, 발전기로 전기를 넣어 중계소를 가동합니다.
+[*][b]항공 지원 무전기 제작[/b]: 군용 무전기, 송신기, 스캐너 모듈, 증폭기 같은 귀한 부품이 필요합니다.
+[*][b]첫 교신[/b]: 새 무전기로 이지스를 부르면 아파치, AC-130, B-2가 모두 해금됩니다.
+[/olist]
+중계소 전력이 끊기면 복구할 때까지 지원을 부를 수 없습니다. 위성 안테나나 무선통신기를 잃으면 중계소도 사라집니다.
+샌드박스 옵션으로 지금처럼 아무 무전기나 쓰는 방식, 중계소 없이 항공 지원 무전기만 쓰는 방식을 고를 수 있고, 중계소에서 멀수록 지원이 늦게 오도록 할 수도 있습니다.

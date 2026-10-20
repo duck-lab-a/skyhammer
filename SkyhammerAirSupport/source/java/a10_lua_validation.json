@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "lua": "5.1",
+  "cases": [
+    "record argument mapping",
+    "14-second expiry",
+    "malformed record clear",
+    "nonfinite clear",
+    "negative time clear",
+    "disabled global reset",
+    "old jar without a10Tick"
+  ]
+}

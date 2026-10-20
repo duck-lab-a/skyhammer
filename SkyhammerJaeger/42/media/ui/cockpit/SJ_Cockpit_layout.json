@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "canvas": {
+    "w": 1920,
+    "h": 1080
+  },
+  "coordinate_origin": "top_left",
+  "units": "pixels",
+  "scale_mode": "stretch",
+  "scale_formula": {
+    "x_w": "value * screen_width / 1920",
+    "y_h": "value * screen_height / 1080"
+  },
+  "sync": {
+    "x": 242,
+    "y": 374,
+    "w": 244,
+    "h": 232
+  },
+  "reactor": {
+    "x": 1534,
+    "y": 340,
+    "w": 84,
+    "h": 372
+  },
+  "status": {
+    "x": 652,
+    "y": 877,
+    "w": 616,
+    "h": 45
+  },
+  "warning": {
+    "x": 806,
+    "y": 182,
+    "w": 308,
+    "h": 32
+  },
+  "draw_order": [
+    "SJ_Cockpit_Visor.png",
+    "SJ_Cockpit_Glass.png",
+    "SJ_Cockpit_HUD.png",
+    "Lua_dynamic_content",
+    "SJ_Cockpit_Emblem.png"
+  ],
+  "safe_zone": {
+    "x": 192,
+    "y": 108,
+    "w": 1536,
+    "h": 864
+  },
+  "emblem_preview": {
+    "x": 844,
+    "y": 424,
+    "w": 232,
+    "h": 232
+  },
+  "notes": [
+    "HUD region rectangles are empty interiors; draw translated text and bar values in Lua.",
+    "Images contain no letters or numerals. The emblem uses an abstract triangle and paired notches.",
+    "Glass max alpha is 38/255. PNG alpha is straight/unassociated.",
+    "Use emblem briefly during boot; static HUD reticle remains below it."
+  ]
+}

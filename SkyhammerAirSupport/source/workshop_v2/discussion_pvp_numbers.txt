@@ -1,0 +1,74 @@
+[게시 위치]
+바닐라 에디션(3813973682) PvP 토론글에 "댓글"로 답니다. 본문은 그대로 둡니다.
+https://steamcommunity.com/workshop/filedetails/discussion/3813973682/586187800873969100/
+
+[댓글]
+[b]PvP numbers (current defaults)[/b]
+A player has 100 health. Each blast checks how far you are from the impact; the nearest band you are in rolls once (chance, then damage).
+
+[b]Damage by distance (tiles: chance / damage)[/b]
+[list]
+[*]105mm (AC-130): ≤2: 100% / 100 · ≤4.5: 100% / 60 · ≤7: 75% / 30 · ≤9.5: 30% / 10
+[*]B-2 bomb: ≤6: 100% / 100 · ≤10: 100% / 60 · ≤14: 75% / 30
+[*]AC-130 gunner's aimed 40mm: ≤1: 100% / 100 · ≤2: 75% / 40
+[*]Apache rocket: ≤2.5: 100% / 100 · ≤4.5: 90% / 60 · ≤6.5: 45% / 25
+[*]Apache 30mm: ≤1: 100% / 45 · ≤2: 60% / 15
+[/list]
+
+[b]Apache vs players[/b]
+[list]
+[*]2-second warning before its first round.
+[*]Hit chance per round: standing 95%, walking 80%, running 55%.
+[*]After 3 rounds on you, every round hits unless you are running.
+[*]Armour 120 (sandbox, 10–400): each shot at its shadow counts 2 from a rifle or shotgun, 1 from a pistol. That is 60 rifle shots or 120 pistol shots, from within 40 tiles.
+[/list]
+
+[b]Per sortie (locked under PvP)[/b]
+[list]
+[*]Apache: arrives in 60 s, 3 min on station, 180 × 30mm, 8 rockets
+[*]AC-130: arrives in 30 s, 3 min on station, 8 × 105mm, 60 aimed 40mm
+[*]B-2: arrives in 90 s, 2 min over the area, 20 bombs
+[/list]
+
+[b]Points[/b]
+Infected you kill yourself 1 · enemy player 10 (sandbox, 0–100) · shooting an Apache down 40 · kills by air support earn nothing.
+Calls: Apache 80 · AC-130 150 · B-2 300.
+
+Safe: indoors, another floor, non-PvP zones, your own safehouse, your own side.
+These are first numbers from solo tests. If something feels off on your server, tell me.
+
+--
+
+[b]PvP 수치 (현재 기본값)[/b]
+플레이어 체력은 100입니다. 폭발마다 탄착점과의 거리를 재고, 해당하는 가장 가까운 구간으로 한 번 굴립니다(확률, 그다음 피해).
+
+[b]거리별 피해 (타일: 확률 / 피해)[/b]
+[list]
+[*]105mm (AC-130): 2 이내 100% / 100 · 4.5 이내 100% / 60 · 7 이내 75% / 30 · 9.5 이내 30% / 10
+[*]B-2 폭탄: 6 이내 100% / 100 · 10 이내 100% / 60 · 14 이내 75% / 30
+[*]AC-130 사수 조준 40mm: 1 이내 100% / 100 · 2 이내 75% / 40
+[*]아파치 로켓: 2.5 이내 100% / 100 · 4.5 이내 90% / 60 · 6.5 이내 45% / 25
+[*]아파치 30mm: 1 이내 100% / 45 · 2 이내 60% / 15
+[/list]
+
+[b]아파치 대 플레이어[/b]
+[list]
+[*]첫 발 전에 2초 경보.
+[*]한 발당 명중률: 서 있으면 95%, 걸으면 80%, 뛰면 55%.
+[*]같은 대상에게 3발을 쏜 뒤로는, 뛰지 않는 한 모두 맞습니다.
+[*]내구도 120(샌드박스, 10~400): 그림자를 향해 쏜 한 발이 소총·산탄총은 2, 권총은 1. 소총 60발 또는 권총 120발이며, 40타일 안에서 쏴야 합니다.
+[/list]
+
+[b]출격 1회당 (PvP에서는 고정)[/b]
+[list]
+[*]아파치: 60초 뒤 도착, 3분 체공, 30mm 180발, 로켓 8발
+[*]AC-130: 30초 뒤 도착, 3분 체공, 105mm 8발, 조준 40mm 60발
+[*]B-2: 90초 뒤 도착, 2분 동안 폭격, 폭탄 20발
+[/list]
+
+[b]포인트[/b]
+직접 잡은 좀비 1 · 적 플레이어 10(샌드박스, 0~100) · 아파치 격추 40 · 항공 지원으로 잡은 건 포인트 없음.
+호출: 아파치 80 · AC-130 150 · B-2 300.
+
+안전한 곳: 실내, 다른 층, 비PvP 구역, 자기 세이프하우스, 같은 편.
+혼자 테스트하며 잡은 첫 수치입니다. 서버에서 어색한 부분이 있으면 알려 주세요.

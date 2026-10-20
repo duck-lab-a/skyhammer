@@ -1,0 +1,23 @@
+[제목]
+[Released] Air support unlock quest
+
+[본문]
+Released in the 2026-10-06 update. Thank you for the feedback!
+[olist]
+[*]Catch Aegis's broadcast on any radio that is switched on.
+[*]Find Aegis's signal manual at military sites.
+[*]Bring a relay online: a satellite dish on a wall, a military ham radio within 6 squares, generator power.
+[*]Get the air support radio: build it, or find one.
+[*]Make first contact: the Apache, AC-130 and B-2 are unlocked.
+[/olist]
+New games only. Existing saves keep working on any radio. Don't want the quest? Sandbox > Skyhammer Air Support > Air support unlock > Any two-way radio.
+
+2026-10-06 업데이트로 적용되었습니다. 의견 주셔서 감사합니다!
+[olist]
+[*]이지스 방송 포착: 켜진 무전기로 방송을 듣습니다.
+[*]이지스 통신 교범 확보: 군 시설에서 찾습니다.
+[*]중계소 가동: 벽에 단 위성 안테나, 6칸 안의 군용 아마추어 무선통신기, 발전기 전력.
+[*]항공 지원 무전기 확보: 만들거나 구합니다.
+[*]첫 교신: 아파치, AC-130, B-2가 해금됩니다.
+[/olist]
+새 게임부터 적용되고, 기존 세이브는 계속 아무 무전기로 쓸 수 있습니다. 퀘스트가 싫으면 샌드박스 > 스카이해머 항공 지원 > 항공 지원 해금 > 아무 양방향 무전기.

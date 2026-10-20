@@ -1,0 +1,30 @@
+{
+  "pass": true,
+  "target_only_files": [],
+  "backed_up_differences": [
+    "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupport\\Contents\\mods\\SkyhammerAirSupport\\42\\media\\sandbox-options.txt",
+    "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupport\\Contents\\mods\\SkyhammerAirSupport\\42\\media\\java\\client\\SkyhammerAircraft3D.jar",
+    "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupport\\Contents\\mods\\SkyhammerAirSupport\\42\\media\\lua\\client\\Skyhammer_AircraftVisual.lua",
+    "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupport\\Contents\\mods\\SkyhammerAirSupport\\42\\media\\lua\\client\\Skyhammer_Core.lua",
+    "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupport\\Contents\\mods\\SkyhammerAirSupport\\42\\media\\lua\\client\\Skyhammer_Killstreak.lua",
+    "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupport\\Contents\\mods\\SkyhammerAirSupport\\42\\media\\lua\\client\\Skyhammer_Terminal.lua",
+    "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupportVanilla\\42\\mod.info",
+    "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupportVanilla\\42\\poster.png",
+    "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupportVanilla\\42\\media\\sandbox-options.txt",
+    "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupportVanilla\\42\\media\\lua\\client\\Skyhammer_AircraftVisual.lua",
+    "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupportVanilla\\42\\media\\lua\\client\\Skyhammer_Core.lua",
+    "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupportVanilla\\42\\media\\lua\\client\\Skyhammer_Killstreak.lua",
+    "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupportVanilla\\42\\media\\lua\\client\\Skyhammer_Terminal.lua",
+    "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupportVanilla\\common\\CREDITS.txt",
+    "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupportVanilla\\common\\INSTALL.txt",
+    "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupportVanilla\\Contents\\mods\\SkyhammerAirSupportVanilla\\42\\mod.info",
+    "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupportVanilla\\Contents\\mods\\SkyhammerAirSupportVanilla\\42\\poster.png",
+    "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupportVanilla\\Contents\\mods\\SkyhammerAirSupportVanilla\\42\\media\\sandbox-options.txt",
+    "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupportVanilla\\Contents\\mods\\SkyhammerAirSupportVanilla\\42\\media\\lua\\client\\Skyhammer_AircraftVisual.lua",
+    "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupportVanilla\\Contents\\mods\\SkyhammerAirSupportVanilla\\42\\media\\lua\\client\\Skyhammer_Core.lua",
+    "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupportVanilla\\Contents\\mods\\SkyhammerAirSupportVanilla\\42\\media\\lua\\client\\Skyhammer_Killstreak.lua",
+    "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupportVanilla\\Contents\\mods\\SkyhammerAirSupportVanilla\\42\\media\\lua\\client\\Skyhammer_Terminal.lua",
+    "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupportVanilla\\Contents\\mods\\SkyhammerAirSupportVanilla\\common\\CREDITS.txt",
+    "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupportVanilla\\Contents\\mods\\SkyhammerAirSupportVanilla\\common\\INSTALL.txt"
+  ]
+}

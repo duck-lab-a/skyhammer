@@ -1,0 +1,343 @@
+{
+  "pass": true,
+  "count": 37,
+  "rgba": true,
+  "straight_alpha": true,
+  "transparent_rgb_zero": true,
+  "no_edge_clipping": true,
+  "files": [
+    {
+      "file": "SH_FX_NukeCloud_00.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 1698,
+      "sha256": "72cba65f2af7ee1b5bf6e0ae08993de1684891dc12a008a548f6a6de880b1d57"
+    },
+    {
+      "file": "SH_FX_NukeCloud_01.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 14234,
+      "sha256": "10893712102dd6bf4cdc0e9a05136fe417bd4b751d0e7480f68090cfef67f749"
+    },
+    {
+      "file": "SH_FX_NukeCloud_02.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 33051,
+      "sha256": "cfdeca7bcba08c2301be4eb6b9126a014bcb7655f5fc47665f2badd5acc7906e"
+    },
+    {
+      "file": "SH_FX_NukeCloud_03.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 35243,
+      "sha256": "63313655f6d620d5e8612cc9c398e1b856d6e7b0ca8ca131878e8f2bf08aa46b"
+    },
+    {
+      "file": "SH_FX_NukeCloud_04.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 35218,
+      "sha256": "9d7c44af7837e5c37d705b65acb0cef97d3c91b48d4f4699ccf4f240814d0750"
+    },
+    {
+      "file": "SH_FX_NukeCloud_05.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 35863,
+      "sha256": "98bad43212a7567dc8cf99f2ba2f06f08377264bbee85f088a5f4db42c4858f7"
+    },
+    {
+      "file": "SH_FX_NukeCloud_06.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 36712,
+      "sha256": "91d6e1b62462d1648e0ad7fcf0e234de5bc1619863af1d978e1540840a31a005"
+    },
+    {
+      "file": "SH_FX_NukeCloud_07.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 39193,
+      "sha256": "31cb6e65e92e215c4c8367b9a2dee0a8ac706a5063dd2bd9e3d052993b779427"
+    },
+    {
+      "file": "SH_FX_NukeCloud_08.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 44029,
+      "sha256": "8f2a7b0496491ca600fdce3dd161b31b80005fa0d2f782436660a0d5a828bdb5"
+    },
+    {
+      "file": "SH_FX_NukeCloud_09.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 49712,
+      "sha256": "d403ba1642687de9d967e2badc348b72d5fafbe3d3a767a1094ccd49ea80a27d"
+    },
+    {
+      "file": "SH_FX_NukeCloud_10.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 52162,
+      "sha256": "d7c099142a6f9cd29da4c4c6e7d16afb0e43954cb68c7dc0505356555ac19629"
+    },
+    {
+      "file": "SH_FX_NukeCloud_11.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 57621,
+      "sha256": "4a89b551ee42f19450b93ca176f7c7d3ca4c21c7108c733ca948e31ee17d476a"
+    },
+    {
+      "file": "SH_FX_NukeCloud_12.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 65691,
+      "sha256": "6ca1345e57504be9b251ecc8dc533d6950caba21eafcc4cee5ad60d65cefb0fd"
+    },
+    {
+      "file": "SH_FX_NukeCloud_13.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 74575,
+      "sha256": "2796b474af5f926e34853e8514862432d527bc688763a6f662bc3f19f6dcc457"
+    },
+    {
+      "file": "SH_FX_NukeCloud_14.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 83799,
+      "sha256": "6a471218886679fec911bf46e2e656da73b80d0ac76c934e0c1023c65686f559"
+    },
+    {
+      "file": "SH_FX_NukeCloud_15.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 92706,
+      "sha256": "e3a2d523133a8bb1aa42eb736326176c6f898ac5ec4b0dbaf2ea9790bfb9c977"
+    },
+    {
+      "file": "SH_FX_NukeCloud_16.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 100628,
+      "sha256": "39022242d0d6bea60e1fc4afc4aa3573e133e4aecb7598848b9f49bf537bf693"
+    },
+    {
+      "file": "SH_FX_NukeCloud_17.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 108713,
+      "sha256": "481c57210061acaa7567b8cdc68b9110000dd0259eb30bf44eb151005dbcb258"
+    },
+    {
+      "file": "SH_FX_NukeCloud_18.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 115543,
+      "sha256": "13cc72dfa8e468b3bf662b3acb74c8cc7c45c07c57b028dafd0b1b5ecfbd68ee"
+    },
+    {
+      "file": "SH_FX_NukeCloud_19.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 121125,
+      "sha256": "8dd325e018c9c307f74c9d26247c5a03916c848f8809a66d050fc2cf23f3cef9"
+    },
+    {
+      "file": "SH_FX_NukeCloud_20.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 125533,
+      "sha256": "2c7c838ab68495cd1618b7b7f2e46e45637398dd2c844e9037845cdf906422d3"
+    },
+    {
+      "file": "SH_FX_NukeCloud_21.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 128542,
+      "sha256": "80f7f99199b295e68e5d1cd02bb88f319f638641c938a95713cf2cb5e87b2f56"
+    },
+    {
+      "file": "SH_FX_NukeCloud_22.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 130121,
+      "sha256": "d9df43693f521d2a265fee156caa928a3c5da15db4ca843ea882ddee34f40d97"
+    },
+    {
+      "file": "SH_FX_NukeCloud_23.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 131002,
+      "sha256": "ab6ce15077a454be46e800fb1c83e8e0e8b806e0faaab95a333720ee6f761fe6"
+    },
+    {
+      "file": "SH_FX_Napalm_00.png",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 41496,
+      "sha256": "1d1143a13f31a2b72655666f7b4494df5dc31b089c7dbad8a76159286dcac224"
+    },
+    {
+      "file": "SH_FX_Napalm_01.png",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 40785,
+      "sha256": "1c07881d850b2b12e84bcdf00e07f6649cbead92f3dce801507862083292b4c8"
+    },
+    {
+      "file": "SH_FX_Napalm_02.png",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 41526,
+      "sha256": "94ecc0c5ce3df1983003e6b1aa86598e491deab5b38a9d91ae1a76746f9677cb"
+    },
+    {
+      "file": "SH_FX_Napalm_03.png",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 41568,
+      "sha256": "1c3f42302794840b930853269e95fe56cf9db9a31bc2b860a992c86747f896db"
+    },
+    {
+      "file": "SH_FX_Napalm_04.png",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 40605,
+      "sha256": "0df18ffb008087f45f2e4e2d7aff73d836a70945efe6253d71690a85cf6d3af8"
+    },
+    {
+      "file": "SH_FX_Napalm_05.png",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 41297,
+      "sha256": "ab9dcde65f5ac08c72fd48bccb3f677fdd010e5e2e24b5595ba89330f8ce6d08"
+    },
+    {
+      "file": "SH_FX_Napalm_06.png",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 41655,
+      "sha256": "a8fdd07f81ec26806d0f5c0b85ed75ab0e37c11c13d95a7d98065ade1feeebaa"
+    },
+    {
+      "file": "SH_FX_Napalm_07.png",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 41813,
+      "sha256": "9a1c88f22d3a1a9c3c0f66ccc22af7dd91fa5c397defd021d22495ca91ec7234"
+    },
+    {
+      "file": "SH_FX_NukeFlash.png",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 9806,
+      "sha256": "9851ef7aa130f27844d77db3a95e0a64dc22852f2d68934137cb88fa07df9558"
+    },
+    {
+      "file": "SH_FX_NukeRing.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 20002,
+      "sha256": "a6d345b7e092a408927cebecf4bb08098a3d35e6d958aca89d50e2045fc26443"
+    },
+    {
+      "file": "SH_FX_Ash.png",
+      "size": [
+        64,
+        64
+      ],
+      "bytes": 263,
+      "sha256": "4cc4ed9ea5bcd3815a0e235260205aeb966952604a00b00345f556dbc2ec8ec5"
+    },
+    {
+      "file": "SH_Icon_Nuke.png",
+      "size": [
+        64,
+        64
+      ],
+      "bytes": 2902,
+      "sha256": "fb03ec34a9c5bf1eec58b964094d7b30dacd0b75f0a95421e2b5e69d6ed887a7"
+    },
+    {
+      "file": "SH_Icon_Napalm.png",
+      "size": [
+        64,
+        64
+      ],
+      "bytes": 3056,
+      "sha256": "e73fb8664a78b27c3dc1fe6ecfd98c8fb0fee2d0d627a844d61d1dc7e1faa3a0"
+    }
+  ]
+}

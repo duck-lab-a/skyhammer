@@ -1,0 +1,22 @@
+module SkyhammerJaeger
+{
+    /* ODIN, drawn as an "animal" (SkyhammerJaeger_Animal.lua). Mesh, rig and the 11 J_* clips
+       come from Codex's stage 3 asset through source/make_odin_game_model.py; metres, 15 m tall.
+       Scale 0.26 (about 3.9 m tall in game): the Apache's 0.61 made 40% smaller after the model
+       test, then 30% smaller again after the first drop test. Mod Options > ODIN > size scales
+       it further at run time. */
+    animationsMesh SH_Jaeger
+    {
+        meshFile = SkyhammerJaeger/SH_Jaeger,
+        keepMeshAnimations = true,
+    }
+
+    model SH_Jaeger
+    {
+        mesh = SkyhammerJaeger/SH_Jaeger,
+        animationsMesh = SkyhammerJaeger.SH_Jaeger,
+        shader = animalEffect,
+        static = false,
+        scale = 0.26,
+    }
+}

@@ -1,0 +1,25 @@
+[h1]Left behind.[/h1]
+When Wraith Team pulled out of Knox County, one operator missed the last ride. The gear is gone. The training is not.
+
+This mod adds [b]one occupation[/b]: the [b]Wraith Operator[/b]. Made for Build 42.21.
+
+[h1]The occupation[/h1]
+[b]Cost: 12 points[/b]
+[list]
+[*]Aiming [b]+5[/b], Nimble [b]+3[/b]
+[*]Sneaking [b]+3[/b], Lightfooted [b]+2[/b]
+[*]Reloading [b]+3[/b], Fitness [b]+2[/b], Strength [b]+2[/b]
+[*]Electrical [b]+2[/b] (enough to build a makeshift radio and walkie-talkie from day one)
+[*]Traits: [b]Desensitized[/b], [b]Cat's Eyes[/b]
+[/list]
+
+[h1]Good to know[/h1]
+[list]
+[*]Works on its own. No other mod needed.
+[*]Part of the Skyhammer series. Pairs well with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813483790]Skyhammer Air Support[/url] and the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813821529]Wraith Team add-on[/url].
+[*][b]With Skyhammer Air Support's unlock quest:[/b] the Wraith Operator already knows how to build the air support radio, so no manual hunt is needed (building it still takes Electrical 4). Aegis's broadcast still has to be heard first.
+[*]New occupations only show up for new characters.
+[*]UI: English, Korean, Simplified Chinese.
+[/list]
+
+Found a bug? Please report it in the Discussions tab.

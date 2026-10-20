@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 256px; height: 256px; overflow: hidden; background: #0e1114; }
+  .t { position: relative; width: 256px; height: 256px; overflow: hidden; font-family: "Bahnschrift", sans-serif; }
+  .bg { position: absolute; inset: 0; background-repeat: no-repeat; }
+  .shade { position: absolute; inset: 0; }
+  .tag { position: absolute; left: 14px; top: 12px; font: 9px Consolas, monospace; letter-spacing: 2px; color: #3cc8ea; }
+  .tag i { display: inline-block; width: 6px; height: 6px; background: #e5533d; margin-right: 6px; vertical-align: 0; font-style: normal; }
+  .title { position: absolute; left: 14px; right: 10px; bottom: 34px; font-size: 38px; font-weight: 700; letter-spacing: 1px;
+    color: #f2a33a; line-height: 1; text-shadow: 0 2px 8px rgba(0,0,0,.8); }
+  .bar { position: absolute; left: 15px; bottom: 26px; width: 40px; height: 3px; background: #3cc8ea; }
+  .sub { position: absolute; left: 14px; bottom: 10px; font-size: 11.5px; font-weight: 600; letter-spacing: 1.5px; color: #efe4cc; }
+  .frame { position: absolute; inset: 6px; border: 1px solid rgba(239,228,204,.18); }
+  .c { position: absolute; width: 12px; height: 12px; border-color: #f2a33a; border-style: solid; }
+  .c1 { left: 6px; top: 6px; border-width: 2px 0 0 2px; } .c2 { right: 6px; top: 6px; border-width: 2px 2px 0 0; }
+  .c3 { left: 6px; bottom: 6px; border-width: 0 0 2px 2px; } .c4 { right: 6px; bottom: 6px; border-width: 0 2px 2px 0; }
+  .ret { position: absolute; border: 1.5px solid rgba(229,83,61,.9); border-radius: 50%; }
+  .ret::before, .ret::after { content: ""; position: absolute; background: rgba(229,83,61,.9); }
+  .ret::before { left: 50%; top: -8px; bottom: -8px; width: 1.5px; margin-left: -.75px; }
+  .ret::after { top: 50%; left: -8px; right: -8px; height: 1.5px; margin-top: -.75px; }
+</style>
+</head>
+<body>
+<div class="t" id="t"></div>
+<script>
+const v = new URLSearchParams(location.search).get("v") || "a";
+const t = document.getElementById("t");
+if (v === "a") {
+  // in-game shot: AC-130 over the player
+  t.innerHTML = `
+    <div class="bg" style="background-image:url('../../../../../Documents/Codex/2026-09-30/w/outputs/skyhammer-video-2026-10-05/Skyhammer_Thumbnail.jpg');
+      background-size:auto 300px; background-position:-118px -4px; filter:contrast(1.15) saturate(.9) brightness(.9)"></div>
+    <div class="shade" style="background:linear-gradient(180deg, rgba(14,17,20,.55) 0, rgba(14,17,20,0) 30%, rgba(14,17,20,0) 50%, rgba(14,17,20,.92) 85%)"></div>
+    <div class="ret" style="left:60px; top:58px; width:66px; height:66px"></div>
+    <div class="tag"><i></i>LINK ACTIVE</div>
+    <div class="title">SKYHAMMER</div><div class="bar"></div>
+    <div class="sub">AC-130 GUNSHIP // B-2 STRIKE</div>
+    <div class="c c1"></div><div class="c c2"></div><div class="c c3"></div><div class="c c4"></div>`;
+} else {
+  // 3D aircraft head-on in a storm sky
+  t.innerHTML = `
+    <div class="bg" style="background-image:url('../../../../../Documents/Codex/2026-09-30/w/outputs/skyhammer-video-2026-10-05/intro-final-preview.png');
+      background-size:auto 520px; background-position:-338px -142px; filter:contrast(1.2) brightness(1.05)"></div>
+    <div class="shade" style="background:linear-gradient(180deg, rgba(14,17,20,.5) 0, rgba(14,17,20,0) 25%, rgba(14,17,20,0) 52%, rgba(14,17,20,.95) 88%)"></div>
+    <div class="tag"><i></i>BANSHEE 2-1 // INBOUND</div>
+    <div class="title">SKYHAMMER</div><div class="bar"></div>
+    <div class="sub">AC-130 GUNSHIP // B-2 STRIKE</div>
+    <div class="c c1"></div><div class="c c2"></div><div class="c c3"></div><div class="c c4"></div>`;
+}
+</script>
+</body>
+</html>

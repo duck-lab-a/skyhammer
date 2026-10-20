@@ -1,0 +1,15 @@
+- New: A-10 napalm, carried on the same sortie as its gun runs, with its own button. Four canisters set a 40-tile strip on fire for 30 seconds; the infected caught in it burn and fall. Mod Options: napalm runs per sortie (1, 0-4) and burn time.
+- New: B-2 tactical nuke (B61). Pick it with the B-2's weapon button before the call and mark a point 60-300 tiles away. A 15-second siren countdown and the warhead falling, then the flash, the shockwave and a mushroom cloud: every infected within 140 tiles dies. The B-2 then rearms for 2 hours by default, set in Mod Options or, online, the server's sandbox (600 points in killstreak mode). Single player: Mod Options. Online it is off unless the server's sandbox allows it (hurting players is a separate option, off by default).
+- Changed: the aircraft arrive sooner by default (Apache, A-10 and AC-130 20 s, B-2 30 s).
+- Changed: the terminal's mark buttons carry the weapon's name, icon and colour; the B-2's weapon button shows its rearm time on hover.
+- Changed: the AC-130's engine fades out as it leaves instead of stopping.
+- Changed: radio calls for the nuke and the napalm use real brevity; an urgent call cuts in at once.
+- New sounds: real recordings (BigSoundBank, CC0) for the siren, the nuke and the napalm.
+--
+- 신규: A-10 네이팜. 기총소사와 같은 출격에 실리며 전용 버튼이 있습니다. 캐니스터 4개가 40타일 띠를 30초간 불태우고, 그 안의 좀비는 타서 쓰러집니다. 모드 옵션: 출격당 네이팜 횟수(1회, 0~4회)와 연소 시간.
+- 신규: B-2 전술핵(B61). 요청 전에 B-2 무장 버튼으로 고르고 60~300타일 떨어진 곳을 찍습니다. 15초 사이렌 카운트다운과 탄두 낙하 뒤 섬광, 충격파, 버섯구름: 140타일 안의 좀비가 모두 죽습니다. 이후 B-2 재무장은 기본 2시간이며 모드 옵션(멀티는 서버 샌드박스)에서 바꿀 수 있습니다(킬스트릭은 600포인트). 싱글플레이는 모드 옵션, 멀티플레이는 서버 샌드박스에서 허용해야 쓸 수 있습니다(플레이어 피해는 별도 옵션, 기본 꺼짐).
+- 변경: 기본 도착 시간 단축(아파치, A-10, AC-130 20초, B-2 30초).
+- 변경: 단말기의 지정 버튼에 무장 이름, 아이콘, 색이 붙었고, B-2 무장 버튼에 마우스를 올리면 재무장 시간이 나옵니다.
+- 변경: AC-130이 떠날 때 엔진 소리가 끊기지 않고 서서히 멀어집니다.
+- 변경: 전술핵과 네이팜 무전이 실제 교신 투로 바뀌었고, 긴급 무전은 바로 끼어듭니다.
+- 신규 소리: 사이렌, 전술핵, 네이팜에 실제 녹음(BigSoundBank, CC0)을 썼습니다.

@@ -1,0 +1,32 @@
+Skyhammer Air Support - installation and compatibility
+
+Single player only (for multiplayer, use the Vanilla Edition). Tested with Project Zomboid Build 42.21.
+Required mods: ZombieBuddy (2.3.0+), Viewpoint.
+Follow ZombieBuddy's own installation and Java approval instructions.
+Enable the prerequisites before Skyhammer. Press K while carrying a working
+two-way radio, or right-click the radio, to open the terminal.
+Includes English, Korean and Simplified Chinese UI/subtitles; spoken radio is English.
+Configure support timings and the optional AC-130 aircraft display in Mod Options.
+
+AC-130 visual compatibility:
+Tested Viewpoint release: 0.1.6.
+At start-up the aircraft renderer checks that every part of Viewpoint it uses still
+exists with the same signature. If a Viewpoint update changes one of them, only the
+3D aircraft switch off (the console names what changed); everything else keeps working.
+If that happens, check for a compatible Skyhammer update.
+Do not copy an old Viewpoint JAR over a new one.
+Disable the old standalone SkyhammerAircraft3D addon when using this integrated mod.
+
+한국어 안내
+싱글플레이 전용이며(멀티플레이는 바닐라판), 좀보이드 42.21 / Viewpoint 0.1.6 기준입니다.
+ZombieBuddy 2.3.0 이상과 Viewpoint가 필요합니다.
+ZombieBuddy의 설치·Java 승인 안내를 따르고 선행 모드부터 활성화하세요.
+작동하는 양방향 무전기를 소지한 상태에서 K키 또는 무전기 우클릭으로 엽니다.
+AC-130 기체 표시는 옵션에서 끌 수 있으며, 별도 SkyhammerAircraft3D는 꺼주세요.
+Viewpoint 업데이트로 모드가 쓰는 부분이 바뀐 경우에만 3D 기체가 꺼지고, 나머지는 그대로 작동합니다.
+
+B-2 3D flyover:
+A B-2 appears only after a bombing point is confirmed, crosses the target once,
+then leaves. It uses the same 3D aircraft toggle and Viewpoint compatibility check.
+B-2 height and size have separate visual options. Bomb damage and cooldowns are unchanged.
+The pass follows the saved combat clock, including pause, fast-forward and reload.

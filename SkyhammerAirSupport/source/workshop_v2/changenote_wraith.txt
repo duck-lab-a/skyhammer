@@ -1,0 +1,9 @@
+[EN]
+- Works with either edition of Skyhammer: Viewpoint or the new Vanilla Edition (https://steamcommunity.com/sharedfiles/filedetails/?id=3813973682).
+- Ferryman's shadow crosses the ground in the normal view as it flies the team in and out.
+- Stays single player: on a server the add-on switches itself off.
+
+[KO]
+- 스카이해머 Viewpoint판과 새 바닐라판(https://steamcommunity.com/sharedfiles/filedetails/?id=3813973682) 모두에서 작동합니다.
+- 기본 시점에서 페리맨 헬기가 대원을 내리고 태워 갈 때 그림자가 지면을 지나갑니다.
+- 싱글플레이 전용: 서버에서는 애드온이 스스로 꺼집니다.

@@ -1,0 +1,73 @@
+module Skyhammer
+{
+    imports
+    {
+        Base
+    }
+
+    /* The air support unlock quest (Skyhammer_Quest.lua): the uplink radio is the only set that
+       reaches Aegis in the quest modes; the manual found at military sites teaches how to build
+       it. Both use vanilla art (the US Army walkie-talkie, a red-pink book). */
+    item HavenUplinkRadio
+    {
+        DisplayCategory = Communications,
+        ItemType = base:radio,
+        Weight = 1.6,
+        Icon = WalkieTalkieMilitary,
+        AttachmentType = Walkie,
+        BaseVolumeRange = 16,
+        DisappearOnUse = false,
+        IsHighTier = true,
+        IsPortable = true,
+        IsTelevision = false,
+        MaxChannel = 1000000,
+        MicRange = 5,
+        MinChannel = 200,
+        Tags = base:usesbattery,
+        Tooltip = Tooltip_SH_Uplink,
+        TransmitRange = 16000,
+        TwoWay = true,
+        UseDelta = 0.014,
+        UseWhileEquipped = false,
+        UsesBattery = true,
+        WorldObjectSprite = appliances_com_01_48,
+        StaticModel = WalkieTalkieUSArmy,
+        WorldStaticModel = WalkieTalkieUSArmy,
+    }
+
+    item HavenSignalManual
+    {
+        DisplayCategory = RecipeResource,
+        ItemType = base:literature,
+        Weight = 0.5,
+        Icon = Book6,
+        LearnedRecipes = CraftHavenUplinkRadio,
+        StaticModel = BookRedPink,
+        WorldStaticModel = BookRedPink_Ground,
+    }
+
+    craftRecipe CraftHavenUplinkRadio
+    {
+        timedAction = MakingElectrical,
+        time = 150,
+        NeedToBeLearn = true,
+        SkillRequired = Electricity:4,
+        Tags = AnySurfaceCraft,
+        category = Electrical,
+        xpAward = Electricity:30,
+        inputs
+        {
+            item 1 [Base.WalkieTalkie5] flags[NoBrokenItems],
+            item 1 [Base.RadioTransmitter] flags[NoBrokenItems],
+            item 1 [Base.ScannerModule] flags[NoBrokenItems],
+            item 1 [Base.Amplifier] flags[NoBrokenItems],
+            item 4 [Base.ElectronicsScrap] flags[NoBrokenItems],
+            item 2 [Base.ElectricWire] flags[NoBrokenItems],
+            item 1 tags[base:screwdriver] mode:keep flags[NoBrokenItems],
+        }
+        outputs
+        {
+            item 1 Skyhammer.HavenUplinkRadio,
+        }
+    }
+}

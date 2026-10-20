@@ -1,0 +1,14 @@
+name=Skyhammer Air Support - AC-130, Apache & B-2 [Viewpoint]
+id=SkyhammerAirSupport
+require=\ZombieBuddy,\Viewpoint
+incompatible=\SkyhammerAirSupportVanilla
+loadModAfter=\ZombieBuddy,\Viewpoint
+poster=poster.png
+icon=poster.png
+modversion=1.0
+versionMin=42.21
+category=features
+javaJarFile=media/java/client/SkyhammerAircraft3D.jar
+javaPkgName=skyhammer.aircraft
+ZBVersionMin=2.3.0
+description=Earn air support in a short quest (Aegis's broadcast, a relay, the air support radio; or pick any two-way radio in the sandbox), then call it from the radio (K key or right-click the radio). Hellhound One-One, an AH-64 Apache, escorts you with 30mm bursts and rocket salvos into big groups. Banshee Two-One, an AC-130 gunship, circles overhead with a 40mm cannon that engages the infected around you on its own and a 105mm howitzer for a point you mark. Titan Zero-One, a B-2, lays one wide carpet strike per sortie. Mark targets on the terminal's thermal sensor map, or eyes-on with a click in the game view. Radio crew voices, subtitles, real-time cooldowns, optional craters, 3D Apache, AC-130 and B-2 in the sky, and options under Mod Options. Requires ZombieBuddy 2.3.0 or newer and Viewpoint. Tested with Project Zomboid 42.21 and Viewpoint 0.1.6; after a Viewpoint update the 3D aircraft and 3D effects switch off only if a part of Viewpoint they use has changed (everything else keeps working). The Wraith Team add-on (needs Bandits) adds a ground team. Single player only; for multiplayer (or without ZombieBuddy and Viewpoint), use the Vanilla Edition.

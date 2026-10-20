@@ -1,0 +1,30 @@
+===== 바닐라판 (먼저 업로드) =====
+
+- New: air support unlock quest. Catch Haven's broadcast, find Haven's signal manual at military sites, bring a relay online (a satellite dish on a wall, a military ham radio within 6 squares, generator power) and get the air support radio. First contact unlocks the Apache, AC-130 and B-2.
+- If the relay loses power, support goes offline until the power is back. Press K without the radio to open the quest log; an optional on-screen tracker is in Mod Options.
+- Sandbox page "Skyhammer Air Support": quest / air support radio only / any two-way radio (as before), slower arrival farther from the relay, and relay anywhere or only near a set place.
+- Multiplayer: the relay is shared by the whole server; each player hears the broadcast and gets their own radio.
+- Existing saves that already used air support keep working on any radio. The quest starts in new games.
+- New Haven radio lines (EN/KO/CN subtitles).
+--
+- 신규: 항공 지원 해금 퀘스트. 헤이븐 방송을 듣고, 군 시설에서 헤이븐 통신 교범을 찾고, 중계소(벽에 단 위성 안테나, 6칸 안의 군용 아마추어 무선통신기, 발전기 전력)를 가동하고, 항공 지원 무전기를 손에 넣으세요. 첫 교신을 마치면 아파치, AC-130, B-2가 해금됩니다.
+- 중계소 전력이 끊기면 다시 들어올 때까지 지원을 부를 수 없습니다. 무전기 없이 K를 누르면 퀘스트 일지가 열리고, 화면 추적 표시는 모드 옵션에서 켤 수 있습니다.
+- 샌드박스 "스카이해머 항공 지원" 페이지: 퀘스트 / 항공 지원 무전기만 / 아무 양방향 무전기(예전 방식), 중계소에서 멀수록 늦게 도착, 중계소를 어디서나 또는 지정 위치 근처에만 세우기.
+- 멀티플레이: 중계소는 서버 전체가 함께 쓰고, 방송 포착과 무전기는 플레이어마다 따로입니다.
+- 이미 항공 지원을 쓰던 세이브는 계속 아무 무전기로 쓸 수 있습니다. 퀘스트는 새 게임부터 시작됩니다.
+- 헤이븐 무전 대사 추가 (영어·한국어·중국어 자막).
+
+
+===== 본편 (나중에 업로드) =====
+
+- New: air support unlock quest. Catch Haven's broadcast, find Haven's signal manual at military sites, bring a relay online (a satellite dish on a wall, a military ham radio within 6 squares, generator power) and get the air support radio. First contact unlocks the Apache, AC-130 and B-2.
+- If the relay loses power, support goes offline until the power is back. Press K without the radio to open the quest log; an optional on-screen tracker is in Mod Options.
+- Sandbox page "Skyhammer Air Support": quest / air support radio only / any two-way radio (as before), slower arrival farther from the relay, and relay anywhere or only near a set place.
+- Existing saves that already used air support keep working on any radio. The quest starts in new games.
+- New Haven radio lines (EN/KO/CN subtitles).
+--
+- 신규: 항공 지원 해금 퀘스트. 헤이븐 방송을 듣고, 군 시설에서 헤이븐 통신 교범을 찾고, 중계소(벽에 단 위성 안테나, 6칸 안의 군용 아마추어 무선통신기, 발전기 전력)를 가동하고, 항공 지원 무전기를 손에 넣으세요. 첫 교신을 마치면 아파치, AC-130, B-2가 해금됩니다.
+- 중계소 전력이 끊기면 다시 들어올 때까지 지원을 부를 수 없습니다. 무전기 없이 K를 누르면 퀘스트 일지가 열리고, 화면 추적 표시는 모드 옵션에서 켤 수 있습니다.
+- 샌드박스 "스카이해머 항공 지원" 페이지: 퀘스트 / 항공 지원 무전기만 / 아무 양방향 무전기(예전 방식), 중계소에서 멀수록 늦게 도착, 중계소를 어디서나 또는 지정 위치 근처에만 세우기.
+- 이미 항공 지원을 쓰던 세이브는 계속 아무 무전기로 쓸 수 있습니다. 퀘스트는 새 게임부터 시작됩니다.
+- 헤이븐 무전 대사 추가 (영어·한국어·중국어 자막).

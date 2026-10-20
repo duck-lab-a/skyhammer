@@ -1,0 +1,5 @@
+- Fixed: the protection while you wait for the helicopter did not work outside debug mode.
+- Fixed: securing a landing site no longer counts friendly Bandits companions or friendly survivors as zombies.
+--
+- 수정: 헬기를 기다리는 동안의 보호가 디버그 모드가 아니면 작동하지 않던 문제.
+- 수정: 착륙지를 확보할 때 동료 밴딧과 우호 생존자를 좀비로 세던 문제.

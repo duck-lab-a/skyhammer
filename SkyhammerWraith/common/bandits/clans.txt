@@ -1,0 +1,15 @@
+[8b1d4e7a-0c62-4f3b-b8e5-6a9c2d1f0b22]
+	general: name = Skyhammer_Wraith
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 0
+	spawn: spawnChance = 0
+	spawn: groupMin = 5
+	spawn: groupMax = 5
+	spawn: zone = 0

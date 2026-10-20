@@ -1,0 +1,17 @@
+[
+  {"id": "Contact1", "phrase": "SPOTTED", "en": "Contact front!", "ko": "전방 접촉!", "cn": "前方接敌！"},
+  {"id": "Contact2", "phrase": "SPOTTED", "en": "Tango, twelve o'clock!", "ko": "12시 방향 적!", "cn": "十二点方向，敌人！"},
+  {"id": "Contact3", "phrase": "SPOTTED", "en": "Eyes on infected!", "ko": "감염자 육안 확인!", "cn": "目视确认感染者！"},
+  {"id": "Contact4", "phrase": "SPOTTED", "en": "Movement!", "ko": "움직임 포착!", "cn": "发现动静！"},
+  {"id": "Reload1", "phrase": "RELOADING", "en": "Reloading!", "ko": "재장전!", "cn": "换弹！"},
+  {"id": "Reload2", "phrase": "RELOADING", "en": "Changing mags, cover me!", "ko": "탄창 교체, 엄호해!", "cn": "换弹匣，掩护我！"},
+  {"id": "Reload3", "phrase": "RELOADING", "en": "Going dry, reloading!", "ko": "탄 소진, 재장전!", "cn": "弹药打空，换弹！"},
+  {"id": "Down1", "phrase": "DEATH", "en": "Tango down.", "ko": "적 제압.", "cn": "目标倒下。"},
+  {"id": "Down2", "phrase": "DEATH", "en": "Hostile down.", "ko": "적 하나 처리.", "cn": "解决一个。"},
+  {"id": "Down3", "phrase": "DEATH", "en": "Clear.", "ko": "클리어.", "cn": "清除。"},
+  {"id": "Breach1", "phrase": "BREACH", "en": "Breaching!", "ko": "돌파한다!", "cn": "破门！"},
+  {"id": "Breach2", "phrase": "BREACH", "en": "Door, going in!", "ko": "문 진입!", "cn": "进门！"},
+  {"id": "Close1", "phrase": "DRAGDOWN", "en": "Close contact!", "ko": "근접 접촉!", "cn": "近身接敌！"},
+  {"id": "Close2", "phrase": "DRAGDOWN", "en": "Get them off me!", "ko": "떼어 내!", "cn": "把它们弄开！"},
+  {"id": "Car1", "phrase": "CAR", "en": "Vehicle, watch it!", "ko": "차량 주의!", "cn": "注意车辆！"}
+]

@@ -1,0 +1,1125 @@
+{
+  "triangles": 19776,
+  "source_part_count": 95,
+  "bones": 39,
+  "bone_names": [
+    "Dummy01",
+    "Translation_Data",
+    "Body",
+    "Pelvis",
+    "L_Hip",
+    "L_Thigh",
+    "L_Knee",
+    "L_Shin",
+    "L_Ankle",
+    "L_Foot",
+    "R_Hip",
+    "R_Thigh",
+    "R_Knee",
+    "R_Shin",
+    "R_Ankle",
+    "R_Foot",
+    "Chest",
+    "Head",
+    "cockpitCam",
+    "Reactor",
+    "L_Shoulder",
+    "L_UpperArm",
+    "L_Elbow",
+    "L_Forearm",
+    "L_Hand",
+    "L_Booster",
+    "hook_L",
+    "R_Shoulder",
+    "R_UpperArm",
+    "R_Elbow",
+    "R_Forearm",
+    "R_Hand",
+    "R_Forearm_hinge_UPPER",
+    "R_Forearm_hinge_LOWER",
+    "R_FIST_RETRACTABLE",
+    "R_Plasma_BARREL_EMITTER",
+    "muzzle_R",
+    "R_Booster",
+    "hook_R"
+  ],
+  "parents": {
+    "Dummy01": null,
+    "Translation_Data": "Dummy01",
+    "Body": "Translation_Data",
+    "Pelvis": "Body",
+    "Chest": "Body",
+    "Head": "Chest",
+    "Reactor": "Chest",
+    "cockpitCam": "Head",
+    "L_Shoulder": "Chest",
+    "L_UpperArm": "L_Shoulder",
+    "L_Elbow": "L_UpperArm",
+    "L_Forearm": "L_Elbow",
+    "L_Hand": "L_Forearm",
+    "L_Booster": "L_Elbow",
+    "L_Hip": "Pelvis",
+    "L_Thigh": "L_Hip",
+    "L_Knee": "L_Thigh",
+    "L_Shin": "L_Knee",
+    "L_Ankle": "L_Shin",
+    "L_Foot": "L_Ankle",
+    "hook_L": "L_Shoulder",
+    "R_Shoulder": "Chest",
+    "R_UpperArm": "R_Shoulder",
+    "R_Elbow": "R_UpperArm",
+    "R_Forearm": "R_Elbow",
+    "R_Hand": "R_Forearm",
+    "R_Booster": "R_Elbow",
+    "R_Hip": "Pelvis",
+    "R_Thigh": "R_Hip",
+    "R_Knee": "R_Thigh",
+    "R_Shin": "R_Knee",
+    "R_Ankle": "R_Shin",
+    "R_Foot": "R_Ankle",
+    "hook_R": "R_Shoulder",
+    "R_Forearm_hinge_UPPER": "R_Forearm",
+    "R_Forearm_hinge_LOWER": "R_Forearm",
+    "R_FIST_RETRACTABLE": "R_Forearm",
+    "R_Plasma_BARREL_EMITTER": "R_Forearm",
+    "muzzle_R": "R_Plasma_BARREL_EMITTER"
+  },
+  "parts": {
+    "Abdomen_waist_frame": {
+      "bone": "Pelvis",
+      "index_offset": 0,
+      "index_count": 540,
+      "origin_blender_m": [
+        0.0,
+        -0.008000001311302185,
+        9.0
+      ]
+    },
+    "Waist_belt": {
+      "bone": "Pelvis",
+      "index_offset": 540,
+      "index_count": 540,
+      "origin_blender_m": [
+        0.0,
+        0.0,
+        9.050000190734863
+      ]
+    },
+    "Pelvis_center": {
+      "bone": "Pelvis",
+      "index_offset": 1080,
+      "index_count": 408,
+      "origin_blender_m": [
+        0.0,
+        0.0,
+        8.449999809265137
+      ]
+    },
+    "R_Chest_light_band": {
+      "bone": "Chest",
+      "index_offset": 1488,
+      "index_count": 132,
+      "origin_blender_m": [
+        -0.047199562191963196,
+        -0.4799998998641968,
+        11.660000801086426
+      ]
+    },
+    "R_Waist_side_armor": {
+      "bone": "Pelvis",
+      "index_offset": 1620,
+      "index_count": 408,
+      "origin_blender_m": [
+        0.3530001938343048,
+        -0.010399997234344482,
+        8.449999809265137
+      ]
+    },
+    "L_Chest_light_band": {
+      "bone": "Chest",
+      "index_offset": 2028,
+      "index_count": 132,
+      "origin_blender_m": [
+        0.047199562191963196,
+        -0.4799998998641968,
+        11.660000801086426
+      ]
+    },
+    "L_Waist_side_armor": {
+      "bone": "Pelvis",
+      "index_offset": 2160,
+      "index_count": 408,
+      "origin_blender_m": [
+        -0.3530001938343048,
+        -0.010399997234344482,
+        8.449999809265137
+      ]
+    },
+    "Reactor_recess": {
+      "bone": "Reactor",
+      "index_offset": 2568,
+      "index_count": 564,
+      "origin_blender_m": [
+        0.0,
+        -0.5870000123977661,
+        12.00629997253418
+      ]
+    },
+    "Reactor_charcoal_bezel": {
+      "bone": "Reactor",
+      "index_offset": 3132,
+      "index_count": 1920,
+      "origin_blender_m": [
+        0.0,
+        -0.5870000123977661,
+        12.00629997253418
+      ]
+    },
+    "Reactor_orange_outer_disc": {
+      "bone": "Reactor",
+      "index_offset": 5052,
+      "index_count": 960,
+      "origin_blender_m": [
+        0.0,
+        -0.5870000123977661,
+        12.00629997253418
+      ]
+    },
+    "Reactor_bright_center": {
+      "bone": "Reactor",
+      "index_offset": 6012,
+      "index_count": 1140,
+      "origin_blender_m": [
+        0.0,
+        -0.5870000123977661,
+        12.00629997253418
+      ]
+    },
+    "Back_power_pack": {
+      "bone": "Chest",
+      "index_offset": 7152,
+      "index_count": 132,
+      "origin_blender_m": [
+        0.0,
+        0.14559996128082275,
+        11.564800262451172
+      ]
+    },
+    "R_Back_vent_block": {
+      "bone": "Chest",
+      "index_offset": 7284,
+      "index_count": 132,
+      "origin_blender_m": [
+        -0.11899995803833008,
+        0.20000004768371582,
+        11.600000381469727
+      ]
+    },
+    "L_Back_vent_block": {
+      "bone": "Chest",
+      "index_offset": 7416,
+      "index_count": 132,
+      "origin_blender_m": [
+        0.11899995803833008,
+        0.20000004768371582,
+        11.600000381469727
+      ]
+    },
+    "Neck_joint": {
+      "bone": "Head",
+      "index_offset": 7548,
+      "index_count": 276,
+      "origin_blender_m": [
+        0.0,
+        0.0,
+        13.369999885559082
+      ]
+    },
+    "Head_complete_intact_helmet": {
+      "bone": "Head",
+      "index_offset": 7824,
+      "index_count": 3300,
+      "origin_blender_m": [
+        0.0,
+        -0.029999999329447746,
+        13.499800682067871
+      ]
+    },
+    "R_Shoulder_joint": {
+      "bone": "R_Shoulder",
+      "index_offset": 11124,
+      "index_count": 1428,
+      "origin_blender_m": [
+        -2.809999942779541,
+        0.0,
+        12.869999885559082
+      ]
+    },
+    "R_Shoulder_orange_inset": {
+      "bone": "R_Shoulder",
+      "index_offset": 12552,
+      "index_count": 132,
+      "origin_blender_m": [
+        -2.621999979019165,
+        -0.12999993562698364,
+        12.929999351501465
+      ]
+    },
+    "R_Cable_eye_mount": {
+      "bone": "R_Shoulder",
+      "index_offset": 12684,
+      "index_count": 132,
+      "origin_blender_m": [
+        -2.1499998569488525,
+        0.0,
+        12.84000015258789
+      ]
+    },
+    "R_Shoulder_cable_eye": {
+      "bone": "hook_R",
+      "index_offset": 12816,
+      "index_count": 864,
+      "origin_blender_m": [
+        -2.5999999046325684,
+        0.029999999329447746,
+        14.100000381469727
+      ]
+    },
+    "R_Elbow_joint": {
+      "bone": "R_Elbow",
+      "index_offset": 13680,
+      "index_count": 1428,
+      "origin_blender_m": [
+        -3.640000104904175,
+        0.12999999523162842,
+        9.920000076293945
+      ]
+    },
+    "R_Rear_elbow_booster_housing": {
+      "bone": "R_Booster",
+      "index_offset": 15108,
+      "index_count": 324,
+      "origin_blender_m": [
+        -4.300000190734863,
+        0.050000011920928955,
+        9.920000076293945
+      ]
+    },
+    "R_Rear_booster_orange_band": {
+      "bone": "R_Booster",
+      "index_offset": 15432,
+      "index_count": 540,
+      "origin_blender_m": [
+        -4.300000190734863,
+        0.050000011920928955,
+        9.920000076293945
+      ]
+    },
+    "R_Rear_booster_dark_exhaust": {
+      "bone": "R_Booster",
+      "index_offset": 15972,
+      "index_count": 396,
+      "origin_blender_m": [
+        -4.300000190734863,
+        0.050000011920928955,
+        9.920000076293945
+      ]
+    },
+    "R_Rear_booster_exhaust_lip": {
+      "bone": "R_Booster",
+      "index_offset": 16368,
+      "index_count": 480,
+      "origin_blender_m": [
+        -4.300000190734863,
+        0.050000011920928955,
+        9.920000076293945
+      ]
+    },
+    "R_Forearm_fixed_frame": {
+      "bone": "R_Forearm",
+      "index_offset": 16848,
+      "index_count": 744,
+      "origin_blender_m": [
+        -3.6433377265930176,
+        0.14709998667240143,
+        9.920384407043457
+      ]
+    },
+    "R_Forearm_fixed_side_outer": {
+      "bone": "R_Forearm",
+      "index_offset": 17592,
+      "index_count": 132,
+      "origin_blender_m": [
+        -3.6433377265930176,
+        0.14709998667240143,
+        9.920384407043457
+      ]
+    },
+    "R_Upper_hinge_pin_-1": {
+      "bone": "R_Forearm_hinge_UPPER",
+      "index_offset": 17724,
+      "index_count": 348,
+      "origin_blender_m": [
+        -3.957780599594116,
+        -0.979219913482666,
+        9.574179649353027
+      ]
+    },
+    "R_Lower_hinge_pin_-1": {
+      "bone": "R_Forearm_hinge_LOWER",
+      "index_offset": 18072,
+      "index_count": 348,
+      "origin_blender_m": [
+        -3.957780599594116,
+        1.080759882926941,
+        9.574179649353027
+      ]
+    },
+    "R_Forearm_fixed_side_inner": {
+      "bone": "R_Forearm",
+      "index_offset": 18420,
+      "index_count": 132,
+      "origin_blender_m": [
+        -3.6433377265930176,
+        0.14709998667240143,
+        9.920384407043457
+      ]
+    },
+    "R_Upper_hinge_pin_1": {
+      "bone": "R_Forearm_hinge_UPPER",
+      "index_offset": 18552,
+      "index_count": 348,
+      "origin_blender_m": [
+        -3.957780599594116,
+        -0.979219913482666,
+        9.574179649353027
+      ]
+    },
+    "R_Lower_hinge_pin_1": {
+      "bone": "R_Forearm_hinge_LOWER",
+      "index_offset": 18900,
+      "index_count": 348,
+      "origin_blender_m": [
+        -3.957780599594116,
+        1.080759882926941,
+        9.574179649353027
+      ]
+    },
+    "R_Plasma_BARREL_EMITTER": {
+      "bone": "R_Plasma_BARREL_EMITTER",
+      "index_offset": 19248,
+      "index_count": 2976,
+      "origin_blender_m": [
+        -4.051873207092285,
+        0.0729999989271164,
+        8.759597778320312
+      ]
+    },
+    "R_Wrist_joint": {
+      "bone": "R_Hand",
+      "index_offset": 22224,
+      "index_count": 276,
+      "origin_blender_m": [
+        -4.16776704788208,
+        0.0729999989271164,
+        7.75626802444458
+      ]
+    },
+    "R_FIST_RETRACTABLE": {
+      "bone": "R_FIST_RETRACTABLE",
+      "index_offset": 22500,
+      "index_count": 1320,
+      "origin_blender_m": [
+        -4.16776704788208,
+        0.0729999989271164,
+        7.75626802444458
+      ]
+    },
+    "L_Shoulder_joint": {
+      "bone": "L_Shoulder",
+      "index_offset": 23820,
+      "index_count": 1428,
+      "origin_blender_m": [
+        2.809999942779541,
+        0.0,
+        12.869999885559082
+      ]
+    },
+    "L_Shoulder_orange_inset": {
+      "bone": "L_Shoulder",
+      "index_offset": 25248,
+      "index_count": 132,
+      "origin_blender_m": [
+        2.621999979019165,
+        -0.12999993562698364,
+        12.929999351501465
+      ]
+    },
+    "L_Cable_eye_mount": {
+      "bone": "L_Shoulder",
+      "index_offset": 25380,
+      "index_count": 132,
+      "origin_blender_m": [
+        2.1499998569488525,
+        0.0,
+        12.84000015258789
+      ]
+    },
+    "L_Shoulder_cable_eye": {
+      "bone": "hook_L",
+      "index_offset": 25512,
+      "index_count": 864,
+      "origin_blender_m": [
+        2.5999999046325684,
+        0.029999999329447746,
+        14.100000381469727
+      ]
+    },
+    "L_Elbow_joint": {
+      "bone": "L_Elbow",
+      "index_offset": 26376,
+      "index_count": 1428,
+      "origin_blender_m": [
+        3.640000104904175,
+        0.12999999523162842,
+        9.920000076293945
+      ]
+    },
+    "L_Rear_elbow_booster_housing": {
+      "bone": "L_Booster",
+      "index_offset": 27804,
+      "index_count": 324,
+      "origin_blender_m": [
+        4.300000190734863,
+        0.050000011920928955,
+        9.920000076293945
+      ]
+    },
+    "L_Rear_booster_orange_band": {
+      "bone": "L_Booster",
+      "index_offset": 28128,
+      "index_count": 540,
+      "origin_blender_m": [
+        4.300000190734863,
+        0.050000011920928955,
+        9.920000076293945
+      ]
+    },
+    "L_Rear_booster_dark_exhaust": {
+      "bone": "L_Booster",
+      "index_offset": 28668,
+      "index_count": 396,
+      "origin_blender_m": [
+        4.300000190734863,
+        0.050000011920928955,
+        9.920000076293945
+      ]
+    },
+    "L_Rear_booster_exhaust_lip": {
+      "bone": "L_Booster",
+      "index_offset": 29064,
+      "index_count": 480,
+      "origin_blender_m": [
+        4.300000190734863,
+        0.050000011920928955,
+        9.920000076293945
+      ]
+    },
+    "L_Forearm_orange_inset": {
+      "bone": "L_Forearm",
+      "index_offset": 29544,
+      "index_count": 132,
+      "origin_blender_m": [
+        3.7200024127960205,
+        -0.3259999752044678,
+        9.959440231323242
+      ]
+    },
+    "L_Wrist_joint": {
+      "bone": "L_Hand",
+      "index_offset": 29676,
+      "index_count": 276,
+      "origin_blender_m": [
+        4.16776704788208,
+        0.0729999989271164,
+        7.75626802444458
+      ]
+    },
+    "L_Hand_fist": {
+      "bone": "L_Hand",
+      "index_offset": 29952,
+      "index_count": 1320,
+      "origin_blender_m": [
+        4.16776704788208,
+        0.0729999989271164,
+        7.75626802444458
+      ]
+    },
+    "R_Hip_joint": {
+      "bone": "R_Hip",
+      "index_offset": 31272,
+      "index_count": 1428,
+      "origin_blender_m": [
+        -1.459999918937683,
+        0.11999999731779099,
+        8.119999885559082
+      ]
+    },
+    "R_Knee_joint": {
+      "bone": "R_Knee",
+      "index_offset": 32700,
+      "index_count": 1428,
+      "origin_blender_m": [
+        -2.0760934352874756,
+        0.05000000447034836,
+        5.2058515548706055
+      ]
+    },
+    "R_Shin_orange_inset": {
+      "bone": "R_Shin",
+      "index_offset": 34128,
+      "index_count": 132,
+      "origin_blender_m": [
+        -2.114401340484619,
+        -0.5149999856948853,
+        4.888153076171875
+      ]
+    },
+    "R_Ankle_joint": {
+      "bone": "R_Ankle",
+      "index_offset": 34260,
+      "index_count": 276,
+      "origin_blender_m": [
+        -2.5022685527801514,
+        0.019999999552965164,
+        1.6714527606964111
+      ]
+    },
+    "L_Hip_joint": {
+      "bone": "L_Hip",
+      "index_offset": 34536,
+      "index_count": 1428,
+      "origin_blender_m": [
+        1.459999918937683,
+        0.11999999731779099,
+        8.119999885559082
+      ]
+    },
+    "L_Knee_joint": {
+      "bone": "L_Knee",
+      "index_offset": 35964,
+      "index_count": 1428,
+      "origin_blender_m": [
+        2.0760934352874756,
+        0.05000000447034836,
+        5.2058515548706055
+      ]
+    },
+    "L_Shin_orange_inset": {
+      "bone": "L_Shin",
+      "index_offset": 37392,
+      "index_count": 132,
+      "origin_blender_m": [
+        2.114401340484619,
+        -0.5149999856948853,
+        4.888153076171875
+      ]
+    },
+    "L_Ankle_joint": {
+      "bone": "L_Ankle",
+      "index_offset": 37524,
+      "index_count": 276,
+      "origin_blender_m": [
+        2.5022685527801514,
+        0.019999999552965164,
+        1.6714527606964111
+      ]
+    },
+    "Chest_structural_core": {
+      "bone": "Chest",
+      "index_offset": 37800,
+      "index_count": 636,
+      "origin_blender_m": [
+        0.0,
+        0.0,
+        10.300000190734863
+      ]
+    },
+    "Abdomen_front_shield": {
+      "bone": "Chest",
+      "index_offset": 38436,
+      "index_count": 504,
+      "origin_blender_m": [
+        0.0,
+        0.0,
+        9.350000381469727
+      ]
+    },
+    "Pelvis_front_guard": {
+      "bone": "Pelvis",
+      "index_offset": 38940,
+      "index_count": 540,
+      "origin_blender_m": [
+        0.0,
+        -0.75,
+        9.0
+      ]
+    },
+    "R_Chest_large_plate": {
+      "bone": "Chest",
+      "index_offset": 39480,
+      "index_count": 636,
+      "origin_blender_m": [
+        0.0,
+        0.0,
+        11.699999809265137
+      ]
+    },
+    "R_Collar_shield": {
+      "bone": "Chest",
+      "index_offset": 40116,
+      "index_count": 300,
+      "origin_blender_m": [
+        0.0,
+        0.0,
+        12.899999618530273
+      ]
+    },
+    "L_Chest_large_plate": {
+      "bone": "Chest",
+      "index_offset": 40416,
+      "index_count": 636,
+      "origin_blender_m": [
+        0.0,
+        0.0,
+        11.699999809265137
+      ]
+    },
+    "L_Collar_shield": {
+      "bone": "Chest",
+      "index_offset": 41052,
+      "index_count": 300,
+      "origin_blender_m": [
+        0.0,
+        0.0,
+        12.899999618530273
+      ]
+    },
+    "R_Shoulder_main_armor": {
+      "bone": "R_Shoulder",
+      "index_offset": 41352,
+      "index_count": 924,
+      "origin_blender_m": [
+        -2.809999942779541,
+        0.0,
+        12.869999885559082
+      ]
+    },
+    "R_Shoulder_outer_facet": {
+      "bone": "R_Shoulder",
+      "index_offset": 42276,
+      "index_count": 288,
+      "origin_blender_m": [
+        -2.809999942779541,
+        0.0,
+        12.869999885559082
+      ]
+    },
+    "R_Upper_arm": {
+      "bone": "R_UpperArm",
+      "index_offset": 42564,
+      "index_count": 552,
+      "origin_blender_m": [
+        -3.0999999046325684,
+        0.05999999865889549,
+        12.350000381469727
+      ]
+    },
+    "R_Upper_arm_front_guard": {
+      "bone": "R_UpperArm",
+      "index_offset": 43116,
+      "index_count": 324,
+      "origin_blender_m": [
+        -3.0999999046325684,
+        0.05999999865889549,
+        12.350000381469727
+      ]
+    },
+    "R_Forearm_hinge_UPPER": {
+      "bone": "R_Forearm_hinge_UPPER",
+      "index_offset": 43440,
+      "index_count": 468,
+      "origin_blender_m": [
+        -3.957780599594116,
+        -1.0784000158309937,
+        9.574179649353027
+      ]
+    },
+    "R_Forearm_hinge_LOWER": {
+      "bone": "R_Forearm_hinge_LOWER",
+      "index_offset": 43908,
+      "index_count": 336,
+      "origin_blender_m": [
+        -3.957780599594116,
+        1.1673998832702637,
+        9.574179649353027
+      ]
+    },
+    "L_Shoulder_main_armor": {
+      "bone": "L_Shoulder",
+      "index_offset": 44244,
+      "index_count": 924,
+      "origin_blender_m": [
+        2.809999942779541,
+        0.0,
+        12.869999885559082
+      ]
+    },
+    "L_Shoulder_outer_facet": {
+      "bone": "L_Shoulder",
+      "index_offset": 45168,
+      "index_count": 288,
+      "origin_blender_m": [
+        2.809999942779541,
+        0.0,
+        12.869999885559082
+      ]
+    },
+    "L_Upper_arm": {
+      "bone": "L_UpperArm",
+      "index_offset": 45456,
+      "index_count": 552,
+      "origin_blender_m": [
+        3.0999999046325684,
+        0.05999999865889549,
+        12.350000381469727
+      ]
+    },
+    "L_Upper_arm_front_guard": {
+      "bone": "L_UpperArm",
+      "index_offset": 46008,
+      "index_count": 324,
+      "origin_blender_m": [
+        3.0999999046325684,
+        0.05999999865889549,
+        12.350000381469727
+      ]
+    },
+    "L_Forearm_armor": {
+      "bone": "L_Forearm",
+      "index_offset": 46332,
+      "index_count": 468,
+      "origin_blender_m": [
+        3.640000104904175,
+        0.12999999523162842,
+        9.920000076293945
+      ]
+    },
+    "R_Thigh_armor": {
+      "bone": "R_Thigh",
+      "index_offset": 46800,
+      "index_count": 552,
+      "origin_blender_m": [
+        -1.4600000381469727,
+        0.11999999731779099,
+        8.113546371459961
+      ]
+    },
+    "R_Thigh_front_plate": {
+      "bone": "R_Thigh",
+      "index_offset": 47352,
+      "index_count": 492,
+      "origin_blender_m": [
+        -1.4600000381469727,
+        0.11999999731779099,
+        8.113546371459961
+      ]
+    },
+    "R_Knee_front_guard": {
+      "bone": "R_Knee",
+      "index_offset": 47844,
+      "index_count": 612,
+      "origin_blender_m": [
+        -2.0760934352874756,
+        0.05000000447034836,
+        5.2058515548706055
+      ]
+    },
+    "R_Shin_armor": {
+      "bone": "R_Shin",
+      "index_offset": 48456,
+      "index_count": 552,
+      "origin_blender_m": [
+        -2.114401340484619,
+        0.05999999865889549,
+        4.888152599334717
+      ]
+    },
+    "R_Shin_front_plate": {
+      "bone": "R_Shin",
+      "index_offset": 49008,
+      "index_count": 564,
+      "origin_blender_m": [
+        -2.114401340484619,
+        0.05999999865889549,
+        4.888152599334717
+      ]
+    },
+    "R_Foot_main": {
+      "bone": "R_Foot",
+      "index_offset": 49572,
+      "index_count": 1380,
+      "origin_blender_m": [
+        -2.5022685527801514,
+        0.0,
+        1.3600000143051147
+      ]
+    },
+    "R_Foot_ankle_cap": {
+      "bone": "R_Foot",
+      "index_offset": 50952,
+      "index_count": 552,
+      "origin_blender_m": [
+        -2.5022685527801514,
+        0.0,
+        1.3600000143051147
+      ]
+    },
+    "R_Toe_armor_0": {
+      "bone": "R_Foot",
+      "index_offset": 51504,
+      "index_count": 408,
+      "origin_blender_m": [
+        -2.5022685527801514,
+        0.0,
+        1.3600000143051147
+      ]
+    },
+    "R_Toe_armor_1": {
+      "bone": "R_Foot",
+      "index_offset": 51912,
+      "index_count": 408,
+      "origin_blender_m": [
+        -2.5022685527801514,
+        0.0,
+        1.3600000143051147
+      ]
+    },
+    "R_Toe_armor_2": {
+      "bone": "R_Foot",
+      "index_offset": 52320,
+      "index_count": 408,
+      "origin_blender_m": [
+        -2.5022685527801514,
+        0.0,
+        1.3600000143051147
+      ]
+    },
+    "L_Thigh_armor": {
+      "bone": "L_Thigh",
+      "index_offset": 52728,
+      "index_count": 552,
+      "origin_blender_m": [
+        1.4600000381469727,
+        0.11999999731779099,
+        8.113546371459961
+      ]
+    },
+    "L_Thigh_front_plate": {
+      "bone": "L_Thigh",
+      "index_offset": 53280,
+      "index_count": 492,
+      "origin_blender_m": [
+        1.4600000381469727,
+        0.11999999731779099,
+        8.113546371459961
+      ]
+    },
+    "L_Knee_front_guard": {
+      "bone": "L_Knee",
+      "index_offset": 53772,
+      "index_count": 612,
+      "origin_blender_m": [
+        2.0760934352874756,
+        0.05000000447034836,
+        5.2058515548706055
+      ]
+    },
+    "L_Shin_armor": {
+      "bone": "L_Shin",
+      "index_offset": 54384,
+      "index_count": 552,
+      "origin_blender_m": [
+        2.114401340484619,
+        0.05999999865889549,
+        4.888152599334717
+      ]
+    },
+    "L_Shin_front_plate": {
+      "bone": "L_Shin",
+      "index_offset": 54936,
+      "index_count": 564,
+      "origin_blender_m": [
+        2.114401340484619,
+        0.05999999865889549,
+        4.888152599334717
+      ]
+    },
+    "L_Foot_main": {
+      "bone": "L_Foot",
+      "index_offset": 55500,
+      "index_count": 1380,
+      "origin_blender_m": [
+        2.5022685527801514,
+        0.0,
+        1.3600000143051147
+      ]
+    },
+    "L_Foot_ankle_cap": {
+      "bone": "L_Foot",
+      "index_offset": 56880,
+      "index_count": 552,
+      "origin_blender_m": [
+        2.5022685527801514,
+        0.0,
+        1.3600000143051147
+      ]
+    },
+    "L_Toe_armor_0": {
+      "bone": "L_Foot",
+      "index_offset": 57432,
+      "index_count": 408,
+      "origin_blender_m": [
+        2.5022685527801514,
+        0.0,
+        1.3600000143051147
+      ]
+    },
+    "L_Toe_armor_1": {
+      "bone": "L_Foot",
+      "index_offset": 57840,
+      "index_count": 408,
+      "origin_blender_m": [
+        2.5022685527801514,
+        0.0,
+        1.3600000143051147
+      ]
+    },
+    "L_Toe_armor_2": {
+      "bone": "L_Foot",
+      "index_offset": 58248,
+      "index_count": 408,
+      "origin_blender_m": [
+        2.5022685527801514,
+        0.0,
+        1.3600000143051147
+      ]
+    },
+    "L_Knee_guard": {
+      "bone": "L_Knee",
+      "index_offset": 58656,
+      "index_count": 336,
+      "origin_blender_m": [
+        2.0760934352874756,
+        0.05000000447034836,
+        5.2058515548706055
+      ]
+    },
+    "R_Knee_guard": {
+      "bone": "R_Knee",
+      "index_offset": 58992,
+      "index_count": 336,
+      "origin_blender_m": [
+        -2.0760934352874756,
+        0.05000000447034836,
+        5.2058515548706055
+      ]
+    }
+  },
+  "original_93_names_origins_preserved": true,
+  "unchanged_original_geometry_count": 87,
+  "shin_tapered_parts": 6,
+  "new_parts": [
+    "L_Knee_guard",
+    "R_Knee_guard"
+  ],
+  "texture_sha256": "1ab1a12f6bac0bfb2b4c4213ded107b86a0d226df832320c7134bba5a6e0db10",
+  "bind_bounds_gltf_m": {
+    "min": [
+      -5.36129903793335,
+      -6.010316155879991e-08,
+      -1.9200005531311035
+    ],
+    "max": [
+      5.327837944030762,
+      15.0,
+      2.6499998569488525
+    ]
+  },
+  "blender_bake_max_matrix_error": 6.472432859854285e-16,
+  "preview_keys": {
+    "J_Idle": [
+      0,
+      1,
+      2
+    ],
+    "J_Walk": [
+      0,
+      0.75,
+      1.5,
+      2.25
+    ],
+    "J_Drop": [
+      0,
+      1.2,
+      1.4,
+      2.5
+    ],
+    "J_Stomp": [
+      0,
+      0.55,
+      0.9,
+      1.15
+    ],
+    "J_Punch": [
+      0,
+      0.35,
+      0.7,
+      1.2
+    ],
+    "J_CannonOut": [
+      0,
+      0.33,
+      0.67,
+      1.0
+    ],
+    "J_CannonFire": [
+      0,
+      0.3,
+      0.4,
+      1.0
+    ],
+    "J_CannonIn": [
+      0,
+      0.33,
+      0.67,
+      1.0
+    ],
+    "J_FinalCharge": [
+      0,
+      1,
+      2
+    ],
+    "J_FinalFire": [
+      0,
+      0.1,
+      0.23,
+      1.5
+    ],
+    "J_Lift": [
+      0,
+      1.5,
+      3.0
+    ]
+  }
+}

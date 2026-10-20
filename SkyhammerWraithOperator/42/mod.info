@@ -1,0 +1,8 @@
+name=Skyhammer - Wraith Operator (Occupation)
+id=SkyhammerWraithOperator
+poster=poster.png
+icon=poster.png
+modversion=1.0
+versionMin=42.21
+category=features
+description=Adds one occupation: the Wraith Operator, a Wraith Team operator left behind in Knox County. Aiming 5, Nimble 3, Sneaking 3, Lightfooted 2, Reloading 3, Fitness 2, Strength 2, Electrical 2, with Desensitized and Cat's Eyes, for 12 points. Works on its own; no other mod needed.

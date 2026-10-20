@@ -1,0 +1,30 @@
+{
+  "SH_Jaeger.glb": {
+    "bytes": 3413484,
+    "sha256": "0ce0718f44b25f7ac61816398d9ef05b3c6f74cca68c82996fe5349c432a03a6"
+  },
+  "SH_Jaeger_source.blend": {
+    "bytes": 1486536,
+    "sha256": "17ee2e2dbada170415d9ea60d7de103ea73d444800701f9319a186639a63716f"
+  },
+  "Skyhammer_B_albedo_2048.png": {
+    "bytes": 30123,
+    "sha256": "1ab1a12f6bac0bfb2b4c4213ded107b86a0d226df832320c7134bba5a6e0db10"
+  },
+  "SH_Jaeger_anims.json": {
+    "bytes": 3757,
+    "sha256": "724359b05496e2fb005157d50cd98db9b39b36b57d787a01f7e618cc3db41749"
+  },
+  "SH_Jaeger_validation.json": {
+    "bytes": 7926,
+    "sha256": "ddfed2c0c5645091303344b3966d8f293a3eebfb182bb1837d8b736baa011d73"
+  },
+  "SH_Jaeger_animation_overview.png": {
+    "bytes": 1549155,
+    "sha256": "7b936c2ec8b6b120703dfead843d723dd9d1dae4c938e358cc8c602029101abd"
+  },
+  "SH_Jaeger_README.txt": {
+    "bytes": 3145,
+    "sha256": "b524c4a1da548bf2f03cfe7d2463990b7f7f0ec1f902cff7e09ad6a378b0eaaa"
+  }
+}

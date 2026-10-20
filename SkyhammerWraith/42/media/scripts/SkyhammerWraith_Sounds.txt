@@ -1,0 +1,434 @@
+module Base
+{
+    sound SH_Heli_Pass
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/sh_heli_pass.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHW_Suppressed_Rifle
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_suppressed_rifle_1.wav, distanceMin = 3, distanceMax = 45, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer_wraith/shw_suppressed_rifle_2.wav, distanceMin = 3, distanceMax = 45, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer_wraith/shw_suppressed_rifle_3.wav, distanceMin = 3, distanceMax = 45, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHW_Suppressed_Pistol
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_suppressed_pistol_1.wav, distanceMin = 3, distanceMax = 35, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer_wraith/shw_suppressed_pistol_2.wav, distanceMin = 3, distanceMax = 35, reverbFactor = 0, volume = 1.0, }
+        clip { file = media/sound/skyhammer_wraith/shw_suppressed_pistol_3.wav, distanceMin = 3, distanceMax = 35, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_SquadCall
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shv_squadcall.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_SquadCallAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shv_squadcallack.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_SquadInsert
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shv_squadinsert.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_SquadOnStation
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shv_squadonstation.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_SquadRally
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shv_squadrally.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_SquadSpread
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shv_squadspread.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_SquadExfil
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shv_squadexfil.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_SquadPickup
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shv_squadpickup.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_SquadGone
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shv_squadgone.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_SquadRtb
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shv_squadrtb.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_SquadRtbAck
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shv_squadrtback.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_SquadNone
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shv_squadnone.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_PtsSquad
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shv_ptssquad.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHW_CO_Contact1_1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_contact1_1.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Contact1_2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_contact1_2.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Contact1_3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_contact1_3.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Contact2_1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_contact2_1.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Contact2_2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_contact2_2.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Contact2_3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_contact2_3.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Contact3_1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_contact3_1.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Contact3_2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_contact3_2.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Contact3_3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_contact3_3.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Contact4_1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_contact4_1.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Contact4_2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_contact4_2.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Contact4_3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_contact4_3.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Reload1_1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_reload1_1.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Reload1_2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_reload1_2.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Reload1_3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_reload1_3.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Reload2_1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_reload2_1.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Reload2_2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_reload2_2.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Reload2_3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_reload2_3.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Reload3_1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_reload3_1.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Reload3_2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_reload3_2.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Reload3_3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_reload3_3.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Down1_1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_down1_1.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Down1_2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_down1_2.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Down1_3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_down1_3.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Down2_1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_down2_1.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Down2_2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_down2_2.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Down2_3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_down2_3.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Down3_1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_down3_1.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Down3_2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_down3_2.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Down3_3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_down3_3.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Breach1_1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_breach1_1.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Breach1_2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_breach1_2.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Breach1_3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_breach1_3.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Breach2_1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_breach2_1.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Breach2_2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_breach2_2.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Breach2_3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_breach2_3.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Close1_1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_close1_1.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Close1_2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_close1_2.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Close1_3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_close1_3.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Close2_1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_close2_1.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Close2_2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_close2_2.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Close2_3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_close2_3.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Car1_1
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_car1_1.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Car1_2
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_car1_2.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+    sound SHW_CO_Car1_3
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer_wraith/shw_co_car1_3.wav, distanceMin = 4, distanceMax = 35, reverbFactor = 0.1, volume = 1.0, }
+    }
+}

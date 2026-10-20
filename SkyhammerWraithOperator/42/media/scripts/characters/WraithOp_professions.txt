@@ -1,0 +1,13 @@
+module Base
+{
+    character_profession_definition skyhammer:wraithoperator
+    {
+        CharacterProfession = skyhammer:wraithoperator,
+        Cost = -12,
+        UIName = UI_prof_wraithoperator,
+        UIDescription = UI_profdesc_wraithoperator,
+        IconPathName = profession_wraithoperator,
+        XPBoosts = Aiming=5;Nimble=3;Sneak=3;Lightfoot=2;Reloading=3;Fitness=2;Strength=2;Electricity=2,
+        GrantedTraits = base:desensitized;base:nightvision,
+    }
+}

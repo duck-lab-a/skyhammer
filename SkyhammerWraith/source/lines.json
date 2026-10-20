@@ -1,0 +1,15 @@
+[
+  {"id": "SquadCall", "speaker": "HAVEN", "en": "Wraith Six, Aegis Control. A survivor needs boots on the ground. Sending their grid now.", "ko": "레이스 식스, 이지스 컨트롤. 생존자 지상 호위 요청. 좌표 전송한다.", "cn": "幽魂 6，这里是神盾指挥。幸存者请求地面护卫。坐标发送中。"},
+  {"id": "SquadCallAck", "speaker": "WRAITH", "en": "Aegis, Wraith Six. Copy. Wraith is spinning up.", "ko": "이지스, 레이스 식스. 수신. 레이스 출동 준비한다.", "cn": "神盾，幽魂 6。收到。幽魂准备出动。"},
+  {"id": "SquadInsert", "speaker": "FERRYMAN", "en": "Ferryman Three-Two over the landing zone. Ropes out, Wraith is going down.", "ko": "페리맨 쓰리-투 착륙 지점 상공. 로프 투하, 레이스 강하한다.", "cn": "摆渡人 3-2 抵达着陆区上空。放绳，幽魂开始降落。"},
+  {"id": "SquadOnStation", "speaker": "WRAITH", "en": "Wraith Six on the ground. We have the survivor. Stay close to us.", "ko": "레이스 식스 지상 전개 완료. 생존자 확보. 우리 곁에서 이탈하지 마라.", "cn": "幽魂 6 已着陆。已保护幸存者。跟紧我们。"},
+  {"id": "SquadRally", "speaker": "WRAITH", "en": "Wraith, collapse on the survivor. Tight on me.", "ko": "레이스, 생존자 주위로 집결. 바짝 붙어라.", "cn": "幽魂，向幸存者靠拢。贴紧我。"},
+  {"id": "SquadSpread", "speaker": "WRAITH", "en": "Wraith, spread out. Diamond, eyes out.", "ko": "레이스, 산개. 다이아몬드 대형, 경계 유지.", "cn": "幽魂，散开。菱形队形，保持警戒。"},
+  {"id": "SquadExfil", "speaker": "WRAITH", "en": "Time's up. Wraith is pulling out.", "ko": "작전 시간 종료. 레이스 철수한다.", "cn": "时间到。幽魂撤离。"},
+  {"id": "SquadPickup", "speaker": "FERRYMAN", "en": "Ferryman on approach. Wraith, get aboard.", "ko": "페리맨 접근 중. 레이스, 탑승하라.", "cn": "摆渡人接近中。幽魂，登机。"},
+  {"id": "SquadGone", "speaker": "FERRYMAN", "en": "Wraith is aboard. Ferryman leaving the area.", "ko": "레이스 탑승 완료. 페리맨 이탈한다.", "cn": "幽魂已登机。摆渡人离开该区域。"},
+  {"id": "SquadRtb", "speaker": "HAVEN", "en": "Wraith, Aegis. Pull your team out.", "ko": "레이스, 이지스. 팀 철수하라.", "cn": "幽魂，这里是神盾。带队撤离。"},
+  {"id": "SquadRtbAck", "speaker": "WRAITH", "en": "Copy. Wraith moving to the pickup.", "ko": "수신. 레이스 회수 지점으로 이동한다.", "cn": "收到。幽魂前往接应点。"},
+  {"id": "SquadNone", "speaker": "HAVEN", "en": "No ground team can reach you right now.", "ko": "현재 투입 가능한 지상 팀 없다.", "cn": "目前没有地面小队可以投入。"},
+  {"id": "PtsSquad", "speaker": "HAVEN", "en": "Wraith Six is cleared to deploy. Call them in when ready.", "ko": "레이스 식스 투입 가능. 필요 시 요청하라.", "cn": "幽魂 6 可以出动。需要时呼叫。"}
+]

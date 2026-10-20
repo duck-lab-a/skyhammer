@@ -1,0 +1,3 @@
+Aegis Control's voice now matches Skyhammer's new radio voices.
+--
+이지스 관제의 목소리를 스카이해머 본편의 새 무전 목소리와 맞췄습니다.

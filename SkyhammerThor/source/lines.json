@@ -1,0 +1,18 @@
+[
+  {"id": "ThorCall", "speaker": "THOR_OPS", "en": "Asgard Control, copy all! Waking THOR-1 and burning for your grid! Stand by!", "ko": "아스가르드 관제, 전부 수신! THOR-1 기동, 귀측 좌표로 궤도 변경 중! 대기하십시오!", "cn": "阿斯加德管制，全部收到！唤醒 THOR-1，正变轨前往你的坐标！待命！"},
+  {"id": "ThorCallAck", "speaker": "THOR_CMD", "en": "Hammer Actual. Approved. Put the hammer over that grid, and make it fast.", "ko": "해머 액추얼. 승인. 망치를 그 상공에 올려. 서둘러.", "cn": "铁锤指挥官。批准。把铁锤调到那片坐标上空，快。"},
+  {"id": "ThorOnStation", "speaker": "THOR_OPS", "en": "THOR-1 is overhead! Rods armed, bay doors open! Send the point of impact!", "ko": "THOR-1 상공 도착! 막대 장전, 투하구 개방! 착탄 지점을 보내십시오!", "cn": "THOR-1 已到上空！钢杆就绪，舱门打开！发送弹着点！"},
+  {"id": "ThorMark", "speaker": "THOR_OPS", "en": "Send the point of impact! Keep it well clear of friendlies! Right-click or Escape to cancel.", "ko": "착탄 지점을 보내십시오! 아군과 충분히 이격! 취소는 우클릭 또는 ESC.", "prompt": true, "cn": "发送弹着点！远离友军！右键或 ESC 取消。"},
+  {"id": "ThorMarkAck", "speaker": "THOR_OPS", "en": "Point of impact locked! Solution is green, rod spun up! Hammer Actual, Asgard, request release authority!", "ko": "착탄 지점 고정! 사격 제원 이상 없음, 막대 회전 안정! 해머 액추얼, 여기는 아스가르드, 투하 승인 요청!", "cn": "弹着点锁定！射击诸元正常，钢杆自旋稳定！铁锤指挥官，这里是阿斯加德，请求投放授权！"},
+  {"id": "ThorAuthorize", "speaker": "THOR_CMD", "en": "Asgard, Hammer Actual. Authority granted. Drop the hammer. Drop it now!", "ko": "아스가르드, 해머 액추얼. 승인한다. 망치를 내려. 지금 당장!", "cn": "阿斯加德，铁锤指挥官。授权批准。落锤。马上落锤！"},
+  {"id": "ThorRelease", "speaker": "THOR_OPS", "en": "Rod away, rod away! Seven seconds!", "ko": "막대 이탈, 막대 이탈! 착탄 7초 전!", "cn": "钢杆脱离，钢杆脱离！七秒！"},
+  {"id": "ThorTerminal", "speaker": "THOR_OPS", "en": "Three! Two! One!", "beats": ["Three!", "Two!", "One!"], "beatMs": 1000, "ko": "3! 2! 1!", "cn": "三！二！一！"},
+  {"id": "ThorImpact", "speaker": "THOR_OPS", "en": "Impact! Impact! Seismic is off the scale! Shockwave still expanding!", "ko": "착탄! 착탄! 지진계 측정 불가! 충격파 계속 확산 중!", "cn": "命中！命中！地震仪爆表！冲击波仍在扩散！"},
+  {"id": "ThorBda", "speaker": "THOR_CMD", "en": "Asgard, Hammer Actual. The grid is gone. Nothing is moving down there. Good kill.", "ko": "아스가르드, 해머 액추얼. 구역 소멸. 움직이는 것 없음. 명중이다.", "cn": "阿斯加德，铁锤指挥官。整片区域没了。下面没有任何活动。干得好。"},
+  {"id": "ThorNext", "speaker": "THOR_OPS", "en": "THOR-1 has another rod in the bay! Send the next point of impact!", "ko": "THOR-1 막대 잔여! 다음 착탄 지점을 보내십시오!", "cn": "THOR-1 舱内还有钢杆！发送下一个弹着点！"},
+  {"id": "ThorDanger", "speaker": "THOR_OPS", "en": "Negative, negative! You are inside the blast! Move the point away from you!", "ko": "불가, 불가! 귀측이 폭심 안에 있습니다! 착탄 지점을 더 멀리 잡으십시오!", "cn": "否定，否定！你在爆炸范围内！把弹着点移远！"},
+  {"id": "ThorWindowClosed", "speaker": "THOR_OPS", "en": "THOR-1 is going over the horizon! Strike window closed!", "ko": "THOR-1 지평선 너머로 이탈! 타격 가능 시간 종료!", "cn": "THOR-1 正越过地平线！打击窗口关闭！"},
+  {"id": "ThorRtb", "speaker": "THOR_CMD", "en": "Hammer Actual. Abort, abort, abort! Safe the rods!", "ko": "해머 액추얼. 중지, 중지, 중지! 막대 안전 조치!", "cn": "铁锤指挥官。中止，中止，中止！钢杆保险！"},
+  {"id": "ThorRtbAck", "speaker": "THOR_OPS", "en": "Copy abort! Rods safe! THOR-1 leaving your sky!", "ko": "중지 수신! 막대 안전! THOR-1 귀측 상공 이탈!", "cn": "收到中止！钢杆已保险！THOR-1 离开你的上空！"},
+  {"id": "PtsThor", "speaker": "THOR_OPS", "en": "Hammer Actual has cleared THOR-1 for your grid! Call it in when you are ready!", "ko": "해머 액추얼이 THOR-1 사용을 승인했습니다! 준비되면 호출하십시오!", "cn": "铁锤指挥官已批准为你的坐标调用 THOR-1！准备好后呼叫！"}
+]

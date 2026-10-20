@@ -1,0 +1,22 @@
+=== Viewpoint Edition (main) and Vanilla Edition ===
+[EN]
+- AC-130 crew chatter: Banshee's pilot and gunner now talk while they circle. A few short calls per sortie, only when the radio is free, never the same one twice: holding orbit, movement with no clear shot, scanning for the next target, nothing in the open, weapons on hold.
+- A big group under the gun gets the pilot and the gunner working it through; a group at first contact has its own call.
+- One minute left on station: Banshee tells you, if you still have 105mm rounds to send.
+- Banshee answers a recall in one of two ways.
+- 10 new voiced lines with English, Korean and Chinese subtitles.
+- Radio timing: with a short flight in, the arrival call no longer waits behind the call exchange (the reply not yet on the air is skipped), and "engaging" / rocket reports are dropped rather than heard long after the shooting started.
+- Marking during Haven's "pick your impact point" call now cuts the call short: the gunner's (or Titan's) fire report goes out at once instead of after the rounds are already in the air. Cancel, "too far" and "under a roof" answers cut it the same way. Fire reports also break in on ordinary radio talk, a prompt not yet read is dropped once the mark is made, and the B-2's danger-close warning is always heard before the first bomb lands.
+- Fix: the flight in now keeps its set time in real seconds even when the frame rate drops (the game clock falls behind real time below about 12 fps, so a 5 s flight could take far longer). Still stopped by a pause and kept in the save.
+- Viewpoint Edition fix: looking up at the sky in Viewpoint's 3D view no longer draws the flat ground shadows over the 3D aircraft (the terminal's 3D view indicator and eyes-on marking were fooled the same way).
+
+[KO]
+- AC-130 승무원 교신: 밴시의 조종사와 사수가 선회하는 동안 짧게 교신합니다. 무전이 비어 있을 때만, 출격당 몇 번, 같은 대사 반복 없이 나옵니다(선회 유지, 움직임은 있으나 사격 각 없음, 다음 표적 탐색, 개활지 표적 없음, 사격 보류 중).
+- 큰 무리를 쏘기 시작하면 조종사와 사수가 주고받고, 첫 교전 상대가 무리면 전용 대사가 나옵니다.
+- 체공 1분 남음: 105mm가 남아 있으면 밴시가 알려 줍니다.
+- 귀환 명령에 대한 밴시의 응답이 두 가지가 됐습니다.
+- 새 음성 대사 10개, 영어·한국어·중국어 자막.
+- 무전 타이밍: 도착 시간이 짧으면 도착 무전이 호출 교신 뒤에서 기다리지 않고(아직 나오지 않은 응답은 건너뜀), "교전 개시"와 로켓 보고는 사격이 한참 지난 뒤에 나오는 대신 생략됩니다.
+- 헤이븐의 "탄착 지점 지정하라" 안내 중에 표적을 찍으면 안내가 끊기고, 사수(또는 타이탄)의 발사 보고가 바로 나옵니다. 전에는 포탄이 이미 날아간 뒤에야 보고가 나왔습니다. 취소, "너무 멀다", "지붕 아래 불가" 응답도 같은 방식으로 바로 나옵니다. 발사 보고는 일반 무전도 끊고 들어오고, 지정이 끝난 뒤 아직 나오지 않은 조준 안내는 생략되며, B-2의 위험 근접 경고는 항상 첫 폭탄보다 먼저 나옵니다.
+- 수정: 프레임이 떨어져도 도착 시간이 설정한 실제 초대로 지켜집니다(약 12fps 아래에서는 게임 시계가 실제보다 느려져 5초 도착이 훨씬 길어질 수 있었음). 일시정지하면 멈추고 세이브에도 남는 것은 그대로입니다.
+- Viewpoint판 수정: Viewpoint 3D 시점에서 하늘을 올려다보면 3D 기체 위에 평면 그림자가 겹쳐 그려지던 문제를 고쳤습니다(단말기의 3D 시점 표시와 육안 지정도 같은 이유로 헷갈리던 것을 함께 고침).

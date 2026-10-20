@@ -1,0 +1,19 @@
+=== Main (3813483790)
+- Fixed: the top slots of the inventory (or any window under the quest tracker / radio subtitle bar) ignored mouse hover and drag. The hidden tracker and the empty subtitle bar no longer take up any screen space.
+- Fixed: "Reset to defaults" in Mod Options could show a Lua error.
+- New: in the plain isometric view (Viewpoint 3D off), the Apache now flies as a 3D model above its shadow (single player).
+--
+- 수정: 인벤토리 맨 위 칸(또는 퀘스트 추적기·무전 자막창 아래에 있던 창)에 마우스를 올려도 반응이 없고 끌어 옮기기가 안 되던 문제를 고쳤습니다. 숨겨진 추적기와 비어 있는 자막창이 더 이상 화면 자리를 차지하지 않습니다.
+- 수정: 모드 옵션의 "기본값으로 초기화"에서 Lua 에러가 뜰 수 있던 문제를 고쳤습니다.
+- 신규: 일반 아이소 시점(Viewpoint 3D 꺼짐)에서 아파치가 그림자 위를 3D 모델로 날아다닙니다(싱글플레이).
+
+=== Vanilla (3813973682)
+- Fixed: the top slots of the inventory (or any window under the quest tracker / radio subtitle bar) ignored mouse hover and drag. The hidden tracker and the empty subtitle bar no longer take up any screen space.
+- Fixed: "Reset to defaults" in Mod Options showed a Lua error.
+- New: in single player the Apache now flies as a 3D model above its shadow.
+- Multiplayer: the server now writes a short "[Skyhammer] kills (...)" line to its console when air support kills do not go through (for the report that strikes stop hurting the infected with a second player nearby).
+--
+- 수정: 인벤토리 맨 위 칸(또는 퀘스트 추적기·무전 자막창 아래에 있던 창)에 마우스를 올려도 반응이 없고 끌어 옮기기가 안 되던 문제를 고쳤습니다. 숨겨진 추적기와 비어 있는 자막창이 더 이상 화면 자리를 차지하지 않습니다.
+- 수정: 모드 옵션의 "기본값으로 초기화"에서 Lua 에러가 뜨던 문제를 고쳤습니다.
+- 신규: 싱글플레이에서 아파치가 그림자 위를 3D 모델로 날아다닙니다.
+- 멀티플레이: 항공 지원의 처치가 제대로 적용되지 않으면, 서버 콘솔에 "[Skyhammer] kills (...)"로 시작하는 짧은 줄이 남습니다(다른 플레이어가 근처에 있으면 공습이 좀비에게 피해를 주지 않는다는 제보 때문에 넣었습니다).

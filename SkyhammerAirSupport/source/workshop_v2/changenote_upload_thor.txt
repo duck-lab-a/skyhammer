@@ -1,0 +1,3 @@
+- Changed: THOR arrives sooner by default (25 s, was 45 s).
+--
+- 변경: THOR 기본 도착 시간 단축(25초, 기존 45초).

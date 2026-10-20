@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "mirror_files_checked": 505,
+  "cross_edition_png_count": 37,
+  "jar_sha256": "e044fc2a186e2cbf53cc6ab94a8aa849cc9aefc9fdbcf808fba13b6e03d0de04",
+  "rumble_cockpit_classes_byte_identical": [
+    "skyhammer/aircraft/Cockpit.class",
+    "skyhammer/aircraft/Cockpit$Key.class",
+    "skyhammer/aircraft/Cockpit$Rumble.class",
+    "skyhammer/aircraft/Cockpit$Shake.class",
+    "skyhammer/aircraft/Patch_Cockpit.class",
+    "skyhammer/aircraft/Patch_RumbleIso.class"
+  ],
+  "errors": []
+}

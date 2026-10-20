@@ -1,0 +1,16 @@
+{
+  "pass": true,
+  "triangle_count": 16238,
+  "vertex_count": 48714,
+  "unit_normals": true,
+  "non_paint_geometry_byte_identical": true,
+  "part_triangles": {
+    "0": 15310,
+    "1": 928
+  },
+  "bounds_unchanged": true,
+  "mesh_sha256": "6c9910f5422229f6cf31a64b8eb909c1f1c150fc390008943c57aa323da10586",
+  "previous": "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupport\\source\\stale\\a10-before-mouth-wrap-20261011-164659",
+  "stage": "mouth position review; shadow/art remain unapproved",
+  "paint_surface": "single surface with shared color-boundary edges; tooth lengths limited at mouth corners"
+}

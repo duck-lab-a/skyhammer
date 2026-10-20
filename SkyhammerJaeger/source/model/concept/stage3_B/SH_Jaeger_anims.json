@@ -1,0 +1,188 @@
+{
+  "units": "meters",
+  "up_axis": "+Y",
+  "front_axis": "+Z",
+  "fps": 30,
+  "root_motion": "Dummy01 and Translation_Data fixed; Drop/Lift animate Body only",
+  "walk_step_length_m": 4.5,
+  "walk_stride_m": 9.0,
+  "walk_nominal_speed_m_s": 3.0,
+  "muzzle_forward_axis": "+Y local",
+  "animations": {
+    "J_Idle": {
+      "duration_s": 4.0,
+      "fps": 30,
+      "loop": true,
+      "events": []
+    },
+    "J_Walk": {
+      "duration_s": 3.0,
+      "fps": 30,
+      "loop": true,
+      "events": [
+        {
+          "name": "foot_contact_L",
+          "time_s": 0,
+          "frame": 0
+        },
+        {
+          "name": "foot_contact_R",
+          "time_s": 1.5,
+          "frame": 45
+        }
+      ]
+    },
+    "J_Drop": {
+      "duration_s": 2.5,
+      "fps": 30,
+      "loop": false,
+      "events": [
+        {
+          "name": "landing",
+          "time_s": 1.2,
+          "frame": 36
+        },
+        {
+          "name": "stand_recovered",
+          "time_s": 2.5,
+          "frame": 75
+        }
+      ]
+    },
+    "J_Stomp": {
+      "duration_s": 2.0,
+      "fps": 30,
+      "loop": false,
+      "events": [
+        {
+          "name": "stomp_R",
+          "time_s": 0.9,
+          "frame": 27
+        }
+      ]
+    },
+    "J_Punch": {
+      "duration_s": 2.0,
+      "fps": 30,
+      "loop": false,
+      "events": [
+        {
+          "name": "punch_L",
+          "time_s": 0.7,
+          "frame": 21
+        }
+      ]
+    },
+    "J_CannonOut": {
+      "duration_s": 1.0,
+      "fps": 30,
+      "loop": false,
+      "events": [
+        {
+          "name": "armor_open",
+          "time_s": 0.33,
+          "frame": 10
+        },
+        {
+          "name": "fist_stowed",
+          "time_s": 0.73,
+          "frame": 22
+        },
+        {
+          "name": "cannon_ready",
+          "time_s": 1.0,
+          "frame": 30
+        }
+      ]
+    },
+    "J_CannonFire": {
+      "duration_s": 1.0,
+      "fps": 30,
+      "loop": false,
+      "events": [
+        {
+          "name": "fire",
+          "time_s": 0.3,
+          "frame": 9,
+          "muzzle_position_m": [
+            -3.863422,
+            10.269115,
+            4.32227
+          ],
+          "muzzle_direction_model": [
+            1e-06,
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "J_CannonIn": {
+      "duration_s": 1.0,
+      "fps": 30,
+      "loop": false,
+      "events": [
+        {
+          "name": "barrel_retracted",
+          "time_s": 0.32,
+          "frame": 10
+        },
+        {
+          "name": "fist_restored",
+          "time_s": 0.7,
+          "frame": 21
+        },
+        {
+          "name": "armor_closed",
+          "time_s": 1.0,
+          "frame": 30
+        }
+      ]
+    },
+    "J_FinalCharge": {
+      "duration_s": 3.0,
+      "fps": 30,
+      "loop": true,
+      "events": []
+    },
+    "J_FinalFire": {
+      "duration_s": 1.5,
+      "fps": 30,
+      "loop": false,
+      "events": [
+        {
+          "name": "fire",
+          "time_s": 0.1,
+          "frame": 3,
+          "muzzle_position_m": [
+            -3.863422,
+            9.454199,
+            4.533287
+          ],
+          "muzzle_direction_model": [
+            1e-06,
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "J_Lift": {
+      "duration_s": 3.0,
+      "fps": 30,
+      "loop": false,
+      "events": [
+        {
+          "name": "lift_start",
+          "time_s": 0,
+          "frame": 0
+        },
+        {
+          "name": "lift_30m",
+          "time_s": 3.0,
+          "frame": 90
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+[EN]
+- New: Vanilla Edition, a separate item for multiplayer or for playing without ZombieBuddy and Viewpoint: https://steamcommunity.com/sharedfiles/filedetails/?id=3813973682
+- Aircraft shadows sweep the ground in the normal view (option in Mod Options).
+- Blasts and eyes-on marking now also work in the normal view, not only in Viewpoint's 3D view.
+- Mod Options: new "Reset to defaults" button.
+- The Wraith Team add-on now works with either edition.
+
+[KO]
+- 새로 나옴: 바닐라판. 멀티플레이용, 또는 ZombieBuddy·Viewpoint 없이 쓰는 별도 모드입니다: https://steamcommunity.com/sharedfiles/filedetails/?id=3813973682
+- 기본 시점에서 기체 그림자가 지면을 지나갑니다(모드 옵션에서 끌 수 있음).
+- 폭발 효과와 육안 지정이 Viewpoint 3D 시점뿐 아니라 기본 시점에서도 됩니다.
+- 모드 옵션: "기본값으로 되돌리기" 버튼 추가.
+- 레이스 팀 애드온이 두 판 모두에서 작동합니다.

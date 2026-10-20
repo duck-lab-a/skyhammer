@@ -1,0 +1,68 @@
+[h1]Called down from orbit.[/h1]
+An add-on for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813483790]Skyhammer Air Support[/url]: a new terminal tab that links to [b]Asgard[/b], an orbital station, which drops [b]ODIN[/b], a heavy combat robot, right where you need it.
+
+Works with [b]both editions[/b] of Skyhammer: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813483790]Viewpoint[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813973682]Vanilla[/url].
+[b]Single player only.[/b] Made for Build 42.21.
+
+[quote][h2]Fair warning: this one goes full sci-fi.[/h2]A giant robot dropped from orbit does not fit Project Zomboid at all, and I know it. [b]It is purely for fans of giant robots.[/b][/quote]
+
+[h1]How it works[/h1]
+[img]https://i.ibb.co/wh9Gskxy/image.png[/img]
+[olist]
+[*]Open the Skyhammer terminal and pick the [b]ODIN / ROBOT[/b] tab. The terminal switches to Asgard's orbital uplink.
+[*]Press [b]CALL[/b] and mark the drop point on the sensor map (open ground, at least 8 tiles from you). No mark, and it picks open ground near you.
+[*]ODIN falls from orbit, lands with a shockwave and powers up. Then it guards you on its own: [b]stomp[/b], [b]booster punch[/b] and a [b]plasma cannon[/b] that fires whenever it is charged.
+[*]Your weapons: the [b]orbital laser[/b] (a pillar of light, 20-tile radius) and [b]full power[/b] (a line 60 tiles long and 25 wide). Mark them on the sensor map or eyes-on.
+[*][b]MOVE[/b] sends it to hold a point, [b]FOLLOW ME[/b] brings it back. When its time is up or you press [b]RECALL[/b], it rises back into orbit. Full power you have not used fires by itself half a minute before it leaves.
+[/olist]
+
+[h1]Viewpoint Edition (3D)[/h1]
+In [b]Project ViewPoint's 3D view[/b] the landing comes with a short camera scene: the view falls from the sky as if through ODIN's eyes, then a cockpit screen powers up over it. It is only a cinematic, not a cockpit you control. A click skips it.
+[img]https://i.ibb.co/VcDpzb2V/odin1.jpg[/img]
+[img]https://i.ibb.co/q3nGBXFp/image.png[/img]
+[img]https://i.ibb.co/gFBCjRGn/odin3.jpg[/img]
+[img]https://i.ibb.co/TMGqqCT4/odin2.jpg[/img]
+
+[h1]Vanilla Edition[/h1]
+Everything works the same in the plain isometric view; once it stands, the cockpit screen shows for a few seconds as a short cinematic.
+[img]https://i.ibb.co/6cRDY3mG/1.png[/img]
+[img]https://i.ibb.co/xST11CbS/2.png[/img]
+
+[h1]Good to know[/h1]
+[list]
+[*][b]Why Japanese?[/b] Once the support came from an orbital station it made me think of Gundam, so the pilot and Asgard's operator speak Japanese. Subtitles are in English, Korean and Simplified Chinese.
+[*][b]The beams come out of its middle.[/b] The plasma cannon and full power fire from the centre of the robot, not from the cannon arm. Forcing them onto the arm risked making the mod heavier, so they stay in the middle.
+[*]Its blows reach the infected indoors too. You are hurt only outdoors, and only with Skyhammer's "protect the player" option off. The orbital laser cannot be marked within 30 tiles of you.
+[*]While ODIN is on the ground, its sensors feed the terminal's thermal map.
+[*]Drove far away? ODIN rises into the sky and drops again next to you.
+[*]ODIN carries over a save and reload.
+[*][b]Light and compatible.[/b] Nothing runs until you call it; on the ground it is one 3D model and short effects. It replaces no vanilla file or code, and it was played alongside about 80 mods with no conflicts or slowdowns found.
+[/list]
+
+[h1]Settings[/h1]
+Mod Options ("Skyhammer - ODIN"): arrival [b]25 s[/b], on the ground [b]5 min[/b], cooldown [b]30 min[/b], cannon recharge [b]30 s[/b], orbital laser and full power uses per sortie ([b]1[/b] each, 0 to 5), robot size, and the drop and cockpit scene. Real time; stops while paused.
+In Skyhammer's [b]killstreak mode[/b] ODIN costs [b]400 points[/b] instead of a cooldown.
+
+[h1]Requirements[/h1]
+[list]
+[*]Skyhammer Air Support, either edition, [b]updated to its latest version[/b]: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813483790]Viewpoint Edition[/url] (with ZombieBuddy and Viewpoint) or [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3813973682]Vanilla Edition[/url]
+[/list]
+Load this add-on after it.
+[b]Note:[/b] Steam lists both Skyhammer editions as required items, but you only need [b]one[/b] of them. Subscribe to the one you play with and enable only that one; you can skip the other.
+
+[h1]FAQ[/h1]
+[list]
+[*][b]Existing save?[/b] Yes.
+[*][b]The camera does not move when it lands?[/b] The camera scene needs the Viewpoint Edition and Viewpoint's first or third person view. Elsewhere you get the cockpit screen only.
+[*][b]Multiplayer?[/b] No. The Vanilla Edition plays online, but this add-on stays off there.
+[/list]
+
+[h1]Credits[/h1]
+[list]
+[*]Voices: VOICEVOX:青山龍星 (the pilot) and VOICEVOX:四国めたん (Asgard Control).
+[*]Sounds: rubberduck - 25 CC0 bang / firework SFX (CC0), edited; others synthesized.
+[*]ODIN 3D model and animations made for this mod. Artwork: AI-generated.
+[*]UI: English, Korean, Simplified Chinese.
+[/list]
+
+Found a bug? Please report it in the Discussions tab.

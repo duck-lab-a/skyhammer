@@ -1,0 +1,4 @@
+레이스 팀 카드의 꼬리표를 "ADD-ON"에서 "ADD-ON · SINGLE PLAYER"로 바꿔 줘.
+맨 아래 오른쪽 줄은 "PROJECT ZOMBOID // SINGLE PLAYER & MULTIPLAYER" 그대로 두고,
+왼쪽 아래 작은 줄 끝에 "Wraith Team: single player only." 한 문장을 덧붙여 줘.
+다른 글자와 배치는 바꾸지 마.

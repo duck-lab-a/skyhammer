@@ -1,0 +1,20 @@
+module WraithGear
+{
+ item OperatorSetHose
+ {
+  DisplayName = Wraith Helmet and Plate Carrier,
+  ItemType = base:clothing,
+  DisplayCategory = ProtectiveGear,
+  BodyLocation = base:torsoextravestbullet,
+  ClothingItem = Wraith_OperatorSetHose,
+  Icon = BulletVestSWAT,
+  BloodLocation = ShirtNoSleeves;Head;Groin,
+  Weight = 6.0,
+  BiteDefense = 30,
+  ScratchDefense = 55,
+  BulletDefense = 100,
+  CanHaveHoles = false,
+  Insulation = 0.4,
+  WindResistance = 0.5,
+ }
+}

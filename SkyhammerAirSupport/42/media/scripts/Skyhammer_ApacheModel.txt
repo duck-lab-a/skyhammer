@@ -1,0 +1,20 @@
+module Skyhammer
+{
+    /* The Apache as a game model for the plain isometric view (Skyhammer_ApacheBody.lua).
+       Mesh and animation made by source/make_apache_animal.py; metres, scale as the shadow's
+       (0.61: the true-size 0.85 looked too big in the isometric view). */
+    animationsMesh SH_ApacheAnimal
+    {
+        meshFile = Skyhammer/SH_ApacheAnimal,
+        keepMeshAnimations = true,
+    }
+
+    model SH_ApacheAnimal
+    {
+        mesh = Skyhammer/SH_ApacheAnimal,
+        animationsMesh = Skyhammer.SH_ApacheAnimal,
+        shader = animalEffect,
+        static = false,
+        scale = 0.61,
+    }
+}

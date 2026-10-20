@@ -1,0 +1,20 @@
+module WraithGear
+{
+ item TacticalSuit
+ {
+  DisplayName = Wraith Tactical Suit,
+  DisplayCategory = Clothing,
+  ItemType = base:clothing,
+  Icon = Wraith_TacticalSuit,
+  BloodLocation = Trousers;Jumper,
+  BodyLocation = base:boilersuit,
+  ClothingItem = Wraith_TacticalSuit,
+  FabricType = Cotton,
+  Insulation = 0.65,
+  RunSpeedModifier = 0.9,
+  ScratchDefense = 10,
+  WindResistance = 0.45,
+  WorldStaticModel = BoilerSuit_Ground,
+  Tags = base:ripclothingcotton,
+ }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+	<files>
+		<path>media/clothing/clothingItems/Wraith_OperatorSet.xml</path>
+		<guid>0de2cebc-8f2d-50a7-b136-01a0c3671542</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Wraith_OperatorSetHose.xml</path>
+		<guid>ae0c5053-ccce-5975-a85b-229047f20a1c</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Wraith_Respirator.xml</path>
+		<guid>651bf4fa-96e1-5271-b1cd-bda2a5c30408</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Wraith_RespiratorHose.xml</path>
+		<guid>5822b3cd-9f69-5db6-92bc-0ab4910528b2</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Wraith_TacticalSuit.xml</path>
+		<guid>8f76abe9-792d-4087-a65e-30f35fd5276b</guid>
+	</files>
+</fileGuidTable>

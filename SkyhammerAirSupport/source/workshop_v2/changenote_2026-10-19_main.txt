@@ -1,0 +1,17 @@
+Explosion effects and audio update
+- Reworked blast fireballs, dirt plumes, lingering smoke, debris and ground dust rings.
+- Increased the early fireball size for a stronger initial blast.
+- Updated 30mm, 40mm, rocket, 105mm and B-2 impact sounds using the new explosion sound set.
+- Radio voices, damage and strike timing are unchanged.
+- Strengthened 105mm impacts and the A-10 flyby.
+- B-2 bombs are much louder, heard from much farther away, and roll on for seconds, so a bombing run rumbles past.
+- Smoother big strikes: the infected a B-2 run or the tactical nuke takes down now fall over a few frames instead of all in one, to cut the half-second freezes (single player).
+--
+폭발 효과 및 음향 업데이트
+- 폭발 화염, 흙기둥, 잔류 연기, 파편과 지면 먼지 고리를 개선했습니다.
+- 초반 불꽃 크기를 키워 폭발 순간의 시각적 효과를 강화했습니다.
+- 30mm, 40mm, 로켓, 105mm, B-2 착탄음을 새 폭발음 세트로 변경했습니다.
+- 무전 음성, 피해량과 폭격 타이밍은 그대로입니다.
+- 105mm 착탄음과 A-10 통과음을 보강했습니다.
+- B-2 폭탄이 훨씬 크고 훨씬 멀리서도 들리며, 몇 초씩 울려서 폭격이 우르르 지나가는 느낌이 납니다.
+- 큰 공습이 부드러워졌습니다: B-2 폭격이나 전술핵에 쓰러지는 감염자가 한 프레임에 한꺼번에가 아니라 몇 프레임에 나눠 쓰러져서, 0.5초 넘게 멈추던 현상을 줄였습니다(싱글).

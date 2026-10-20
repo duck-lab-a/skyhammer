@@ -1,0 +1,16 @@
+[제목]
+Skyhammer - Complete Collection
+
+[설명]
+Everything you need for [b]Skyhammer Air Support[/b] in one click. Press [b]Subscribe to all[/b], then enable the mods in this order:
+
+[olist]
+[*][b]Viewpoint[/b] - required (3D view, eyes-on marking)
+[*][b]Skyhammer Air Support[/b] - AC-130, AH-64 Apache and B-2 from your two-way radio
+[*][b]Bandits[/b] - only needed for the Wraith Team
+[*][b]Skyhammer Air Support - Wraith Team[/b] - optional add-on: a five-man special operations team
+[/olist]
+
+[b]Also required: ZombieBuddy 2.3.0+[/b] (loads the 3D aircraft; approve its Java prompt). Install it from its own page if it is not in this list.
+
+Single player only. Build 42.21.

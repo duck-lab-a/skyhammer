@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>sjDrop</m_Name>
+	<m_Priority>175</m_Priority>
+	<m_ConditionPriority>175</m_ConditionPriority>
+	<m_AnimName>J_Drop</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Looped>false</m_Looped>
+	<m_Conditions>
+		<m_Name>sjAnim</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>J_Drop</m_Value>
+	</m_Conditions>
+</animNode>

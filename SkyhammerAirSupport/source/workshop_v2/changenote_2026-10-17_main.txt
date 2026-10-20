@@ -1,0 +1,9 @@
+- New: the ground shakes. When a 105mm round or a B-2 bomb lands near you, your view shakes, harder the closer it is (in first person and the normal view). Mod Options: Impact shake (0 turns it off).
+- New in Mod Options: 105mm rounds per sortie (default 8) and 105mm rounds per mark (default 2, was a fixed 4). The sensor map mark shows how many will fire.
+- Changed: the A-10's gun run covers more ground. The line is 40 tiles long (was 30); everything within 5 tiles of it goes down (was 3), and out to 8 tiles most do (was 5).
+- Changed: the GAU-8's BRRRT is louder.
+--
+- 신규: 착탄 진동. 가까이에 105mm 포탄이나 B-2 폭탄이 떨어지면 화면이 흔들리고, 가까울수록 세게 흔들립니다 (1인칭과 일반 시점 모두). 모드 옵션: 착탄 진동 (0이면 꺼짐).
+- 신규 모드 옵션: 105mm 출격당 탄약(기본 8발)과 105mm 지정 1회당 발 수(기본 2발, 기존 4발 고정). 센서 지도 표시에 이번에 쏠 발 수가 나옵니다.
+- 변경: A-10 기총소사 범위가 넓어졌습니다. 직선 길이 40타일(기존 30), 선에서 5타일 안은 확실히 처치(기존 3), 8타일까지는 대부분 처치(기존 5).
+- 변경: GAU-8 "부르르" 소리가 커졌습니다.

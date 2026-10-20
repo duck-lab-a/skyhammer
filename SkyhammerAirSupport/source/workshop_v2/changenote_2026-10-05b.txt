@@ -1,0 +1,33 @@
+=== Viewpoint Edition (main) ===
+[EN]
+- New poster in the mod list, and the name now ends in [Viewpoint].
+- Mod list category: Features.
+
+[KO]
+- 모드 목록 포스터를 새 이미지로 바꾸고, 이름 끝에 [Viewpoint]를 붙였습니다.
+- 모드 목록 카테고리: 기능.
+
+=== Vanilla Edition ===
+[EN]
+- Multiplayer fix: when more than 128 infected went down in one moment (a B-2 strike on a big horde), some of them survived. All of them die now.
+- Mod list category: Features.
+
+[KO]
+- 멀티 수정: 한순간에 좀비가 128마리 넘게 쓰러지면(큰 무리에 B-2 폭격) 일부가 살아남던 문제를 고쳤습니다.
+- 모드 목록 카테고리: 기능.
+
+=== Wraith Team ===
+[EN]
+- New poster in the mod list.
+- Mod list category: Features.
+
+[KO]
+- 모드 목록 포스터를 새 이미지로 바꿨습니다.
+- 모드 목록 카테고리: 기능.
+
+=== Wraith Operator ===
+[EN]
+- Mod list category: Features.
+
+[KO]
+- 모드 목록 카테고리: 기능.

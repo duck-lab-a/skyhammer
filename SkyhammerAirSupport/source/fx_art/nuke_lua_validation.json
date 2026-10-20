@@ -1,0 +1,18 @@
+{
+  "pass": true,
+  "lua": "5.1",
+  "cases": [
+    "combat clock",
+    "pause freezes elapsed",
+    "reload resumes elapsed",
+    "90s expiry",
+    "invalid coordinates",
+    "negative elapsed",
+    "napalm routing",
+    "old jar avoids accidental gun fire",
+    "legacy gun routing",
+    "old jar skips nuke",
+    "global visual off reset",
+    "ASCII source"
+  ]
+}

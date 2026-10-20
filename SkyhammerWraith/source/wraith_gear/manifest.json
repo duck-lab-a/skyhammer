@@ -1,0 +1,53 @@
+{
+  "Wraith_OperatorSet": {
+    "triangles": 2932,
+    "vertices": 6305,
+    "skinned": true,
+    "bounds": [
+      [
+        -0.1275,
+        0.59,
+        -0.13448000000000004
+      ],
+      [
+        0.1275,
+        0.99348,
+        0.1645
+      ]
+    ]
+  },
+  "Wraith_Respirator": {
+    "triangles": 1296,
+    "vertices": 3479,
+    "skinned": true,
+    "bounds": [
+      [
+        -0.12103346671814572,
+        0.7455,
+        -0.14327393472295297
+      ],
+      [
+        0.0754,
+        0.986,
+        0.109
+      ]
+    ]
+  },
+  "Wraith_RespiratorHose": {
+    "triangles": 1564,
+    "vertices": 4138,
+    "skinned": true,
+    "bounds": [
+      [
+        -0.11728440423597306,
+        0.6655,
+        -0.1035
+      ],
+      [
+        0.0754,
+        0.986,
+        0.2
+      ]
+    ]
+  }
+}

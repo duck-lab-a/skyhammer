@@ -1,0 +1,5 @@
+New: Project A-Life compatibility. A-Life NPCs who are friendly to you are no longer hit or targeted by air support, the same as friendly Bandits companions. Hostile ones are still targets.
+Tweak: the Apache's ground shadow is a little bigger, closer to the real helicopter's size.
+--
+추가: Project A-Life 호환. 나에게 우호적인 A-Life NPC는 우호 밴딧 동료처럼 공중 지원에 맞거나 조준되지 않습니다. 적대적인 NPC는 그대로 공격 대상입니다.
+조정: 아파치의 땅 그림자를 실제 헬기 크기에 가깝게 조금 키웠습니다.

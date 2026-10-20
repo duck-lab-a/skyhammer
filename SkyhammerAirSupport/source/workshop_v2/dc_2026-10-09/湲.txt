@@ -1,0 +1,45 @@
+[말머리] 모드소개
+
+[제목]
+스카이해머 애드온 3개 나왔음 (특수부대 / 거대로봇 / 신의 지팡이)
+
+[본문]
+저번에 올린 무전기로 항공지원 부르는 모드에 애드온 3개 추가함
+
+저번 글: https://gall.dcinside.com/mgallery/board/view/?id=pzom&no=311431
+
+셋 다 단말기(K)에 탭으로 붙고 바닐라판/Viewpoint판 둘 다 됨. 애드온은 싱글 전용
+
+
+(이미지 1)
+
+헬기에서 특수부대원 5명 내려서 2분 동안 같이 싸워줌. Bandits 모드 필요
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=3813821529
+
+
+(이미지 2)
+
+궤도에서 거대 로봇 떨궈줌. 따라다니면서 알아서 싸우고 궤도 레이저랑 최대출력은 직접 조준함
+
+좀보이드랑 안 어울리는 거 앎... 로봇 좋아하는 사람용임
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=3815899202
+
+
+(이미지 3)
+
+(신의 지팡이: 우주에서 텅스텐 막대 떨궈서 속도빨로 부수자는 미국 구상. 돈 너무 들어서 접힘)
+
+위성에서 텅스텐 막대 떨굼. 반경 50칸 안은 실내까지 다 죽고, 크레이터 옵션 켜면 건물까지 밀림
+
+일부러 과하게 만들었는데 모드 옵션에서 다 줄일 수 있음
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=3816298691
+
+
+본편 바닐라판(멀티): https://steamcommunity.com/sharedfiles/filedetails/?id=3813973682
+
+본편 Viewpoint판(3D): https://steamcommunity.com/sharedfiles/filedetails/?id=3813483790
+
+버그 있으면 댓글로 알려주셈

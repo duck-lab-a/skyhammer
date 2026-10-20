@@ -1,0 +1,9 @@
+name=Skyhammer Air Support - THOR (Add-on)
+id=SkyhammerThor
+loadModAfter=\SkyhammerAirSupport,\SkyhammerAirSupportVanilla
+poster=poster.png
+icon=poster.png
+modversion=1.0
+versionMin=42.21
+category=features
+description=Add-on for Skyhammer Air Support (either edition). Adds a terminal tab: THOR-1, an orbital kinetic strike run by the orbital station Asgard. The weapon satellite moves over your grid; mark a point and, once Hammer Actual authorizes the release, a tungsten rod falls from orbit. Everything within the kill radius (50 tiles by default, indoors too) dies, and the shockwave knocks down what lies beyond. Optional fires; with the main mod's crater option on, the buildings around the impact are levelled for good. Single player only.

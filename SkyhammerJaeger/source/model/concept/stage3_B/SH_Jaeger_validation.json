@@ -1,0 +1,293 @@
+{
+  "status": "PASS",
+  "asset": "SH_Jaeger.glb",
+  "glTF_version": 2,
+  "triangles": 19776,
+  "vertices_with_uv_normal_splits": 39144,
+  "bones": 39,
+  "skin_meshes": 1,
+  "materials": 1,
+  "texture_count": 1,
+  "texture_dimensions": [
+    2048,
+    2048
+  ],
+  "texture_unchanged": true,
+  "texture_sha256": "1ab1a12f6bac0bfb2b4c4213ded107b86a0d226df832320c7134bba5a6e0db10",
+  "emission_material": false,
+  "rigid_influences_per_vertex": 1,
+  "max_influences_per_vertex": 1,
+  "bind_height_m": 15.0,
+  "bind_floor_y_m": -6.010316155879991e-08,
+  "up_axis": "+Y",
+  "front_axis": "+Z",
+  "bone_hierarchy": [
+    "Dummy01",
+    "Translation_Data",
+    "Body"
+  ],
+  "inverse_bind_max_error": 1.8662127699298203e-06,
+  "animation_count": 11,
+  "animation_checks": {
+    "J_Idle": {
+      "duration_s": 4,
+      "samples": 121,
+      "loop": true,
+      "loop_end_matrix_error": 0.0,
+      "minimum_geometry_y_m": -5.1921062116378044e-08,
+      "minimum_sole_y_m": {
+        "L": -5.1921062116378044e-08,
+        "R": -5.1921062116378044e-08
+      },
+      "body_vertical_start_end_m": [
+        0.0,
+        0.0
+      ],
+      "root_motion_m": 0
+    },
+    "J_Walk": {
+      "duration_s": 3,
+      "samples": 91,
+      "loop": true,
+      "loop_end_matrix_error": 0.0,
+      "minimum_geometry_y_m": -3.0267569620048128e-06,
+      "minimum_sole_y_m": {
+        "L": -3.0267569620048128e-06,
+        "R": -3.0267569620048128e-06
+      },
+      "body_vertical_start_end_m": [
+        -0.7200002670288077,
+        -0.7200002670288077
+      ],
+      "root_motion_m": 0,
+      "step_length_m": 4.500000929063687
+    },
+    "J_Drop": {
+      "duration_s": 2.5,
+      "samples": 76,
+      "loop": false,
+      "loop_end_matrix_error": null,
+      "minimum_geometry_y_m": -2.5193469121555607e-06,
+      "minimum_sole_y_m": {
+        "L": -2.5193469121555607e-06,
+        "R": -2.5193469121555607e-06
+      },
+      "body_vertical_start_end_m": [
+        30.000000953674288,
+        0.0
+      ],
+      "root_motion_m": 0,
+      "landing_frame": 36
+    },
+    "J_Stomp": {
+      "duration_s": 2,
+      "samples": 61,
+      "loop": false,
+      "loop_end_matrix_error": null,
+      "minimum_geometry_y_m": -1.8688369791930039e-06,
+      "minimum_sole_y_m": {
+        "L": -1.8688369791930039e-06,
+        "R": -1.7851073619135434e-06
+      },
+      "body_vertical_start_end_m": [
+        0.0,
+        0.0
+      ],
+      "root_motion_m": 0
+    },
+    "J_Punch": {
+      "duration_s": 2,
+      "samples": 61,
+      "loop": false,
+      "loop_end_matrix_error": null,
+      "minimum_geometry_y_m": -2.3042741558062408e-06,
+      "minimum_sole_y_m": {
+        "L": -1.4824041445620684e-06,
+        "R": -2.3042741558062408e-06
+      },
+      "body_vertical_start_end_m": [
+        0.0,
+        0.0
+      ],
+      "root_motion_m": 0
+    },
+    "J_CannonOut": {
+      "duration_s": 1,
+      "samples": 31,
+      "loop": false,
+      "loop_end_matrix_error": null,
+      "minimum_geometry_y_m": -1.3997489083724276e-06,
+      "minimum_sole_y_m": {
+        "L": -1.3997489083724276e-06,
+        "R": -1.3997489083724276e-06
+      },
+      "body_vertical_start_end_m": [
+        0.0,
+        -0.25
+      ],
+      "root_motion_m": 0
+    },
+    "J_CannonFire": {
+      "duration_s": 1,
+      "samples": 31,
+      "loop": false,
+      "loop_end_matrix_error": null,
+      "minimum_geometry_y_m": -9.995273943641803e-07,
+      "minimum_sole_y_m": {
+        "L": -9.995273943641803e-07,
+        "R": -9.995273943641803e-07
+      },
+      "body_vertical_start_end_m": [
+        -0.25,
+        -0.25
+      ],
+      "root_motion_m": 0
+    },
+    "J_CannonIn": {
+      "duration_s": 1,
+      "samples": 31,
+      "loop": false,
+      "loop_end_matrix_error": null,
+      "minimum_geometry_y_m": -1.3997489083724276e-06,
+      "minimum_sole_y_m": {
+        "L": -1.3997489083724276e-06,
+        "R": -1.3997489083724276e-06
+      },
+      "body_vertical_start_end_m": [
+        -0.25,
+        0.0
+      ],
+      "root_motion_m": 0
+    },
+    "J_FinalCharge": {
+      "duration_s": 3,
+      "samples": 91,
+      "loop": true,
+      "loop_end_matrix_error": 0.0,
+      "minimum_geometry_y_m": -1.8989885693809485e-06,
+      "minimum_sole_y_m": {
+        "L": -1.8989885693809485e-06,
+        "R": -1.8989885693809485e-06
+      },
+      "body_vertical_start_end_m": [
+        -1.079999923706053,
+        -1.079999923706053
+      ],
+      "root_motion_m": 0
+    },
+    "J_FinalFire": {
+      "duration_s": 1.5,
+      "samples": 46,
+      "loop": false,
+      "loop_end_matrix_error": null,
+      "minimum_geometry_y_m": -1.7441210811339497e-06,
+      "minimum_sole_y_m": {
+        "L": -1.7441210811339497e-06,
+        "R": -1.7441210811339497e-06
+      },
+      "body_vertical_start_end_m": [
+        -1.079999923706053,
+        -1.079999923706053
+      ],
+      "root_motion_m": 0
+    },
+    "J_Lift": {
+      "duration_s": 3,
+      "samples": 91,
+      "loop": false,
+      "loop_end_matrix_error": null,
+      "minimum_geometry_y_m": -1.1433486969290675e-07,
+      "minimum_sole_y_m": {
+        "L": -1.1433486969290675e-07,
+        "R": -1.1433486969290675e-07
+      },
+      "body_vertical_start_end_m": [
+        0.0,
+        30.000000953674288
+      ],
+      "root_motion_m": 0
+    }
+  },
+  "muzzle_event_checks": {
+    "J_CannonFire": {
+      "time_s": 0.3,
+      "frame": 9,
+      "position_m": [
+        -3.863422740600297,
+        10.269113226712733,
+        4.322269555290925
+      ],
+      "direction_model": [
+        6.636845996210986e-07,
+        3.739440749510114e-07,
+        0.99999999999971
+      ],
+      "metadata_error_m": 1.7732872663600574e-06
+    },
+    "J_FinalFire": {
+      "time_s": 0.1,
+      "frame": 3,
+      "position_m": [
+        -3.8634222306988932,
+        9.45419795314579,
+        4.533286668640848
+      ],
+      "direction_model": [
+        6.488818166522963e-07,
+        2.893642929411391e-07,
+        0.9999999999997478
+      ],
+      "metadata_error_m": 1.0468542086528032e-06
+    }
+  },
+  "cannon_reverse_max_error": 0.0,
+  "previous_version_backup_files_verified": 32,
+  "previous_version_backup_path": "before_stage3",
+  "GLB_sha256": "0ce0718f44b25f7ac61816398d9ef05b3c6f74cca68c82996fe5349c432a03a6",
+  "verification_scope": "Local GLB binary, skeleton FK, rigid weights, every sampled pose, Blender bake and roundtrip previews. Project Zomboid runtime integration is not part of this asset stage.",
+  "source_blend": {
+    "file": "SH_Jaeger_source.blend",
+    "editable_named_parts": 95,
+    "existing_93_names_origins_preserved": true,
+    "unchanged_original_part_geometry": 87,
+    "shin_tapered_parts": 6,
+    "new_knee_guards": [
+      "L_Knee_guard",
+      "R_Knee_guard"
+    ],
+    "baked_pose_max_matrix_error": 1.1444091796875e-05
+  },
+  "roundtrip": {
+    "blender_import": "PASS",
+    "skin_meshes": 1,
+    "bones": 39,
+    "animation_count": 11,
+    "rigid_weights_verified": true
+  },
+  "previews": {
+    "render_source": "Final GLB re-import",
+    "individual_png_frames": 82,
+    "views": [
+      "front",
+      "threequarter"
+    ],
+    "contact_sheets": [
+      "J_Idle_contact_sheet.png",
+      "J_Walk_contact_sheet.png",
+      "J_Drop_contact_sheet.png",
+      "J_Stomp_contact_sheet.png",
+      "J_Punch_contact_sheet.png",
+      "J_CannonOut_contact_sheet.png",
+      "J_CannonFire_contact_sheet.png",
+      "J_CannonIn_contact_sheet.png",
+      "J_FinalCharge_contact_sheet.png",
+      "J_FinalFire_contact_sheet.png",
+      "J_Lift_contact_sheet.png"
+    ],
+    "overview": "SH_Jaeger_animation_overview.png",
+    "camera_follows_vertical_motion": [
+      "J_Drop",
+      "J_Lift"
+    ]
+  }
+}

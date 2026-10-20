@@ -1,0 +1,19 @@
+{
+  "source_title": "Explosion Sound Effects",
+  "source_channel": "Celestial SFX",
+  "source_url": "https://www.youtube.com/watch?v=YRex1Udiybs",
+  "user_supplied_file": "Explosion Sound Effects.mp4",
+  "user_assurance": "User says NCS and authorized use. No independent license certification.",
+  "processing": "105mm unchanged. B-2 restored to the original first-half sound selected by the user, +3dB drive with an offline single-hit limiter; no fixed -12dB attenuation. A-10 unchanged. B-2 overlapping tails are bounded separately in Lua; no new sample layers or runtime DSP.",
+  "sha256": {
+    "sh_105_impact_1.wav": "ab973aa9be9e1c1f84e5d02f4a9d72537ec370ba511fe5f18c633c0cf8061181",
+    "sh_105_impact_2.wav": "b8e11cdea90d500744d7d9b6f5168b1ed7263c1291e5debcd7781777acbbcf8e",
+    "sh_105_impact_3.wav": "138fc92cc8db427cd519b38ffd05234db03809ead5a44b26d53bbb54b1e9dde3",
+    "sh_a10_flyby.wav": "07ee5a085380082f7ea21959cf4eea6e8c86714dd365ad8a2a9534a28dbba2df",
+    "sh_bomb_impact_1.wav": "34b06f31864d001792495aedc33249ac270a1240a7b04b94150fea5467e11517",
+    "sh_bomb_impact_2.wav": "7f4f8e07b13ef6bc1d6658c300a87a8b2f79c416840c3951b38a0b43b4edc518",
+    "sh_bomb_impact_3.wav": "48d435d266f743d234d8936dc165aa6cc5e1f48290389e9a8bc9bb27afecd63b",
+    "sh_bomb_impact_4.wav": "7c2b4037d2a04bcfdd03a280018c638148b6bf60ff69cf1f80dff14c6441d431"
+  },
+  "source_scope": "User-supplied video credits apply to 105mm only. B-2 restored from pre-redesign build using existing credited CC0 sources."
+}

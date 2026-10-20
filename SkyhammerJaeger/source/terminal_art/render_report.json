@@ -1,0 +1,31 @@
+{
+  "source_blend": "C:\\Users\\user\\Zomboid\\mods\\SkyhammerJaeger\\source\\model\\concept\\stage3_B\\SH_Jaeger_source.blend",
+  "source_glb_sha256": "0ce0718f44b25f7ac61816398d9ef05b3c6f74cca68c82996fe5349c432a03a6",
+  "source_blend_sha256": "17ee2e2dbada170415d9ea60d7de103ea73d444800701f9319a186639a63716f",
+  "art_pose": "J_CannonFire",
+  "frame": 9,
+  "fps": 30,
+  "camera_yaw_degrees": 30,
+  "camera_elevation_degrees": -3.15,
+  "engine": "CYCLES",
+  "art_samples": 80,
+  "art_source_resolution": [
+    2048,
+    840
+  ],
+  "icon_source_resolution": [
+    512,
+    512
+  ],
+  "original_geometry_preserved_except_render_only_lower_body_crop": true,
+  "procedural_render_only_microtexture": true,
+  "emission_strength": 0.1,
+  "background_transparent": true,
+  "ground_objects_rendered": false,
+  "bloom": false,
+  "projected_width_to_height": 1.1359535775829492,
+  "render_only_weighted_normals": true,
+  "render_only_procedural_dust_scratches": true,
+  "user_approved_chest_crop": true,
+  "camera_ortho_width_m": 12.65
+}

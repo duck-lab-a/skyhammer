@@ -1,0 +1,10 @@
+name=Skyhammer Air Support - Wraith Team (Bandits add-on)
+id=SkyhammerWraith
+require=\Bandits2
+loadModAfter=\SkyhammerAirSupport,\SkyhammerAirSupportVanilla,\Bandits2
+poster=poster.png
+icon=poster.png
+modversion=1.0
+versionMin=42.21
+category=features
+description=Add-on for Skyhammer Air Support. Adds a fourth support tab to the terminal: Wraith Six, a five-man special operations team flown in by Ferryman Three-Two. They move with you in a diamond formation, fight the infected (who cannot kill them; one you hit yourself is pulled out at once), and are flown out when their time is up or you recall them. SWAT kit under their own Wraith gear set (helmet, quad night vision, headset, face cover, plate carrier). Requires Skyhammer Air Support (Viewpoint or Vanilla edition) and Bandits. Single player only.

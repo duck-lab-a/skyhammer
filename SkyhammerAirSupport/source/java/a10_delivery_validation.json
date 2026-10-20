@@ -1,0 +1,224 @@
+{
+  "pass": true,
+  "version": "0.7.0",
+  "jar_sha256": "0de4bc18f711e5419695aa6a3770bc674ae35aabfa33ff6c21e0b42493ad4dfd",
+  "java_class_major": 61,
+  "mesh": {
+    "triangles": 16238,
+    "vertices": 48714,
+    "bbox_min_xyz": [
+      -8.751385688781738,
+      -0.9549999833106995,
+      -8.149999618530273
+    ],
+    "bbox_max_xyz": [
+      8.751385688781738,
+      3.549999952316284,
+      8.149999618530273
+    ],
+    "dimensions_xyz": [
+      17.502771377563477,
+      4.504999935626984,
+      16.299999237060547
+    ],
+    "part_triangles": {
+      "0": 15310,
+      "1": 928
+    },
+    "components": {
+      "fuselage": 1664,
+      "canopy": 404,
+      "main_wings": 532,
+      "landing_gear_sponsons": 816,
+      "pylons": 192,
+      "engine_nacelles": 3256,
+      "horizontal_tail": 276,
+      "twin_vertical_tails": 172,
+      "GAU8_mount": 128,
+      "GAU8_rotating_bundle": 928,
+      "shark_mouth_paint": 7846,
+      "underside_panels": 24
+    },
+    "barrel_axis_origin_xyz": [
+      -0.18,
+      -0.46,
+      7.56
+    ],
+    "barrel_axis_direction_xyz": [
+      0,
+      0,
+      1
+    ],
+    "axes": "+X starboard, +Y up, +Z nose",
+    "units": "1 model unit = 1 meter = 1 game tile",
+    "shark_mouth": "original surface-conforming vertex-color paint; requested by user",
+    "stage": "mesh review; shadow/art/JAR not finalized"
+  },
+  "shadow_half_extent": 9.3,
+  "existing_shadows_regenerated": false,
+  "art": [
+    {
+      "name": "SH_Art_A10.png",
+      "size": [
+        512,
+        270
+      ],
+      "bytes": 83704,
+      "sha256": "5a04ff4ce9983c127d66609b8daa446ac55eec895d6ba759d1c6cf8ec2bf2367",
+      "rgba": true,
+      "transparent_rgb_zero": true
+    },
+    {
+      "name": "SH_Icon_A10.png",
+      "size": [
+        64,
+        64
+      ],
+      "bytes": 3821,
+      "sha256": "d9642e785063f72cb555e01e0142f335c7fca542da5fe3be06babc6bca3f0d64",
+      "rgba": true,
+      "transparent_rgb_zero": true
+    },
+    {
+      "name": "SH_Shadow_A10.png",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 7438,
+      "sha256": "4d48b23e9212082dff6da719c66e7584a7547ad4515427af924e362b592c51ed",
+      "rgba": true,
+      "transparent_rgb_zero": true
+    }
+  ],
+  "pose": {
+    "pass": true,
+    "samples": 33600,
+    "aim_samples": 3624,
+    "max_aim_error_degrees": 7.194e-06,
+    "rows": [
+      {
+        "e": 0.0,
+        "x": -380.0,
+        "y": 0.0,
+        "height": 60.0,
+        "pitch_degrees": 0.0,
+        "bank_degrees": 0.0,
+        "firing": false
+      },
+      {
+        "e": 5.0,
+        "x": -130.0,
+        "y": 0.0,
+        "height": 60.0,
+        "pitch_degrees": 24.775141,
+        "bank_degrees": 0.0,
+        "firing": true
+      },
+      {
+        "e": 6.0,
+        "x": -80.0,
+        "y": 0.0,
+        "height": 51.090123,
+        "pitch_degrees": 32.563381,
+        "bank_degrees": 0.0,
+        "firing": true
+      },
+      {
+        "e": 6.5,
+        "x": -55.0,
+        "y": 0.0,
+        "height": 43.409194,
+        "pitch_degrees": 33.736337,
+        "bank_degrees": 0.0,
+        "firing": true
+      },
+      {
+        "e": 7.6,
+        "x": 0.0,
+        "y": 0.0,
+        "height": 33.0,
+        "pitch_degrees": 0.0,
+        "bank_degrees": 0.0,
+        "firing": false
+      },
+      {
+        "e": 10.0,
+        "x": 120.0,
+        "y": 0.0,
+        "height": 98.496094,
+        "pitch_degrees": -42.291786,
+        "bank_degrees": 58.0,
+        "firing": false
+      },
+      {
+        "e": 13.9,
+        "x": 315.0,
+        "y": 0.0,
+        "height": 239.849968,
+        "pitch_degrees": -3.416329,
+        "bank_degrees": 58.0,
+        "firing": false
+      }
+    ]
+  },
+  "gpu_shader": {
+    "pass": true,
+    "shader_link": true,
+    "gbuffer_attachments": 4,
+    "barrel_velocity_max": 0.070679,
+    "flash_hidden": 0.0,
+    "flash_shown": 1.0,
+    "gpu": "NVIDIA GeForce RTX 2080 SUPER/PCIe/SSE2"
+  },
+  "lua_visual": {
+    "pass": true,
+    "lua": "5.1",
+    "cases": [
+      "record argument mapping",
+      "14-second expiry",
+      "malformed record clear",
+      "nonfinite clear",
+      "negative time clear",
+      "disabled global reset",
+      "old jar without a10Tick"
+    ]
+  },
+  "sim_a10": "13/13",
+  "regression_tests": {
+    "flare": "7/7",
+    "killstreak": "31/31",
+    "pvp_client": "33/33",
+    "pvp": "66/66"
+  },
+  "mirrors": [
+    {
+      "source": "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupport\\42",
+      "destination": "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupport\\Contents\\mods\\SkyhammerAirSupport\\42",
+      "files": 213,
+      "hashes_identical": true
+    },
+    {
+      "source": "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupport\\common",
+      "destination": "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupport\\Contents\\mods\\SkyhammerAirSupport\\common",
+      "files": 3,
+      "hashes_identical": true
+    },
+    {
+      "source": "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupportVanilla\\42",
+      "destination": "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupportVanilla\\Contents\\mods\\SkyhammerAirSupportVanilla\\42",
+      "files": 212,
+      "hashes_identical": true
+    },
+    {
+      "source": "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupportVanilla\\common",
+      "destination": "C:\\Users\\user\\Zomboid\\Workshop\\SkyhammerAirSupportVanilla\\Contents\\mods\\SkyhammerAirSupportVanilla\\common",
+      "files": 3,
+      "hashes_identical": true
+    }
+  ],
+  "vanilla_java_absent": true,
+  "source_changes_during_deployment": [],
+  "gameplay_tested": false,
+  "workshop_uploaded": false
+}

@@ -1,0 +1,4 @@
+=== Main (3813483790)
+- Fixed: after today's Viewpoint update (alpha-0.1.6) the 3D aircraft and the cockpit scenes switched themselves off. They are enabled again for the new Viewpoint. ZombieBuddy will ask once to approve the updated Skyhammer Java.
+--
+- 수정: 오늘 Viewpoint 업데이트(alpha-0.1.6) 이후 3D 항공기와 조종석 연출이 스스로 꺼지던 문제를 고쳤습니다. 새 Viewpoint에서 다시 켜집니다. ZombieBuddy가 바뀐 스카이해머 Java 승인을 한 번 물어봅니다.

@@ -1,0 +1,9 @@
+name=Skyhammer Air Support - ODIN (Add-on)
+id=SkyhammerOdin
+loadModAfter=\SkyhammerAirSupport,\SkyhammerAirSupportVanilla
+poster=poster.png
+icon=poster.png
+modversion=1.0
+versionMin=42.21
+category=features
+description=Add-on for Skyhammer Air Support (either edition). Adds a terminal tab: ODIN, a heavy combat robot that falls from the sky onto the point you mark on the sensor map (or open ground near you), fights for you (stomp, booster punch and plasma cannon on its own; yours to aim: the orbital laser and full power, once a sortie each; orders: follow, move), and rises back into the sky. Drop and cockpit scene in Viewpoint's 3D view. Voices: VOICEVOX:Aoyama Ryusei (pilot), VOICEVOX:Shikoku Metan (Asgard Control). Single player only.

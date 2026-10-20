@@ -1,0 +1,173 @@
+{
+  "ST_Orbit.png": {
+    "size": [
+      1920,
+      1080
+    ],
+    "mode": "RGB",
+    "bytes": 2224604,
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "zero_alpha_rgb_zero": true,
+    "alpha_bbox": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "sha256": "c49dac6d9652a751afb22b44984e0d01f59918af335141560aa4e95b4a227014"
+  },
+  "ST_Orbit_Earth.png": {
+    "size": [
+      2048,
+      1152
+    ],
+    "mode": "RGB",
+    "bytes": 1841505,
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "zero_alpha_rgb_zero": true,
+    "alpha_bbox": [
+      0,
+      0,
+      2048,
+      1152
+    ],
+    "sha256": "8d162c5f16198f1333bd383fb8cf63bb4c53b2a1a9278730ae0ad0c6e2c06c45"
+  },
+  "ST_Orbit_Sat.png": {
+    "size": [
+      1400,
+      700
+    ],
+    "mode": "RGBA",
+    "bytes": 649452,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "zero_alpha_rgb_zero": true,
+    "alpha_bbox": [
+      232,
+      24,
+      1177,
+      673
+    ],
+    "sha256": "57827221f402063a6b5b32255475b53bc7d2ba3d42cfe0f4728c657a390653c4"
+  },
+  "ST_Orbit_Rod.png": {
+    "size": [
+      160,
+      900
+    ],
+    "mode": "RGBA",
+    "bytes": 76184,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "zero_alpha_rgb_zero": true,
+    "alpha_bbox": [
+      25,
+      8,
+      135,
+      892
+    ],
+    "sha256": "a278db6274e241460e746f40b39d278a98c55600ea0a18f4ac652dc12280950a"
+  },
+  "ST_Orbit_Flash.png": {
+    "size": [
+      512,
+      512
+    ],
+    "mode": "RGBA",
+    "bytes": 35860,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "zero_alpha_rgb_zero": true,
+    "alpha_bbox": [
+      83,
+      83,
+      429,
+      429
+    ],
+    "sha256": "9937da4768cdc328b4029660a0cafb9fc7fd71528b8812221a300594f9ab86c3"
+  },
+  "ST_RodHUD.png": {
+    "size": [
+      1920,
+      1080
+    ],
+    "mode": "RGBA",
+    "bytes": 12844,
+    "alpha_min": 0,
+    "alpha_max": 217,
+    "zero_alpha_rgb_zero": true,
+    "alpha_bbox": [
+      35,
+      90,
+      1886,
+      987
+    ],
+    "sha256": "d97cd6b57690a90c69cc2d2b0fe64f8952185fe05772e634e17a3a4f31584468"
+  },
+  "SH_Art_Thor.png": {
+    "size": [
+      512,
+      210
+    ],
+    "mode": "RGBA",
+    "bytes": 81798,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "zero_alpha_rgb_zero": true,
+    "alpha_bbox": [
+      110,
+      5,
+      402,
+      205
+    ],
+    "sha256": "8a9c2b1fdc1dceadf5d6e8e9e7471e688f86a4d44176f455ed2af2fe57dbebf3"
+  },
+  "HUD_empty_center_40_percent": true,
+  "sources": {
+    "ST_Orbit": {
+      "native_size": [
+        1672,
+        941
+      ],
+      "source": "ST_Orbit_native.png"
+    },
+    "ST_Orbit_Earth": {
+      "native_size": [
+        1672,
+        941
+      ],
+      "source": "ST_Orbit_Earth_native.png"
+    },
+    "ST_Orbit_Sat": {
+      "native_size": [
+        1536,
+        1024
+      ],
+      "source": "ST_Orbit_Sat_native.png"
+    },
+    "SH_Art_Thor": {
+      "native_size": [
+        1536,
+        1024
+      ],
+      "source": "SH_Art_Thor_native.png"
+    },
+    "ST_Orbit_Rod": {
+      "native_size": [
+        940,
+        1672
+      ],
+      "source": "ST_Orbit_Rod_native.png"
+    }
+  },
+  "export_notes": [
+    "Generated native images retained without alteration. Exact-size exports resampled with Lanczos.",
+    "Solid satellite alpha >=240 normalized to255; <=3 to0. Generated coverage otherwise retained; RGB zeroed at A0.",
+    "Full ST_Orbit preserved per explicit instruction. Satellite layer and terminal art use background-extracted white/yellow user reference under latest direction, overriding original charcoal design/open-hatch/alternate-camera requirements.",
+    "HUD and flare are original procedural UI graphics, not AI-generated.",
+    "No game code changed. No game runtime test performed."
+  ]
+}

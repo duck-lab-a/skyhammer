@@ -1,0 +1,3 @@
+- Changed: the Wraith Team arrives sooner by default (25 s, was 60 s).
+--
+- 변경: 레이스 팀 기본 도착 시간 단축(25초, 기존 60초).

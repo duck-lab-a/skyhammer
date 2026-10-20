@@ -1,0 +1,55 @@
+[게시 위치]
+바닐라 에디션(3813973682) 토론 탭의 기존 PvP 글을 "편집"해서 제목과 본문을 통째로 바꿉니다.
+https://steamcommunity.com/workshop/filedetails/discussion/3813973682/586187800873969100/
+
+[제목]
+[Experimental] PvP mode: how it works and feedback
+
+[본문]
+[h1]PvP mode is out (experimental)[/h1]
+Turn on [b]Air support PvP[/b] in the sandbox (off by default). It follows the server's PvP setting, non-PvP zones and your own safehouse. The server decides every hit.
+
+[b]How it works[/b]
+[list]
+[*][b]Killstreak by default[/b] (sandbox "PvP: call mode" can switch PvP to the normal cooldowns): every infected you kill yourself is a point. Apache 80, AC-130 150, B-2 300. An enemy player you kill yourself is worth 10 (sandbox). Points belong to your character; a new character starts at 0.
+[*]Combat values are locked to their defaults, so everyone plays by the same numbers.
+[*]The 105mm, the B-2 and the AC-130 gunner's [b]aimed[/b] 40mm hurt players. The AC-130's own automatic 40mm never does.
+[*]The [b]Apache hunts players[/b] after a 2-second warning (sandbox option). Stand still and you go down; running is your chance.
+[*][b]Shoot the Apache down[/b] by firing at its shadow: about two rifle magazines (sandbox "PvP: Apache armour"). The shooter gets 40 points.
+[*]Enemy aircraft inbound and strike warnings. [b]Indoors is always safe.[/b]
+[*][b]Your own side is safe[/b]. Each server picks how sides are recognized: faction, safehouse, either, Extraction Mode hideout, or off (thanks, Ex Ossibus Fumus!).
+[*]Admins can check it alone with "PvP: lone test".
+[/list]
+
+[b]Not in yet (still ideas)[/b]
+[list]
+[*]A laser designator to mark targets.
+[*]A relay for each faction, so cutting the enemy's power shuts down their air support.
+[/list]
+
+[b]Feedback wanted[/b]
+It has only been tested solo so far. Please tell me how it plays on a real server: too strong, too weak, anything odd.
+
+[h1]PvP 모드 출시 (실험적)[/h1]
+샌드박스에서 [b]항공 지원 PvP[/b]를 켜세요(기본 꺼짐). 서버의 PvP 설정, 비PvP 구역, 자기 세이프하우스를 그대로 따릅니다. 피해는 모두 서버가 판정합니다.
+
+[b]작동 방식[/b]
+[list]
+[*][b]기본은 킬스트릭[/b](샌드박스 "PvP: 호출 방식"에서 일반 쿨타임으로 바꿀 수 있음): 직접 잡은 좀비마다 1포인트. 아파치 80, AC-130 150, B-2 300. 적 플레이어를 직접 잡으면 10포인트(샌드박스). 포인트는 캐릭터에 쌓이고, 새 캐릭터는 0부터 시작합니다.
+[*]전투 수치는 기본값으로 고정되어 모두 같은 조건으로 싸웁니다.
+[*]105mm, B-2, AC-130 사수의 [b]직접 조준[/b] 40mm가 플레이어에게 피해를 줍니다. AC-130의 자동 40mm는 플레이어를 맞히지 않습니다.
+[*][b]아파치는 2초 경보 뒤 플레이어를 노립니다[/b](샌드박스 옵션). 가만히 있으면 쓰러지고, 뛰어야 살 수 있습니다.
+[*][b]아파치 격추[/b]: 그림자를 향해 쏘면 됩니다. 소총 탄창 두 개 정도(샌드박스 "PvP: 아파치 내구도"). 쏜 사람은 40포인트를 얻습니다.
+[*]적 기체 접근 알림과 폭격 경보. [b]실내는 언제나 안전합니다.[/b]
+[*][b]같은 편은 안전합니다[/b]. 같은 편 판별은 서버마다 고릅니다: 팩션, 세이프하우스, 둘 중 하나, Extraction Mode 은신처, 끄기(Ex Ossibus Fumus 님, 고마워요!).
+[*]관리자는 "PvP: 혼자 테스트"로 혼자 확인할 수 있습니다.
+[/list]
+
+[b]아직 없는 것 (아이디어 단계)[/b]
+[list]
+[*]표적을 찍는 레이저 지시기.
+[*]팩션마다 중계소를 두어, 상대의 전기를 끊으면 그쪽 항공 지원이 끊기게 하기.
+[/list]
+
+[b]의견 부탁드립니다[/b]
+아직 혼자서만 테스트했습니다. 실제 서버에서 어땠는지 알려 주세요: 너무 강하다, 약하다, 이상한 점 무엇이든.

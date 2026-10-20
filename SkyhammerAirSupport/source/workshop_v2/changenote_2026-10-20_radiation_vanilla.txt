@@ -1,0 +1,19 @@
+New: nuclear fallout.
+- The tactical nuke now leaves a radioactive zone around ground zero. It fades over 72 game hours by default and shows on the sensor map. Walk in and a warning sign shows on screen and Aegis warns you on the radio.
+- The longer you stay, the bigger your dose. You get sick through the game's own sick moodle, and at the worst stage you keep losing health even after you leave. Sandbox option "Fallout can kill" (on by default).
+- Protection: hazmat suit 95%, gas mask or NBC mask with a filter 70%, improvised gas mask or builder's respirator 40%. Worn together, up to 98%. A roof halves it.
+- New item: Prussian Blue capsules (pharmacies, hospitals, labs, military medical storage). For 8 hours your dose clears 3x faster outside the zone. It is not an instant cure.
+- NPCs get exposed too: Bandits, A-Life people and Companion Dogs' companions. Zombies are not affected.
+- Works in multiplayer. Fallout hurts everyone standing in it, PvP or not.
+- Fallout can be turned off or tuned in the sandbox.
+Fixed: the sandbox option "Strikes damage vehicles" showed its raw name. It now shows its name and description in English, Korean and Chinese.
+--
+추가: 핵 낙진.
+- 이제 전술핵이 폭심 주변에 방사능 구역을 남깁니다. 기본 72게임시간에 걸쳐 사라지고, 센서 지도에 표시됩니다. 들어가면 화면에 경고 마크가 뜨고 이지스가 무전으로 경고합니다.
+- 오래 있을수록 피폭이 쌓입니다. 게임의 구역질 무들로 병이 들고, 마지막 단계에서는 구역을 나와도 체력이 계속 깎입니다. 샌드박스 옵션 "낙진으로 사망 가능"(기본 켜짐).
+- 방호: 방호복 95%, 필터 낀 방독면·NBC 마스크 70%, 임시 방독면·방진 마스크 40%. 겹쳐 입으면 최대 98%, 지붕 아래에서는 절반입니다.
+- 새 아이템: 프러시안 블루 캡슐(약국, 병원, 연구소, 군 의무 보관함). 8시간 동안 구역 밖에서 피폭이 3배 빨리 빠집니다. 바로 낫게 하는 약은 아닙니다.
+- NPC도 피폭됩니다: 밴딧, A-Life NPC, 컴패니언 독의 동료 개. 좀비는 영향을 받지 않습니다.
+- 멀티플레이에서도 동작합니다. 낙진은 PvP와 상관없이 그 안에 있는 모두에게 해롭습니다.
+- 낙진은 샌드박스에서 끄거나 조절할 수 있습니다.
+수정: 샌드박스 옵션 "공습이 차량을 파손"이 이름 대신 내부 키로 보이던 문제를 고쳤습니다. 이제 영어·한국어·중국어로 제대로 나옵니다.
