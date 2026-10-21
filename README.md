@@ -1,6 +1,8 @@
-# Skyhammer Air Support (Project Zomboid B42)
+<p align="center"><img src=".github/skyhammer.jpg" alt="Skyhammer" width="560"></p>
 
-Sources of the Skyhammer mod series for Project Zomboid Build 42.21.
+# SKYHAMMER AIR SUPPORT · Project Zomboid Mod
+
+Sources of the Skyhammer mod series for Project Zomboid Build 42.21: call an Apache, an A-10, an AC-130 and a B-2 over the radio.
 
 | folder | mod | Workshop |
 |---|---|---|
