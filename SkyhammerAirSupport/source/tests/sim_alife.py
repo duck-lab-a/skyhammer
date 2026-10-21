@@ -96,10 +96,34 @@ def alife_errors_mean_hit():
     eq(L.eval("S.IsFriendlyNPC(body({ ProjectALifeUID = 'a1' }))"), False, "an A-Life error never stops a strike")
 
 
-def block(path):
+@test
+def stay_with_me_companion_spared():
+    # (2026-10-20) Stay With Me's companion: an infected body marked "NotAloneBody" (variable), or
+    # notAloneBody in its mod data (the server's mark); a plain infected is still hit
+    L = world()
+    L.execute("""function swm(var, md)
+        return { getModData = function() return md or {} end, hasModData = function() return md ~= nil end,
+                 getVariableString = function() return '' end,
+                 getVariableBoolean = function(_, k) return k == 'NotAloneBody' and var == true end } end""")
+    eq(L.eval("S.IsFriendlyNPC(swm(true))"), True, "marked by the variable: spared")
+    eq(L.eval("S.IsFriendlyNPC(swm(false, { notAloneBody = true }))"), True, "marked in mod data: spared")
+    eq(L.eval("S.IsFriendlyNPC(swm(false, {}))"), False, "a plain infected: hit")
+    eq(L.eval("S.IsFriendlyNPC(swm(false))"), False, "no mod data at all: hit")
+
+
+def block(path, name="alifeFriendly", args="z, player"):
     s = io.open(path, encoding="utf-8").read()
-    m = re.search(r"local function alifeFriendly\(z, player\).*?\nend\n", s, re.S)
+    m = re.search(r"local function " + name + r"\(" + args + r"\).*?\nend\n", s, re.S)
     return s, (m.group(0) if m else None)
+
+
+@test
+def server_same_stay_with_me_rule():
+    _, a = block(os.path.join(LUA, "client", "Skyhammer_Ops.lua"), "stayWithMe", "z")
+    _, b = block(os.path.join(LUA, "server", "Skyhammer_Server.lua"), "stayWithMe", "z")
+    eq(a is not None and a == b, True, "same stayWithMe in Ops and Server")
+    srv = io.open(os.path.join(LUA, "server", "Skyhammer_Server.lua"), encoding="utf-8").read()
+    eq("or stayWithMe(z) or alifeFriendly(z, player)" in srv, True, "the server's friendly() asks it")
 
 
 @test

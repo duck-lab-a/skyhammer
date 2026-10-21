@@ -1,0 +1,7 @@
+Sound fixes.
+Fixed: the Apache's and the AC-130's shadows (and the Apache model in the normal view) could spin round once on the spot while circling.
+Fixed: in the terminal, pressing Up on the first weapon now goes round to the last one.
+--
+사운드 수정.
+수정: 아파치와 AC-130의 그림자(그리고 기본 시점의 아파치 모델)가 선회 중 제자리에서 한 바퀴 돌 수 있던 문제를 고쳤습니다.
+수정: 단말기의 첫 번째 무기에서 ↑키를 누르면 이제 마지막 무기로 넘어갑니다.

@@ -268,7 +268,7 @@ local function startNext()
     local seconds = l and l[3] or 3
     current = { id = row.id, speaker = l and l[1] or "HAVEN", text = getText("IGUI_SH_L_" .. row.id),
         startMs = S.now(), endMs = S.now() + math.max(2.2, seconds + 0.35) * 1000, prompt = l ~= nil and l[4] == true,
-        priority = row.priority, urgent = row.urgent }
+        priority = row.priority, urgent = row.urgent, ahead = row.ahead }
     -- (a line that stood in line a long time is worth knowing about when the radio feels late;
     -- the unlock quest's exchanges, Q*, queue up their lines one after another by design)
     if row.at and S.now() - row.at > 8000 and not string.find(row.id, "^Q%u") then
@@ -297,12 +297,17 @@ end
 --   opts.craft     the line belongs to that aircraft's current sortie and is dropped if it is
 --                  still waiting when the sortie ends (S.DropRadio)
 --   opts.stale     ms: still waiting that long, it is dropped instead of heard late (as STALE)
+--   opts.ahead     (2026-10-21) an ordinary line that is about something about to be seen (the
+--                  AC-130's angel flares): it goes ahead of the ordinary lines waiting and cuts
+--                  off an ordinary line on the air, but never a priority line or a mark prompt,
+--                  and drops nothing
 -- A line already waiting is not queued twice.
 function S.Say(id, onShow, opts)
     if not LINES[id] then S.log("no line " .. tostring(id)); return end
     for _, row in ipairs(queue) do if row.id == id then return end end
     local urgent = opts and opts.urgent or false
     local row = { id = id, onShow = onShow, priority = urgent or (opts and opts.priority) or false, urgent = urgent, at = S.now() }
+    row.ahead = not row.priority and opts and opts.ahead or false
     if opts and opts.craft then row.craft, row.sortie = opts.craft, S.Sortie(opts.craft) end
     if opts and opts.stale then row.stale = opts.stale end
     if row.priority and not LINES[id][4] then
@@ -318,12 +323,17 @@ function S.Say(id, onShow, opts)
     elseif row.priority then
         at = 1
         while queue[at] and queue[at].priority do at = at + 1 end
+    elseif row.ahead then
+        at = 1
+        while queue[at] and (queue[at].priority or queue[at].ahead) do at = at + 1 end
     end
     table.insert(queue, at, row)
     if not current then startNext()
     elseif row.priority and (current.prompt or not current.priority or (row.urgent and not current.urgent)) then
         -- (an urgent line cuts a priority one on the air too; an urgent line on the air is not cut,
         -- so the urgent lines of one exchange keep their order)
+        stopVoice(); startNext()
+    elseif row.ahead and at == 1 and not (current.priority or current.prompt or current.ahead) then
         stopVoice(); startNext()
     end
 end

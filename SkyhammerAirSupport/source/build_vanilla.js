@@ -102,6 +102,32 @@ fs.writeFileSync(path.join(DST, 'common', 'INSTALL.txt'), [
   '',
 ].join('\r\n'), 'utf8');
 
+// radio lines that go with the Java part's visuals only (2026-10-21, the user: the angel flares'
+// call has no place in this edition, no flares are seen here): no voice file, no sound, no line,
+// no subtitle
+const VIEWPOINT_ONLY_LINES = ['GunAngelFlares'];
+for (const id of VIEWPOINT_ONLY_LINES) {
+  const media = path.join(DST, '42', 'media');
+  fs.rmSync(path.join(media, 'sound', 'skyhammer', 'shv_' + id.toLowerCase() + '.wav'), { force: true });
+  const edit = (file, fn) => {
+    const before = fs.readFileSync(file, 'utf8'), after = fn(before);
+    if (after === before) throw new Error(`${file}: no ${id} to leave out; update build_vanilla.js`);
+    fs.writeFileSync(file, after);
+  };
+  edit(path.join(media, 'scripts', 'Skyhammer_Sounds.txt'),
+    s => s.replace(new RegExp(`    sound SHV_${id}\\r?\\n    \\{[\\s\\S]*?\\r?\\n    \\}\\r?\\n`), ''));
+  edit(path.join(media, 'lua', 'client', 'Skyhammer_Lines.lua'),
+    s => s.replace(new RegExp(`    ${id} = \\{[^\\n]*\\n`), ''));
+  for (const lang of fs.readdirSync(path.join(media, 'lua', 'shared', 'Translate'))) {
+    edit(path.join(media, 'lua', 'shared', 'Translate', lang, 'IG_UI.json'), s => {
+      const t = JSON.parse(s);
+      if (!('IGUI_SH_L_' + id in t)) return s;
+      delete t['IGUI_SH_L_' + id];
+      return JSON.stringify(t, null, 2) + '\n';
+    });
+  }
+}
+
 const count = d => fs.readdirSync(d, { withFileTypes: true }).reduce((n, e) => n + (e.isDirectory() ? count(path.join(d, e.name)) : 1), 0);
 console.log('built', DST, '-', count(DST), 'files');
 

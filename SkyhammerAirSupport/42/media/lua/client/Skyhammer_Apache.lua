@@ -395,7 +395,7 @@ table.insert(S.Hooks.released, function(craft) if craft == "apache" then resetAp
 -- APACHE_LEAD seconds before it reports on station) until it has flown off after leaving.
 S.APACHE_LEAD = 12
 local ROTOR_TAIL_MS = 10000
-local rotorTick = K.engineLoop("SH_Rotor_Loop", "rotorVolume")   -- its own volume, not the AC-130's mute
+local rotorTick = K.engineLoop("SH_Rotor_Loop", "rotorVolume")   -- its own volume, not the AC-130's
 local rotorUntil = 0
 table.insert(S.Hooks.tick, function(combat, dtMs)
     local ph = S.Phase("apache")

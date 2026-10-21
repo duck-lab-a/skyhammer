@@ -61,6 +61,7 @@ end
 -- the infected of far chunks that have loaded; chunks loaded and waiting for their sweep
 local lists, farWork, sweeps, swept = {}, {}, {}, {}
 local ticking, listening = false, false
+local empJob = nil           -- the EMP's walk still to go (emp, empStep)
 local onTick, onSquareLoaded
 -- (review 2026-10-18) the tiles the far chunks cover, not saved: the game loads squares by the
 -- thousand as the player moves, and one outside it goes no further than its x and y
@@ -87,7 +88,7 @@ local function listen(on)
     elseif not on and listening then Events.LoadGridsquare.Remove(onSquareLoaded); listening = false end
 end
 local function busy()
-    return pending() or #queue() > 0 or #farWork > 0 or #sweeps > 0
+    return pending() or #queue() > 0 or #farWork > 0 or #sweeps > 0 or empJob ~= nil
 end
 
 -- ---------------------------------------------------------------- the infected
@@ -681,6 +682,10 @@ end
 -- (the "nukeEmp" option, single player) the loaded generators within the noise radius are
 -- switched off and the running engines stop. Only the ground in memory is searched (the chunk
 -- map round the player), the blast's floor and the two above and below it.
+-- (2026-10-20: the walk took 79 ms of the blast's frame in the user's log; it now goes a few
+-- columns of squares at a time, EMP_MS a frame, from the blast's tick on: done within a few
+-- frames, under the flash)
+local EMP_MS = 3
 local function emp(x, y, z)
     if not S.opt("nukeEmp") or K.online() then return end
     local cell, p = getCell(), getSpecificPlayer(0)
@@ -690,39 +695,56 @@ local function emp(x, y, z)
     local half = ((ok and tonumber(w)) or 128) / 2
     local x0, x1 = math.max(x - r, p:getX() - half), math.min(x + r, p:getX() + half)
     local y0, y1 = math.max(y - r, p:getY() - half), math.min(y + r, p:getY() + half)
-    local gens, cars = 0, 0
     -- (2026-10-18, an error in game: in B42 cell:getVehicles() is a java.util.Set, with no get(i).
     -- The cars are found on the squares walked for the generators instead, each one once.)
-    local seen = {}
-    for sx = math.floor(x0), math.floor(x1) do
-        for sy = math.floor(y0), math.floor(y1) do
-            if (sx + 0.5 - x) ^ 2 + (sy + 0.5 - y) ^ 2 <= r * r then
-                for fz = z - 2, z + 2 do
+    empJob = { x = x, y = y, z = z, r = r, sx = math.floor(x0), x1 = math.floor(x1),
+        y0 = math.floor(y0), y1 = math.floor(y1), gens = 0, cars = 0, seen = {} }
+    start()
+end
+local function empStep()
+    local j = empJob
+    if not j then return end
+    local cell = getCell()
+    if not cell then empJob = nil; return end
+    local t0 = getTimestampMs()
+    while j.sx <= j.x1 do
+        local sx = j.sx
+        for sy = j.y0, j.y1 do
+            if (sx + 0.5 - j.x) ^ 2 + (sy + 0.5 - j.y) ^ 2 <= j.r * j.r then
+                for fz = j.z - 2, j.z + 2 do
                     local sq = cell:getGridSquare(sx, sy, fz)
                     local g = sq and sq:getGenerator()
                     if g and g:isActivated() then
                         g:setActivated(false)
-                        gens = gens + 1
+                        j.gens = j.gens + 1
                     end
                     local v = sq and sq:getVehicleContainer()
-                    if v and not seen[v] then
-                        seen[v] = true
+                    if v and not j.seen[v] then
+                        j.seen[v] = true
                         if v:isEngineRunning() then
                             v:shutOff()
-                            cars = cars + 1
+                            j.cars = j.cars + 1
                         end
                     end
                 end
             end
         end
+        j.sx = sx + 1
+        if getTimestampMs() - t0 >= EMP_MS then return end
     end
-    S.log(string.format("nuke: emp, %d generators and %d engines off", gens, cars))
+    empJob = nil
+    S.log(string.format("nuke: emp, %d generators and %d engines off", j.gens, j.cars))
 end
 
 -- The bomb goes off (on the combat clock, from the tick): the 3D blast, the noise, the player,
 -- the scorched ground, the infected (here, or the server online), the EMP; the B-2 goes home if
 -- it is still the sortie that dropped it.
+-- (2026-10-20, a 126 ms frame at the blast in the user's log: the time each part takes is logged
+-- once per blast, "nuke: blast frame ms ...", to see which one it is)
 function U.Detonate(rec)
+    local t0 = getTimestampMs()
+    local ms = {}
+    local function lap(name) local t = getTimestampMs(); ms[#ms + 1] = name .. " " .. (t - t0); t0 = t end
     local d = S.Store()
     if d.nuke == rec then d.nuke = nil end
     local x, y, z = rec.x, rec.y, math.floor(tonumber(rec.z) or 0)
@@ -732,19 +754,24 @@ function U.Detonate(rec)
     sirenStop()
     local okFx, errFx = pcall(U.PlayFx, x, y, z, d.nukeVisualRun.startedMs)
     if not okFx then S.log("nuke: presentation failed: " .. tostring(errFx)) end
+    lap("fx")
     K.attract(x, y, z, U.ZONE.noise)
     hurtMe(x, y)
+    lap("noise")
     K.scorch(x, y, z, 25, 50)
+    lap("scorch")
     -- (and, with the same option, the fireball's buildings levelled: Skyhammer_Level)
     if SkyhammerLevel then
         local okL, errL = pcall(SkyhammerLevel.Add, x, y, z, U.ZONE.fireball)
         if not okL then S.log("nuke: levelling failed: " .. tostring(errL)) end
     end
+    lap("level")
     -- the fallout round ground zero (Skyhammer_Radiation; online the server makes it)
     if SkyhammerRadiation and SkyhammerRadiation.Detonated then
         local okR, errR = pcall(SkyhammerRadiation.Detonated, x, y, z, U.ZONE.fireball)
         if not okR then S.log("nuke: fallout failed: " .. tostring(errR)) end
     end
+    lap("fallout")
     if K.online() then
         -- (the server wrecks the fireball's vehicles too, from this same command)
         K.send("nuke", { x = x, y = y, z = z })
@@ -754,17 +781,23 @@ function U.Detonate(rec)
             local okV, errV = pcall(SkyhammerVehicleDamage.Around, x, y, z, "nuke")
             if not okV then S.log("nuke: vehicles failed: " .. tostring(errV)) end
         end
+        lap("vehicles")
         local q = { x = x, y = y, z = z, done = -1 }
         local qs = queue()
         qs[#qs + 1] = q
         S.log("nuke: " .. #build(q).items .. " infected in reach")
+        lap("infected")
         markFar(x, y)
         start()
+        lap("far")
     end
     local ok, err = pcall(emp, x, y, z)
     if not ok then S.log("nuke: emp failed: " .. tostring(err)) end
+    lap("emp")
     if S.Sortie("b2") == rec.sortie then S.Release("b2") end
     S.Say("NukeDone", nil, { craft = "b2" })
+    lap("radio")
+    S.log("nuke: blast frame ms " .. table.concat(ms, ", "))
 end
 
 onTick = function()
@@ -777,6 +810,10 @@ onTick = function()
         if S.Store().nuke == rec then S.Store().nuke = nil end
     end
     if #sweeps > 0 then sweepFar(S.now()) end
+    if empJob then
+        local okE, errE = pcall(empStep)
+        if not okE then empJob = nil; S.log("nuke: emp failed: " .. tostring(errE)) end
+    end
     work(U.perTick)
     if not busy() then stop() end
 end

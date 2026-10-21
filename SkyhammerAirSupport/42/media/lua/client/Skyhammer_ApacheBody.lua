@@ -91,7 +91,16 @@ function S.ApacheBodySync(p, st, z)
         if not body then body = spawn(st.x, st.y, z) end
         if not body then return end
         body:setX(st.x); body:setY(st.y); body:setZ(z)
-        body:setForwardDirection(math.cos(st.h), math.sin(st.h))
+        -- (2026-10-21, the user: in the plain view it sometimes spun round on the spot)
+        -- setForwardDirection moves only where the animal means to face; its animation player
+        -- then turns the model after it on its own (an animal's turning, root motion and all).
+        -- setTargetAndCurrentDirection sets that player's target and current angle too
+        -- (IsoGameCharacter -> AnimationPlayer), so the model faces the heading at once, nothing
+        -- left to turn through.
+        local fx, fy = math.cos(st.h), math.sin(st.h)
+        if not pcall(function() body:setTargetAndCurrentDirection(fx, fy) end) then
+            body:setForwardDirection(fx, fy)
+        end
         body:setVariable("shApache", true)
         body:getBehavior():setBlockMovement(true)
         setAlpha(body, st.a)

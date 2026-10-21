@@ -93,8 +93,8 @@ local OPTIONS = {
     { "keyFeed",      "OptKeyFeed",  "key", Keyboard.KEY_F9 },
     { "voiceVolume",  "OptVoice",    0, 1,    0.05, 0.8 },
     { "subtitles",    "OptSubtitles", true },
+    -- (2026-10-20: the "mute the AC-130 engines" tick box went; this slider at 0 is the same)
     { "engineVolume", "OptEngine",   0, 1,    0.05, 0.6 },
-    { "engineMute",   "OptEngineMute", false },
     { "rotorVolume",  "OptRotor",    0, 1,    0.05, 0.6 },
     { "sensorFeed",   "OptFeed",     true },
     { "questTracker", "OptTracker",  false },

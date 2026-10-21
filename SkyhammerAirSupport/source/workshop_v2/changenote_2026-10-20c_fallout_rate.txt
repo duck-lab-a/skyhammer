@@ -1,0 +1,7 @@
+Sorry for the many updates today.
+Fallout dose now goes down at a steady rate once you are out of the zone: 2.5 every game hour, 7.5 while a Prussian Blue capsule is working. A small dose no longer lingers for days (5 used to take about four days to reach 1). A heavy dose is as dangerous as before.
+Fixed: online, the fallout sign could stay on screen for good, even after the dose was gone.
+--
+오늘 업데이트가 잦아서 죄송합니다.
+낙진 피폭이 이제 구역을 벗어나면 일정한 속도로 줄어듭니다. 게임 1시간마다 2.5씩, 프러시안 블루 캡슐이 듣는 동안은 7.5씩 줄어듭니다. 적은 피폭이 며칠씩 남지 않습니다(전에는 5에서 1까지 약 4일). 높은 피폭의 위험도는 전과 같습니다.
+수정: 멀티플레이에서 피폭이 다 빠진 뒤에도 낙진 표시가 화면에 계속 남을 수 있던 문제를 고쳤습니다.

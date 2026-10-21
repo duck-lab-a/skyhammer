@@ -1,0 +1,82 @@
+{
+  "reload_105.wav": {
+    "seconds": 4.4,
+    "rate": 44100,
+    "channels": 1,
+    "PCM_bits": 16,
+    "peak_dBFS": -0.7,
+    "oversampled_peak_dBFS": -0.42,
+    "active_RMS_dBFS": -17.15,
+    "active_RMS_definition": "power average of 10 ms RMS blocks above -40 dBFS",
+    "event_seconds": [
+      0.34,
+      0.65,
+      1.2,
+      1.51,
+      1.89,
+      2.38,
+      3.19
+    ],
+    "event_max_20ms_dBFS": [
+      -8.1,
+      -7.87,
+      -22.13,
+      -15.33,
+      -8.04,
+      -10.34,
+      -7.99
+    ],
+    "spectral_energy_percent": {
+      "0-250": 11.66,
+      "250-1000": 7.84,
+      "1000-3000": 29.03,
+      "3000-8000": 50.14,
+      "8000-22051": 1.32
+    },
+    "clipped_samples": 0,
+    "DC": -9.942118641372268e-05,
+    "limiter_max_gain_reduction_dB": -5.46,
+    "sha256": "c8a8eca95ab889477b7745203490c2ef2f519ee717e0c142dec1284e02604809"
+  },
+  "reload_40.wav": {
+    "seconds": 2.4,
+    "rate": 44100,
+    "channels": 1,
+    "PCM_bits": 16,
+    "peak_dBFS": -0.7,
+    "oversampled_peak_dBFS": -0.44,
+    "active_RMS_dBFS": -16.7,
+    "active_RMS_definition": "power average of 10 ms RMS blocks above -40 dBFS",
+    "event_seconds": [
+      0.14,
+      0.75,
+      1.08,
+      1.21,
+      1.35,
+      1.45,
+      1.59,
+      1.82
+    ],
+    "event_max_20ms_dBFS": [
+      -8.74,
+      -8.12,
+      -13.4,
+      -12.26,
+      -15.24,
+      -10.38,
+      -12.26,
+      -8.55
+    ],
+    "spectral_energy_percent": {
+      "0-250": 11.9,
+      "250-1000": 11.99,
+      "1000-3000": 37.94,
+      "3000-8000": 35.1,
+      "8000-22051": 3.06
+    },
+    "clipped_samples": 0,
+    "DC": -9.70276755450444e-05,
+    "limiter_max_gain_reduction_dB": -5.5,
+    "sha256": "e8c360df1ec6f936a8a9316f45971fdfd2db416240f41004902af6777bfaab19"
+  }
+}

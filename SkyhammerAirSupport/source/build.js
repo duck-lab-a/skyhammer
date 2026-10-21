@@ -864,6 +864,16 @@ function writeEffectWav(target, file, samples) {
   } else writeWav(target, SR, samples);
 }
 function effect(sound, file, samples, clip) { EFFECTS.push({ sound, file, clip }); writeEffectWav(path.join(SOUND_DIR, file), file, samples); }
+// a finished WAV made by its own script in source/ (mono 16-bit at SR), copied as it is
+function fixedEffect(sound, file, src, clip) {
+  const b = fs.readFileSync(path.join(__dirname, src)); // fail loudly if it is missing
+  if (b.toString('ascii', 0, 4) !== 'RIFF' || b.toString('ascii', 8, 12) !== 'WAVE'
+      || b.readUInt16LE(20) !== 1 || b.readUInt16LE(22) !== 1
+      || b.readUInt32LE(24) !== SR || b.readUInt16LE(34) !== 16)
+    throw new Error('Invalid fixed effect: ' + src);
+  EFFECTS.push({ sound, file, clip });
+  fs.copyFileSync(path.join(__dirname, src), path.join(SOUND_DIR, file));
+}
 
 function buildEffects() {
   // 40mm report: the Bofors firing far overhead; a cannon shot pitched down a little, dulled
@@ -926,6 +936,12 @@ function buildEffects() {
   [0, 1].forEach(i => effect('SH_GAU8', `sh_gau8_${i + 1}.wav`, gau8(1.9, 5100 + i * 7), { distanceMin: 160, distanceMax: 1000, volume: 1.6 }));
   effect('SH_A10_Flyby', 'sh_a10_flyby.wav', a10Flyby(6, 5200), { distanceMin: 60, distanceMax: 700 });
   buildNapalmNukeEffects();
+  // (2026-10-21, the user) the AC-130 crew reloading the 105: the first 1.0 s of the synthesized
+  // take (synth_reload/make_reload_105.py, then make_reload_radio.py "first1s": cut and quieter;
+  // played to the player alone, not in 3D: Skyhammer_Ops reloadSound), and the 105 round coming in
+  // (incoming_105/make_incoming_105.py, INCOMING_SECONDS long, ending at the impact)
+  fixedEffect('SH_Reload_105', 'sh_reload_105.wav', 'synth_reload/sh_reload_105.wav', { distanceMin: 40, distanceMax: 80 });
+  fixedEffect('SH_Incoming_105', 'sh_incoming_105.wav', 'incoming_105/sh_incoming_105.wav', { distanceMin: 8, distanceMax: 200 });
 }
 
 // ---------------------------------------------------------------- napalm and the tactical nuke

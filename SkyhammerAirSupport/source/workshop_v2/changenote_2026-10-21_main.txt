@@ -1,0 +1,9 @@
+New: AC-130 angel flares. Once per call, a while after the gunship starts circling, it fires a wide "angel wings" spread of flares, and the crew tells you over the radio just before. Call the gunship again to see them again. (3D aircraft on, single player.)
+Sound fixes.
+Fixed: the Apache's and the AC-130's shadows (and the Apache model in the normal view) could spin round once on the spot while circling.
+Fixed: in the terminal, pressing Up on the first weapon now goes round to the last one.
+--
+추가: AC-130 엔젤 플레어. 호출할 때마다 한 번, 건쉽이 선회를 시작하고 얼마 뒤 "천사 날개" 모양으로 플레어를 넓게 뿌리며, 직전에 승무원이 무전으로 알려줍니다. 다시 보려면 건쉽을 다시 호출하세요. (3D 기체 켜짐, 싱글플레이)
+사운드 수정.
+수정: 아파치와 AC-130의 그림자(그리고 기본 시점의 아파치 모델)가 선회 중 제자리에서 한 바퀴 돌 수 있던 문제를 고쳤습니다.
+수정: 단말기의 첫 번째 무기에서 ↑키를 누르면 이제 마지막 무기로 넘어갑니다.

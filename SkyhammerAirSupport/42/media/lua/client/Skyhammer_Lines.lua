@@ -71,6 +71,7 @@ Skyhammer_Lines = {
     GunKeepScanning = { "GUNS", "SHV_GunKeepScanning", 2.75 },
     GunQuietSector = { "GUNS", "SHV_GunQuietSector", 2.91 },
     GunHoldOverwatch = { "BANSHEE", "SHV_GunHoldOverwatch", 2.89 },
+    GunAngelFlares = { "BANSHEE", "SHV_GunAngelFlares", 3.01 },
     GunOneMinute = { "BANSHEE", "SHV_GunOneMinute", 3.85 },
     GunBreakOrbit = { "BANSHEE", "SHV_GunBreakOrbit", 4.17 },
     GunGoodKill = { "TV", "SHV_GunGoodKill", 1.75 },

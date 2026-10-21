@@ -167,6 +167,25 @@ onSquareLoaded = function(sq)
     end
 end
 
+-- a job's cursor: the chunk (kx, ky, 8x8 columns) and the column in it (i, 0..63). A job saved
+-- before 2026-10-20 has a row cursor (cx, cy): it goes on from the chunk row holding that row (the
+-- few rows of it already done are done again, which changes nothing).
+local CHUNK = 8
+local function cursorOf(j)
+    if j.kx then return end
+    j.kx = math.floor((j.x - j.r) / CHUNK)
+    j.ky = math.floor((tonumber(j.cy) or (j.y - j.r)) / CHUNK)
+    j.i = 0
+    j.cx, j.cy = nil, nil
+end
+-- whether a chunk has any column in the circle
+local function chunkMeets(j)
+    local x0, y0 = j.kx * CHUNK, j.ky * CHUNK
+    local nx = math.max(x0, math.min(j.x, x0 + CHUNK))
+    local ny = math.max(y0, math.min(j.y, y0 + CHUNK))
+    return (nx - j.x) ^ 2 + (ny - j.y) ^ 2 <= j.r * j.r
+end
+
 onTick = function()
     local l = data()
     local burnt = getSprite(LV.burnt)
@@ -181,13 +200,18 @@ onTick = function()
             l.pendingN = math.max(0, l.pendingN - 1)
         end
     end
-    -- the blasts' circles, column by column
+    -- the blasts' circles, chunk by chunk (2026-10-20: was row by row, which changed every 8x8
+    -- chunk over some ten frames, one row at a time; now a chunk's columns go together, so the
+    -- game and Viewpoint have each chunk to redo once or twice instead of on every row)
     local steps = 0
     while #l.jobs > 0 and not busy() and steps < LV.steps do
         local j = l.jobs[1]
+        cursorOf(j)
         steps = steps + 1
-        local x, y = j.cx, j.cy
-        if (x + 0.5 - j.x) ^ 2 + (y + 0.5 - j.y) ^ 2 <= j.r * j.r then
+        local x, y = j.kx * CHUNK + j.i % CHUNK, j.ky * CHUNK + math.floor(j.i / CHUNK)
+        if j.i == 0 and not chunkMeets(j) then
+            j.i = CHUNK * CHUNK         -- (a chunk wholly outside the circle: one step)
+        elseif (x + 0.5 - j.x) ^ 2 + (y + 0.5 - j.y) ^ 2 <= j.r * j.r then
             if not levelColumn(x, y, j.z, burnt) then
                 local key = x .. "," .. y
                 if not l.pending[key] then
@@ -196,16 +220,22 @@ onTick = function()
                     boxAdd(x, y)
                 end
             end
-        end
-        -- the cursor: along the row, then the next row
-        if x < math.floor(j.x + j.r) then j.cx = x + 1
+            j.i = j.i + 1
         else
-            j.cx = math.floor(j.x - j.r)
-            j.cy = y + 1
-            if j.cy > math.floor(j.y + j.r) then
-                table.remove(l.jobs, 1)
-                S.log(string.format("level: %d,%d done here; %d columns wait to be loaded",
-                    math.floor(j.x), math.floor(j.y), l.pendingN))
+            j.i = j.i + 1
+        end
+        -- the cursor: through the chunk, then the next chunk along, then the next chunk row
+        if j.i >= CHUNK * CHUNK then
+            j.i = 0
+            if j.kx < math.floor((j.x + j.r) / CHUNK) then j.kx = j.kx + 1
+            else
+                j.kx = math.floor((j.x - j.r) / CHUNK)
+                j.ky = j.ky + 1
+                if j.ky > math.floor((j.y + j.r) / CHUNK) then
+                    table.remove(l.jobs, 1)
+                    S.log(string.format("level: %d,%d done here; %d columns wait to be loaded",
+                        math.floor(j.x), math.floor(j.y), l.pendingN))
+                end
             end
         end
     end
@@ -237,7 +267,7 @@ function LV.Add(x, y, z, r)
     if S.opt("craters") ~= true or (S.Online and S.Online()) then return false end
     z = math.floor(tonumber(z) or 0)
     local l = data()
-    l.jobs[#l.jobs + 1] = { x = x, y = y, z = z, r = r, cx = math.floor(x - r), cy = math.floor(y - r) }
+    l.jobs[#l.jobs + 1] = { x = x, y = y, z = z, r = r, kx = math.floor((x - r) / CHUNK), ky = math.floor((y - r) / CHUNK), i = 0 }
     S.log(string.format("level: %d tiles round %d,%d,%d", r, math.floor(x), math.floor(y), z))
     start()
     return true

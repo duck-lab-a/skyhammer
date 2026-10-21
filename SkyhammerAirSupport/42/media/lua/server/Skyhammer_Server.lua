@@ -96,14 +96,25 @@ local function alifeFriendly(z, player)
     end)
     return ok and f == true
 end
+-- Stay With Me (Workshop 3800989007, id Bridge; 2026-10-20): the companion's body is an infected
+-- body the mod marks "NotAloneBody" (an animation variable, and its mod data's notAloneBody here
+-- on the server: BridgeServer). Anyone's companion is spared.
+local function stayWithMe(z)
+    local ok, f = pcall(function()
+        if z:getVariableBoolean("NotAloneBody") == true then return true end
+        return z:hasModData() and z:getModData().notAloneBody == true
+    end)
+    return ok and f == true
+end
 -- friendly NPCs (a Bandits companion or friendly clan: brain.hostile == false, the Wraith Team
--- included; an A-Life person friendly to `player`, the one who called the strike) are never hit
+-- included; an A-Life person friendly to `player`, the one who called the strike; a Stay With Me
+-- companion) are never hit
 local function friendly(z, player)
     local ok, f = pcall(function()
         local brain = z:getModData().brain
         return type(brain) == "table" and brain.hostile == false
     end)
-    return (ok and f == true) or alifeFriendly(z, player)
+    return (ok and f == true) or stayWithMe(z) or alifeFriendly(z, player)
 end
 
 -- Diagnosis (two reports, 2026-10-08: online, once a second player joined, air support stopped

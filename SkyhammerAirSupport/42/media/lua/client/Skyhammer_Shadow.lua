@@ -62,6 +62,15 @@ local function daylight()
     return ok and d or 1
 end
 
+-- the turn from heading b to heading a, -pi..pi. Not with %: the game's Lua (Kahlua) keeps the
+-- dividend's sign (a - trunc(a / b) * b), so a heading wrapping past 2 pi (the orbits, each lap)
+-- came out as a full turn and the shadow spun round once on the spot (2026-10-21, the user).
+local TWO_PI = 2 * math.pi
+local function turn(a, b)
+    local d = a - b
+    return d - math.floor(d / TWO_PI + 0.5) * TWO_PI
+end
+
 -- Where each aircraft is now and whether it is there at all: active, x, y, heading, and whether
 -- x, y are relative to the orbit's centre (the circling ones) rather than a world point (B-2).
 -- The heading of a circling one is its orbit's tangent, never its frame-to-frame motion: the
@@ -172,7 +181,7 @@ local function ferryStep(p, dt)
         f.vx, f.vy = f.vx + ex, f.vy + ey
         f.x, f.y = f.x + f.vx * s, f.y + f.vy * s
         if math.sqrt(f.vx * f.vx + f.vy * f.vy) > 1.5 then
-            local d = (math.atan2(f.vy, f.vx) - f.h + math.pi) % (2 * math.pi) - math.pi
+            local d = turn(math.atan2(f.vy, f.vx), f.h)
             f.h = f.h + math.max(-FERRY.TURN * s, math.min(FERRY.TURN * s, d))
         end
     end
@@ -207,8 +216,7 @@ local function update(p, dt, kind, active, x, y, h, relative)
         x, y = st.cx + x, st.cy + y
     end
     if st.h and st.a > 0 then
-        local d = (h - st.h + math.pi) % (2 * math.pi) - math.pi
-        h = st.h + d * ease(dt, TURN_LAG_S)
+        h = st.h + turn(h, st.h) * ease(dt, TURN_LAG_S)
     end
     st.x, st.y, st.h = x, y, h
     st.a = math.min(1, st.a + dt / FADE_S)

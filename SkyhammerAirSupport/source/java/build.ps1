@@ -16,7 +16,7 @@ New-Item -ItemType Directory -Force "$out\classes\skyhammer\aircraft", "$out\cla
 $sources = Get-ChildItem "$here\skyhammer\aircraft\*.java" | ForEach-Object FullName
 & $java -jar $Ecj -17 -encoding UTF-8 -nowarn -cp $cp -d "$out\classes" @sources
 if ($LASTEXITCODE -ne 0) { throw "ecj failed" }
-foreach ($res in "ac130.mesh", "aircraft.vert", "aircraft.frag", "apache.mesh", "apache.vert", "apache.frag", "b2.mesh", "a10.mesh", "a10.vert", "uh60.mesh", "uh60.vert", "napalm.mesh", "nuke.vert", "nuke.frag", "nuke_smoke_atlas.png") {
+foreach ($res in "ac130.mesh", "aircraft.vert", "aircraft.frag", "apache.mesh", "apache.vert", "apache.frag", "b2.mesh", "bomber.frag", "a10.mesh", "a10.vert", "uh60.mesh", "uh60.vert", "napalm.mesh", "nuke.vert", "nuke.frag", "nuke_smoke_atlas.png", "angel.vert", "angel.frag") {
     Copy-Item "$here\skyhammer\aircraft\$res" "$out\classes\skyhammer\aircraft\$res"
 }
 Set-Content "$out\classes\META-INF\MANIFEST.MF" "Manifest-Version: 1.0`r`nCreated-By: Skyhammer build.ps1`r`n" -Encoding ascii -NoNewline

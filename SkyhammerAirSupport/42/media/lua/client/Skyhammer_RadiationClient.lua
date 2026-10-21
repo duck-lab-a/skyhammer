@@ -23,31 +23,114 @@ local B = RAD.body
 local NPC_DEATH_MIN = 120
 local ALIFE_PER_MIN = 300       -- the cell's zombie list read this many at a time for A-Life people
 
--- (2026-10-20, the user: "an icon when you are in the zone") the radiation sign, pulsing at the
--- screen's top right while the player stands in fallout; made when they walk in and taken off the
--- screen when they leave (no idle panel left over windows: see the UI pointover note)
+-- (2026-10-20, the user: "an icon when you are in the zone"; later "the dose under the icon",
+-- "until the dose is 0", "movable")
+-- The radiation sign with the dose under it, left of the game's moodle column (it sat on the
+-- moodles at first): pulsing while the player stands in fallout, steady while any dose is still
+-- wearing off outside (RadiationBody clears it below GONE). Made when needed and taken off the
+-- screen when not (no idle panel left over windows: see the UI pointover note). It can be dragged;
+-- the place is kept in Zomboid/Lua/Skyhammer_RadIcon.txt ("x,y", every save), as the comms strip
+-- does. Online the dose is the server's ("raddose", Skyhammer_RadiationServer).
+local ICON_SIZE = 48
+local shownDose = 0
+local shownBlue = false     -- a Prussian Blue capsule working: the number in blue
+local POS_FILE = "Skyhammer_RadIcon.txt"
+local function loadPos()
+    local x, y
+    pcall(function()
+        local r = getFileReader(POS_FILE, false)
+        if not r then return end
+        local line = r:readLine()
+        r:close()
+        if line then x, y = line:match("^%s*(%-?%d+)%s*,%s*(%-?%d+)") end
+    end)
+    return tonumber(x), tonumber(y)
+end
+local function savePos(x, y)
+    pcall(function()
+        local w = getFileWriter(POS_FILE, true, false)
+        if not w then return end
+        w:write(math.floor(x) .. "," .. math.floor(y))
+        w:close()
+    end)
+end
+local savedX, savedY = loadPos()
 SkyhammerRadIcon = ISPanel:derive("SkyhammerRadIcon")
 function SkyhammerRadIcon:prerender() end
+local function dropped(self)
+    if not self.moved then return end
+    self.moved = false
+    savedX, savedY = self:getX(), self:getY()
+    savePos(savedX, savedY)
+end
+function SkyhammerRadIcon:onMouseMove(dx, dy)
+    if self.moving then self.moved = true end
+    return ISPanel.onMouseMove(self, dx, dy)
+end
+function SkyhammerRadIcon:onMouseMoveOutside(dx, dy)
+    if self.moving then self.moved = true end
+    return ISPanel.onMouseMoveOutside(self, dx, dy)
+end
+function SkyhammerRadIcon:onMouseUp(x, y)
+    ISPanel.onMouseUp(self, x, y)
+    dropped(self)
+    return true
+end
+function SkyhammerRadIcon:onMouseUpOutside(x, y)
+    ISPanel.onMouseUpOutside(self, x, y)
+    dropped(self)
+    return true
+end
 function SkyhammerRadIcon:render()
     local t = getTexture("media/ui/SH_Rad_Icon.png")
-    if not t then return end
-    local a = 0.7 + 0.3 * math.sin(getTimestampMs() / 260)
-    self:drawTextureScaled(t, 0, 0, self.width, self.height, a, 1, 1, 1)
+    local a = self.pulse and (0.7 + 0.3 * math.sin(getTimestampMs() / 260)) or 0.85
+    if t then self:drawTextureScaled(t, (self.width - ICON_SIZE) / 2, 0, ICON_SIZE, ICON_SIZE, a, 1, 1, 1) end
+    -- (2026-10-20, the user's review: white while it does nothing yet (under SICK_FROM), then
+    -- yellow / orange / red; blue while a Prussian Blue capsule works, so taking one shows)
+    local d = math.floor(shownDose + 0.5)
+    local r, g, b = 0.9, 0.9, 0.9
+    if d >= 80 then r, g, b = 1, 0.3, 0.25 elseif d >= 40 then r, g, b = 1, 0.6, 0.2
+    elseif d >= B.SICK_FROM then r, g, b = 1, 0.85, 0.3 end
+    if shownBlue then r, g, b = 0.45, 0.75, 1 end
+    self:drawTextCentre(getText("IGUI_SH_RadDose", d), self.width / 2, ICON_SIZE + 1, r, g, b, 1, UIFont.Small)
+end
+-- where it goes: where it was dragged to (kept on the screen), else just left of the moodle
+-- column, level with its top
+local function iconPos(w, h)
+    if savedX then
+        local sw, sh = getCore():getScreenWidth(), getCore():getScreenHeight()
+        return math.max(0, math.min(savedX, sw - w)), math.max(0, math.min(savedY, sh - h))
+    end
+    local ok, x, y = pcall(function()
+        local mu = MoodlesUI.getInstance()
+        return mu:getX(), mu:getY()
+    end)
+    if ok and tonumber(x) and x > w then return x - w - 12, math.max(10, tonumber(y) or 110) end
+    return getCore():getScreenWidth() - w - 110, 110
 end
 local icon = nil
-local ICON_SIZE = 48
-local function showIcon(on)
+local function showIcon(on, pulse)
     if on and not icon then
         local ok = pcall(function()
-            icon = SkyhammerRadIcon:new(getCore():getScreenWidth() - ICON_SIZE - 24, 110, ICON_SIZE, ICON_SIZE)
+            local w = ICON_SIZE + 24
+            local h = ICON_SIZE + getTextManager():getFontHeight(UIFont.Small) + 2
+            local x, y = iconPos(w, h)
+            icon = SkyhammerRadIcon:new(x, y, w, h)
             icon.background = false
+            icon.moveWithMouse = true
             icon:initialise(); icon:addToUIManager()
-            icon.javaObject:setConsumeMouseEvents(false)
         end)
         if not ok then icon = nil end
     elseif not on and icon then
         pcall(function() icon:removeFromUIManager() end)
         icon = nil
+    end
+    if icon then
+        icon.pulse = pulse == true
+        -- (follows the moodle column until it has been dragged somewhere)
+        if not savedX and not icon.moving then
+            pcall(function() local x, y = iconPos(icon.width, icon.height); icon:setX(x); icon:setY(y) end)
+        end
     end
 end
 
@@ -138,7 +221,10 @@ local known = nil           -- the zone ids seen so far (a new one: the fallout 
 local tick
 local function hook(on)
     if on and not ticking then Events.EveryOneMinute.Add(tick); ticking = true
-    elseif not on and ticking then Events.EveryOneMinute.Remove(tick); ticking = false; showIcon(false) end
+    -- (2026-10-20 review: online, the server's list could empty before this side's minute had seen
+    -- the zone fade; `inside` then stayed set and the server's dose messages kept the sign up for
+    -- good, even at 0. Off means out of every zone.)
+    elseif not on and ticking then Events.EveryOneMinute.Remove(tick); ticking = false; inside = nil; showIcon(false) end
 end
 
 tick = function()
@@ -161,9 +247,10 @@ tick = function()
     end
     if zone and inside ~= zone.id then S.Say("RadEnter", nil, { priority = true }) end
     inside = zone and zone.id or nil
-    showIcon(inside ~= nil)
+    if not online then shownDose = dose; shownBlue = dose > 0 and B.blueOn(p, now) end
+    showIcon(inside ~= nil or shownDose > 0, inside ~= nil)
     -- (the hook stays while there is fallout, or a dose still to wear off)
-    hook(zones > 0 or dose >= B.SICK_FROM or npcHot > 0)
+    hook(zones > 0 or dose > 0 or npcHot > 0)
 end
 
 -- the zones changed (a detonation here, or the server's list): the warning for a new one, the
@@ -182,8 +269,28 @@ local function changed()
     end
     known = ids
     local p = getSpecificPlayer(0)
-    hook(#RAD.list() > 0 or (p ~= nil and not S.Online() and B.doseOf(p) >= B.SICK_FROM))
+    hook(#RAD.list() > 0 or (p ~= nil and not S.Online() and B.doseOf(p) > 0))
 end
+
+-- online: the server's word on this player's dose (each game minute while it matters)
+Events.OnServerCommand.Add(function(module, command, args)
+    if module ~= "SkyhammerAirSupport" or command ~= "raddose" or type(args) ~= "table" then return end
+    shownDose = tonumber(args.d) or 0
+    shownBlue = args.b == true
+    showIcon(inside ~= nil or shownDose > 0, inside ~= nil)
+end)
+
+-- the dose is the character's (its mod data): a dead one's goes with it, and a new character
+-- starts clean (online the last number heard was the dead one's: dropped here)
+Events.OnPlayerDeath.Add(function(p)
+    if p ~= getSpecificPlayer(0) then return end
+    shownDose, shownBlue, inside = 0, false, nil
+    showIcon(false)
+end)
+Events.OnCreatePlayer.Add(function()
+    shownDose, shownBlue, inside = 0, false, nil
+    showIcon(false)
+end)
 
 -- single player: Skyhammer_Nuke calls this at the blast
 function RAD.Detonated(x, y, z, fireball)

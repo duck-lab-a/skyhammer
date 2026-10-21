@@ -92,7 +92,7 @@ def other_shake_and_option_unchanged():
 def ac130_loop_fades_stops_and_restarts_once():
  L=world();L.execute('''
  E.playSoundImpl=function(_,name,flag)assert(name=='SH_Engine_Loop' and flag==false);CALLS.plays=CALLS.plays+1;return CALLS.plays end
- OPTVALS.engineVolume=.5;OPTVALS.engineMute=false
+ OPTVALS.engineVolume=.5
  ET=S.Kit.engineLoop('SH_Engine_Loop')
  for i=1,40 do CLOCK=i*250;ET(true,250) end
  assert(CALLS.plays==1 and math.abs(CALLS.volume-.5)<.00001)
@@ -102,7 +102,7 @@ def ac130_loop_fades_stops_and_restarts_once():
  assert(CALLS.stops==1 and CALLS.plays==1)
  for i=1,16 do CLOCK=CLOCK+250;ET(true,250) end
  assert(CALLS.plays==2)
- OPTVALS.engineMute=true
+ OPTVALS.engineVolume=0 -- (the engine slider at 0 silences it; the mute tick box went 2026-10-20)
  for i=1,16 do CLOCK=CLOCK+250;ET(true,250) end
  assert(CALLS.stops==2)
  ''')
@@ -110,7 +110,7 @@ def ac130_loop_fades_stops_and_restarts_once():
 def apache_rotor_independent_of_ac130_mute():
  L=world();L.execute('''
  E.playSoundImpl=function(_,name,flag)assert(name=='SH_Rotor_Loop' and flag==false);CALLS.plays=CALLS.plays+1;return CALLS.plays end
- OPTVALS.engineMute=true;OPTVALS.rotorVolume=.5
+ OPTVALS.engineVolume=0;OPTVALS.rotorVolume=.5
  RT=S.Kit.engineLoop('SH_Rotor_Loop','rotorVolume')
  for i=1,40 do CLOCK=i*250;RT(true,250,1.1) end
  assert(CALLS.plays==1 and math.abs(CALLS.volume-.55)<.00001)

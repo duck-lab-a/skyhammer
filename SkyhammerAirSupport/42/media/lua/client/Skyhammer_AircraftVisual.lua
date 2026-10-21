@@ -13,12 +13,59 @@ SkyhammerAircraftVisual = SkyhammerAircraftVisual or {}
 local V = SkyhammerAircraftVisual
 V.enabled = true
 local last, wasActive, warned = nil, false, false
+-- (2026-10-21, the user) the angel flares: one release per sortie (to see them again, call the
+-- gunship again), and the crew calls them ("Flares away") so the player looks up. The release is
+-- the Java part's to make (it may refuse on the tick: the aircraft out of its orbit or hidden), so
+-- it is counted, and called, only once the Java part has really made it: after its tick, its next
+-- release has moved on (ac130FlaresNext: combat seconds, NaN while none is due; an older Java part
+-- has none: no call, and its flares are not limited). The sortie that had its release is kept in
+-- the save (S.Store().angelFlaresSortie); then the Java part is told the gunship is off station,
+-- for its flares only, once the ripple (1.5 s) has gone out. Smoke already out fades as usual.
+local FLARE_RIPPLE_S = 2.0
+local flareAt = nil         -- the release seen this session (combat seconds), until its ripple is out
+local flareWas = nil        -- the Java part's next release, read before this tick
 
 local function bridge() return SkyhammerAircraft end
 local function reset()
     local b = bridge()
     if b then pcall(b.reset) end
-    last, wasActive = nil, false
+    last, wasActive, flareAt, flareWas = nil, false, nil, nil
+end
+
+local function flaresNext(b)
+    if not b.ac130FlaresNext then return nil end
+    local ok, at = pcall(b.ac130FlaresNext)
+    if ok and type(at) == "number" and at == at then return at end
+    return nil
+end
+
+-- before the tick: the phase the flares are given, on station only until this sortie's release
+-- has gone out
+local function flarePhase(b, ac)
+    flareWas = nil
+    if ac ~= 2 then flareAt = nil; return ac end
+    local now = S.combatMs() / 1000
+    if S.Store().angelFlaresSortie == (S.Sortie and S.Sortie("ac130") or 0) then
+        if flareAt and now >= flareAt and now < flareAt + FLARE_RIPPLE_S then return 2 end
+        flareAt = nil
+        return 1
+    end
+    flareWas = flaresNext(b)
+    return 2
+end
+
+-- after the tick: did the Java part release? (it moves its next release on when it does)
+local function flareCheck(b)
+    local was = flareWas
+    flareWas = nil
+    if not was or S.combatMs() / 1000 < was then return end
+    local at = flaresNext(b)
+    if at and at > was then
+        S.Store().angelFlaresSortie, flareAt = (S.Sortie and S.Sortie("ac130") or 0), S.combatMs() / 1000
+        -- (ahead: the radio is often busy; it goes before the chatter, never before a priority
+        -- line; still waiting after 3 s, the flares are past their best and it is dropped)
+        S.Say("GunAngelFlares", nil, { craft = "ac130", ahead = true, stale = 3000 })
+    end
 end
 V.reset = reset
 function V.shot() local b = bridge(); if b then pcall(b.shot) end end
@@ -121,7 +168,7 @@ local function update()
         return
     end
     local player = getPlayer()
-    if S.Multiplayer() or not player or player:isDead() or not V.enabled or not S.opt("aircraftVisual") then
+    if S.Multiplayer() or (S.VanillaEdition and S.VanillaEdition()) or not player or player:isDead() or not V.enabled or not S.opt("aircraftVisual") then
         if wasActive then reset() end
         return
     end
@@ -133,6 +180,13 @@ local function update()
     -- one aircraft carries both guns, so both weapon slots get the same phase
     local ac = phase("ac130")
     b.tick(dt, ac, ac, player:getX(), player:getY(), player:getZ())
+    -- No jobs/timers are added to combat gameplay. The Java visual pool cancels a
+    -- pending ripple immediately on departure and resets between sorties.
+    if b.ac130FlaresTick then
+        b.ac130FlaresTick(S.combatMs() / 1000, flarePhase(b, ac),
+            S.Sortie and S.Sortie("ac130") or 0, S.opt("fxQuality"))
+        flareCheck(b)
+    end
     if b.apacheTick and S.ApacheOrbit then apache(b, dt, player) end
     bomber(b)
     strafer(b)

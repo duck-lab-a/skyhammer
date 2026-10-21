@@ -1,0 +1,7 @@
+Compatibility: Stay With Me. Your companion (and other players' companions) is no longer targeted by air support, the nuke or napalm, and shows as friendly on the sensor map.
+Fixed: while a fallout dose wore off, the sick moodle could flicker between two levels.
+Mod Options: the "Mute the AC-130 engines" tick box is gone. If you had it on, set the AC-130 engine volume to 0 instead.
+--
+호환: Stay With Me. 내 동료(다른 플레이어의 동료 포함)가 더 이상 공중 지원, 핵, 네이팜의 대상이 되지 않으며, 센서 지도에 아군으로 표시됩니다.
+수정: 낙진 피폭이 빠지는 동안 구역질 무들이 두 단계 사이에서 깜빡일 수 있던 문제를 고쳤습니다.
+모드 옵션: "체공 중 AC-130 엔진음 끄기" 체크박스를 없앴습니다. 켜 두셨다면 대신 AC-130 엔진 음량을 0으로 맞춰 주세요.

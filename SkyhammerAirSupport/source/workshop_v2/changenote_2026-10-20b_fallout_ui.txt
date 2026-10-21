@@ -1,0 +1,13 @@
+Fallout sign:
+- It now stays on screen until your dose is completely gone.
+- You can drag it anywhere. The spot is remembered.
+- The dose number shows how bad it is: white while it does nothing yet, then yellow, orange and red. It turns blue while a Prussian Blue capsule is working.
+Fixed: online, a new character could show the dose of the character that died.
+Smaller hitch when the nuke goes off: the EMP no longer runs in a single frame, and the levelled ground is redone one area at a time.
+--
+낙진 표시:
+- 이제 피폭이 완전히 빠질 때까지 화면에 남습니다.
+- 마우스로 끌어서 원하는 곳에 둘 수 있고, 위치가 기억됩니다.
+- 피폭 숫자 색으로 심각도를 알 수 있습니다. 아직 영향이 없을 때는 흰색, 그다음 노랑, 주황, 빨강입니다. 프러시안 블루 캡슐이 듣는 동안에는 파란색입니다.
+수정: 멀티플레이에서 새 캐릭터에 죽은 캐릭터의 피폭 수치가 보일 수 있던 문제를 고쳤습니다.
+핵폭발 순간의 끊김을 줄였습니다. EMP를 한 프레임에 몰아서 처리하지 않고, 평탄화된 땅은 구역별로 다시 그립니다.

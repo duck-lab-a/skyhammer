@@ -9,7 +9,7 @@ def world(native=False):
  for _,fn in ipairs(HANDLERS.OnTick) do local f=up(fn,'gunshipEngine');if f then GT=f end end
  assert(type(GT)=='function')
  E.playSoundImpl=function(_,name,flag)assert(name=='SH_Engine_Loop' and flag==false);CALLS.plays=CALLS.plays+1;return CALLS.plays end
- OPTVALS.engineVolume=.6;OPTVALS.engineMute=false
+ OPTVALS.engineVolume=.6
  S.Multiplayer=function()return false end
  SkyhammerAircraftVisual={enabled=true};OPTVALS.aircraftVisual=true
  function sampleAC(ms)CLOCK=ms;GT(ms,250);return CALLS.volume end
@@ -33,9 +33,9 @@ def actual_pose_gain_is_used():
  L.execute('VALUE=0;sampleAC(18250)');assert L.eval('CALLS.stops')==1
 @test
 def mute_volume_and_recall_work():
- L=world(True);L.execute('PH="REARM";VALUE=.5;sampleAC(4250);OPTVALS.engineMute=true')
+ L=world(True);L.execute('PH="REARM";VALUE=.5;sampleAC(4250);OPTVALS.engineVolume=0')
  L.execute('for i=4500,7500,250 do sampleAC(i) end');assert L.eval('CALLS.stops')==1
- L.execute('OPTVALS.engineMute=false;PH="ON_STATION";sampleAC(7750)')
+ L.execute('OPTVALS.engineVolume=.6;PH="ON_STATION";sampleAC(7750)')
  assert L.eval('CALLS.volume')<.1
  L.execute('for i=8000,11000,250 do sampleAC(i) end');assert abs(L.eval('CALLS.volume')-.6)<1e-8
  assert L.eval('CALLS.plays')==2

@@ -69,6 +69,7 @@
   {"id": "GunKeepScanning", "speaker": "GUNS", "en": "More movement there. Hang on, finding the next one.", "ko": "저쪽에 움직임 더 있다. 잠깐, 다음 표적 찾는 중.", "cn": "那边还有动静。稍等，找下一个。"},
   {"id": "GunQuietSector", "speaker": "GUNS", "en": "Nothing moving in the open. Eyes on.", "ko": "개활지 움직임 없음. 감시 중.", "cn": "开阔地没有动静。持续观察。"},
   {"id": "GunHoldOverwatch", "speaker": "BANSHEE", "en": "Weapons hold. Staying overhead.", "ko": "사격 보류. 상공 대기.", "cn": "武器暂停。保持在上空。"},
+  {"id": "GunAngelFlares", "speaker": "BANSHEE", "en": "Flares away. Don't mind the fireworks.", "ko": "플레어 투하. 불꽃놀이는 신경 쓰지 마라.", "cn": "干扰弹已投放。别在意那些烟花。"},
   {"id": "GunOneMinute", "speaker": "BANSHEE", "en": "One minute to bingo. Send your last targets.", "ko": "연료 한계 1분 전. 마지막 표적 보내라.", "cn": "离燃油告急一分钟。发送最后的目标。"},
   {"id": "GunBreakOrbit", "speaker": "BANSHEE", "en": "Banshee Two-One, breaking orbit. Good hunting down there.", "ko": "밴시 투-원, 선회 이탈. 무운을 빈다.", "cn": "女妖 2-1，脱离盘旋。祝你好运。"},
   {"id": "GunGoodKill", "speaker": "TV", "en": "Good kill, good kill.", "ko": "굿 킬, 굿 킬.", "cn": "击毙，击毙。"},

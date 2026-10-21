@@ -172,6 +172,20 @@ module Base
         is3D = true,
         clip { file = media/sound/skyhammer/sh_napalm_loop.wav, distanceMin = 12, distanceMax = 160, reverbFactor = 0, volume = 1.0, }
     }
+    sound SH_Reload_105
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_reload_105.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SH_Incoming_105
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/sh_incoming_105.wav, distanceMin = 8, distanceMax = 200, reverbFactor = 0, volume = 1.0, }
+    }
     sound SHV_GunCall
     {
         category = Object,
@@ -661,6 +675,13 @@ module Base
         loop = false,
         is3D = true,
         clip { file = media/sound/skyhammer/shv_gunholdoverwatch.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
+    }
+    sound SHV_GunAngelFlares
+    {
+        category = Object,
+        loop = false,
+        is3D = true,
+        clip { file = media/sound/skyhammer/shv_gunangelflares.wav, distanceMin = 40, distanceMax = 80, reverbFactor = 0, volume = 1.0, }
     }
     sound SHV_GunOneMinute
     {

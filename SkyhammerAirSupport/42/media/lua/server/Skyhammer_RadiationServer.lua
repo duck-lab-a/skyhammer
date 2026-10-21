@@ -145,7 +145,13 @@ tick = function()
             if p:isDead() then return end
             local dose, _, changed = B.step(p, now)
             if changed and sicknessMask() then syncPlayerStats(p, sicknessMask()) end
-            if dose >= B.SICK_FROM then carrying = true end
+            -- the dose for the client's sign (once more after it has worn off, so the sign goes)
+            local md = p:getModData()
+            if dose > 0 or md.SkyhammerRadSent then
+                sendServerCommand(p, "SkyhammerAirSupport", "raddose", { d = math.floor(dose * 10 + 0.5) / 10, b = B.blueOn(p, now) or nil })
+                md.SkyhammerRadSent = dose > 0 or nil
+            end
+            if dose > 0 then carrying = true end
         end)
         if not ok then carrying = true end
     end
@@ -160,7 +166,7 @@ function RAD.ServerHook()
     if #RAD.list() > 0 then hook(true); return end
     for _, p in ipairs(players()) do
         local ok, d = pcall(B.doseOf, p)
-        if ok and d >= B.SICK_FROM then hook(true); return end
+        if ok and d > 0 then hook(true); return end
     end
 end
 Events.OnInitGlobalModData.Add(function() RAD.ServerHook() end)

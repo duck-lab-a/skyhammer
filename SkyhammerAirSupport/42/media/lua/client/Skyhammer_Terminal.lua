@@ -1388,7 +1388,10 @@ local function cycle(dir)
     local i = 1
     local tabs = open.tabs
     for n, key in ipairs(tabs) do if key == open.key then i = n end end
-    open.key = tabs[(i - 1 + dir) % #tabs + 1]
+    -- (not with %: the game's Lua keeps the dividend's sign, so up from the first tab gave tabs[0])
+    local j = i + dir
+    if j < 1 then j = #tabs elseif j > #tabs then j = 1 end
+    open.key = tabs[j]
     open:save()
 end
 

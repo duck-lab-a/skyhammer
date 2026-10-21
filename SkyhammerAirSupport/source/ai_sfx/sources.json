@@ -1,0 +1,465 @@
+{
+  "sources": [
+    {
+      "key": "bolt5",
+      "author": "LordForklift",
+      "id": 448416,
+      "page": "https://freesound.org/people/LordForklift/sounds/448416/",
+      "download": "https://cdn.freesound.org/previews/448/448416_2294740-hq.mp3",
+      "licence": "CC0 1.0",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "file": "bolt5.mp3",
+      "sha256": "e7c6acf76ec86645c83e6dba86c860fff65322eda2ee45a084ac59e20363d2f4",
+      "format_note": "Public HQ MP3 preview of the CC0 recording"
+    },
+    {
+      "key": "bolt1",
+      "author": "LordForklift",
+      "id": 448412,
+      "page": "https://freesound.org/people/LordForklift/sounds/448412/",
+      "download": "https://cdn.freesound.org/previews/448/448412_2294740-hq.mp3",
+      "licence": "CC0 1.0",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "file": "bolt1.mp3",
+      "sha256": "2f5b4acd37e673c5086d75e3d3926f504557aef241982dff83de31efba073f2e",
+      "format_note": "Public HQ MP3 preview of the CC0 recording"
+    },
+    {
+      "key": "bolt3",
+      "author": "LordForklift",
+      "id": 448410,
+      "page": "https://freesound.org/people/LordForklift/sounds/448410/",
+      "download": "https://cdn.freesound.org/previews/448/448410_2294740-hq.mp3",
+      "licence": "CC0 1.0",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "file": "bolt3.mp3",
+      "sha256": "d92bb968da3744cfb92a747cb715215e1d883e7434ccbeb9cca045d97d3fa353",
+      "format_note": "Public HQ MP3 preview of the CC0 recording"
+    },
+    {
+      "key": "slide1",
+      "author": "LordForklift",
+      "id": 448413,
+      "page": "https://freesound.org/people/LordForklift/sounds/448413/",
+      "download": "https://cdn.freesound.org/previews/448/448413_2294740-hq.mp3",
+      "licence": "CC0 1.0",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "file": "slide1.mp3",
+      "sha256": "94427a55202ef71a62d8e841446114403266016235b2a36171668d778c0fd22f",
+      "format_note": "Public HQ MP3 preview of the CC0 recording"
+    },
+    {
+      "key": "gate",
+      "author": "qubodup",
+      "id": 184935,
+      "page": "https://freesound.org/people/qubodup/sounds/184935/",
+      "download": "https://cdn.freesound.org/previews/184/184935_71257-hq.mp3",
+      "licence": "CC0 1.0",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "file": "gate.mp3",
+      "sha256": "c75c6142daabe16af760426f204a3c574ec3c7f011c1190ab36e644010597401",
+      "format_note": "Public HQ MP3 preview of the CC0 recording"
+    },
+    {
+      "key": "impactMetal_heavy_000",
+      "author": "Kenney",
+      "page": "https://kenney.nl/assets/impact-sounds",
+      "file": "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupport\\source\\cc0\\kenney_impact\\ogg\\impactMetal_heavy_000.ogg",
+      "sha256": "e07045693e4a2b3d165c424e3dab4c781d9ff8880a386880ac89a51315d7f831",
+      "licence": "CC0 1.0",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "local_licence": "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupport\\source\\cc0\\kenney_impact\\ogg\\License.txt"
+    },
+    {
+      "key": "impactMetal_heavy_001",
+      "author": "Kenney",
+      "page": "https://kenney.nl/assets/impact-sounds",
+      "file": "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupport\\source\\cc0\\kenney_impact\\ogg\\impactMetal_heavy_001.ogg",
+      "sha256": "83554049f81f4db9209379e103c30bfa63f65c42189a03f300b045c2c82e23ae",
+      "licence": "CC0 1.0",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "local_licence": "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupport\\source\\cc0\\kenney_impact\\ogg\\License.txt"
+    },
+    {
+      "key": "impactMetal_heavy_002",
+      "author": "Kenney",
+      "page": "https://kenney.nl/assets/impact-sounds",
+      "file": "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupport\\source\\cc0\\kenney_impact\\ogg\\impactMetal_heavy_002.ogg",
+      "sha256": "b914c8f1eb7c0f34bb165d7c77f4be0351f6be0660c13c53e65424e262e2c093",
+      "licence": "CC0 1.0",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "local_licence": "C:\\Users\\user\\Zomboid\\mods\\SkyhammerAirSupport\\source\\cc0\\kenney_impact\\ogg\\License.txt"
+    }
+  ],
+  "edits": [
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 0.34,
+      "source": "bolt1",
+      "source_start": 0.539,
+      "source_end": 0.844,
+      "playback_rate": 0.96,
+      "layer_gain": 1
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 0.34,
+      "source": "gate",
+      "source_start": 2.898,
+      "source_end": 3.1580000000000004,
+      "playback_rate": 0.94,
+      "layer_gain": 0.32
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 0.34,
+      "source": "impactMetal_heavy_001",
+      "source_start": 0.0,
+      "source_end": 0.16,
+      "playback_rate": 1,
+      "role": "subordinate damped metal mass"
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 0.65,
+      "source": "gate",
+      "source_start": 3.133,
+      "source_end": 3.553,
+      "playback_rate": 0.9,
+      "layer_gain": 0.42
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 0.65,
+      "source": "bolt3",
+      "source_start": 0.399,
+      "source_end": 0.644,
+      "playback_rate": 0.98,
+      "layer_gain": 1
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 0.65,
+      "source": "impactMetal_heavy_002",
+      "source_start": 0.0,
+      "source_end": 0.11439909297052155,
+      "playback_rate": 1,
+      "role": "subordinate damped metal mass"
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 1.2,
+      "source": "bolt5",
+      "source_start": 0.219,
+      "source_end": 0.374,
+      "playback_rate": 1.05,
+      "layer_gain": 1
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 1.51,
+      "source": "bolt1",
+      "source_start": 0.574,
+      "source_end": 0.784,
+      "playback_rate": 1.02,
+      "layer_gain": 1
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 1.51,
+      "source": "impactMetal_heavy_001",
+      "source_start": 0.0,
+      "source_end": 0.16,
+      "playback_rate": 1,
+      "role": "subordinate damped metal mass"
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 1.89,
+      "source": "gate",
+      "source_start": 4.155,
+      "source_end": 4.515000000000001,
+      "playback_rate": 0.95,
+      "layer_gain": 0.42
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 1.89,
+      "source": "bolt5",
+      "source_start": 0.204,
+      "source_end": 0.46399999999999997,
+      "playback_rate": 0.96,
+      "layer_gain": 1
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 1.89,
+      "source": "impactMetal_heavy_000",
+      "source_start": 0.0,
+      "source_end": 0.16,
+      "playback_rate": 1,
+      "role": "subordinate damped metal mass"
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 2.38,
+      "source": "bolt3",
+      "source_start": 0.374,
+      "source_end": 0.6839999999999999,
+      "playback_rate": 0.92,
+      "layer_gain": 1
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 2.38,
+      "source": "impactMetal_heavy_001",
+      "source_start": 0.0,
+      "source_end": 0.16,
+      "playback_rate": 1,
+      "role": "subordinate damped metal mass"
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 3.19,
+      "source": "bolt1",
+      "source_start": 0.539,
+      "source_end": 0.894,
+      "playback_rate": 0.93,
+      "layer_gain": 1
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 3.19,
+      "source": "gate",
+      "source_start": 1.94,
+      "source_end": 2.24,
+      "playback_rate": 0.96,
+      "layer_gain": 0.55
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 3.19,
+      "source": "impactMetal_heavy_001",
+      "source_start": 0.0,
+      "source_end": 0.16,
+      "playback_rate": 1,
+      "role": "subordinate damped metal mass"
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 0.88,
+      "source": "slide1",
+      "source_start": 0.7,
+      "source_end": 0.91,
+      "playback_rate": 0.92,
+      "target_RMS_dBFS": -24
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 1.62,
+      "source": "slide1",
+      "source_start": 1.19,
+      "source_end": 1.36,
+      "playback_rate": 1,
+      "target_RMS_dBFS": -25
+    },
+    {
+      "output": "reload_105.wav",
+      "event_seconds": 2.6,
+      "source": "slide1",
+      "source_start": 0.77,
+      "source_end": 1.19,
+      "playback_rate": 0.91,
+      "target_RMS_dBFS": -23
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 0.14,
+      "source": "bolt3",
+      "source_start": 0.40900000000000003,
+      "source_end": 0.654,
+      "playback_rate": 1.04,
+      "layer_gain": 1
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 0.14,
+      "source": "gate",
+      "source_start": 3.2030000000000003,
+      "source_end": 3.3930000000000002,
+      "playback_rate": 1.08,
+      "layer_gain": 0.2
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 0.14,
+      "source": "impactMetal_heavy_002",
+      "source_start": 0.0,
+      "source_end": 0.11439909297052155,
+      "playback_rate": 1,
+      "role": "subordinate damped metal mass"
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 0.75,
+      "source": "bolt1",
+      "source_start": 0.5589999999999999,
+      "source_end": 0.8140000000000001,
+      "playback_rate": 1.05,
+      "layer_gain": 1
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 0.75,
+      "source": "bolt5",
+      "source_start": 0.219,
+      "source_end": 0.404,
+      "playback_rate": 1.02,
+      "layer_gain": 0.35
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 0.75,
+      "source": "impactMetal_heavy_000",
+      "source_start": 0.0,
+      "source_end": 0.16,
+      "playback_rate": 1,
+      "role": "subordinate damped metal mass"
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 1.08,
+      "source": "bolt5",
+      "source_start": 0.226,
+      "source_end": 0.359,
+      "playback_rate": 1.12,
+      "layer_gain": 1
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 1.08,
+      "source": "impactMetal_heavy_000",
+      "source_start": 0.0,
+      "source_end": 0.16,
+      "playback_rate": 1,
+      "role": "subordinate damped metal mass"
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 1.21,
+      "source": "bolt3",
+      "source_start": 0.426,
+      "source_end": 0.559,
+      "playback_rate": 1.1,
+      "layer_gain": 1
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 1.21,
+      "source": "impactMetal_heavy_001",
+      "source_start": 0.0,
+      "source_end": 0.16,
+      "playback_rate": 1,
+      "role": "subordinate damped metal mass"
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 1.35,
+      "source": "bolt1",
+      "source_start": 0.596,
+      "source_end": 0.729,
+      "playback_rate": 1.14,
+      "layer_gain": 1
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 1.35,
+      "source": "impactMetal_heavy_000",
+      "source_start": 0.0,
+      "source_end": 0.16,
+      "playback_rate": 1,
+      "role": "subordinate damped metal mass"
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 1.45,
+      "source": "bolt5",
+      "source_start": 0.226,
+      "source_end": 0.359,
+      "playback_rate": 1.06,
+      "layer_gain": 1
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 1.45,
+      "source": "impactMetal_heavy_001",
+      "source_start": 0.0,
+      "source_end": 0.16,
+      "playback_rate": 1,
+      "role": "subordinate damped metal mass"
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 1.59,
+      "source": "bolt3",
+      "source_start": 0.426,
+      "source_end": 0.559,
+      "playback_rate": 1.15,
+      "layer_gain": 1
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 1.59,
+      "source": "impactMetal_heavy_000",
+      "source_start": 0.0,
+      "source_end": 0.16,
+      "playback_rate": 1,
+      "role": "subordinate damped metal mass"
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 1.82,
+      "source": "bolt1",
+      "source_start": 0.569,
+      "source_end": 0.864,
+      "playback_rate": 1.03,
+      "layer_gain": 1
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 1.82,
+      "source": "gate",
+      "source_start": 4.19,
+      "source_end": 4.405,
+      "playback_rate": 1.07,
+      "layer_gain": 0.28
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 1.82,
+      "source": "impactMetal_heavy_002",
+      "source_start": 0.0,
+      "source_end": 0.11439909297052155,
+      "playback_rate": 1,
+      "role": "subordinate damped metal mass"
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 0.34,
+      "source": "slide1",
+      "source_start": 0.74,
+      "source_end": 0.99,
+      "playback_rate": 1.08,
+      "target_RMS_dBFS": -25
+    },
+    {
+      "output": "reload_40.wav",
+      "event_seconds": 0.88,
+      "source": "slide1",
+      "source_start": 1.17,
+      "source_end": 1.31,
+      "playback_rate": 1.08,
+      "target_RMS_dBFS": -28
+    }
+  ]
+}

@@ -120,14 +120,25 @@ local function alifeFriendly(z, player)
     end)
     return ok and f == true
 end
+-- Stay With Me (Workshop 3800989007, id Bridge; 2026-10-20, the user): the companion's body is an
+-- infected body the mod marks "NotAloneBody" (an animation variable; on the server also its mod
+-- data's notAloneBody). Anyone's companion is spared.
+local function stayWithMe(z)
+    local ok, f = pcall(function()
+        if z:getVariableBoolean("NotAloneBody") == true then return true end
+        return z:hasModData() and z:getModData().notAloneBody == true
+    end)
+    return ok and f == true
+end
 -- friendly NPCs (a Bandits companion or friendly clan: brain.hostile == false, the Wraith Team
--- included; a friendly A-Life person) are never hit and show green on the sensor map
+-- included; a friendly A-Life person; a Stay With Me companion) are never hit and show green on
+-- the sensor map
 local function friendly(z)
     local ok, f = pcall(function()
         local brain = z:getModData().brain
         return type(brain) == "table" and brain.hostile == false
     end)
-    return (ok and f == true) or alifeFriendly(z, getPlayer())
+    return (ok and f == true) or stayWithMe(z) or alifeFriendly(z, getPlayer())
 end
 S.IsFriendlyNPC = friendly
 local function dist(ax, ay, bx, by) return math.sqrt((ax - bx) ^ 2 + (ay - by) ^ 2) end
@@ -928,6 +939,47 @@ local function muzzleFlash()
     if SkyhammerAircraftVisual and SkyhammerAircraftVisual.shot then SkyhammerAircraftVisual.shot() end
 end
 
+-- ---------------------------------------------------------------- the 105's own sounds
+-- (2026-10-21, the user) The 105 has an incoming sound of its own (SH_Incoming_105; the B-2 keeps
+-- the shared SH_Incoming, the user), and the gunship crew reloading the 105 after each round
+-- (SH_Reload_105, 1.0 s: the breech opening and the case coming out; the 40 mm has none: the user
+-- found it not needed).
+-- Each is used only while it is defined, else the shared incoming / no reload.
+local soundKnown = {}
+-- whether a sound is defined (by this mod or a later one), asked once per name
+local function soundDefined(name)
+    if soundKnown[name] == nil then
+        local ok, gs = pcall(function() return getScriptManager():getGameSound(name) end)
+        soundKnown[name] = ok and gs ~= nil
+    end
+    return soundKnown[name]
+end
+local function incomingSound(name)
+    return soundDefined(name) and name or "SH_Incoming"
+end
+-- the reload: for this player only, not in 3D, at the radio's volume. One at a time: a round fired
+-- while the last reload still plays adds none.
+local RELOAD = { he = { sound = "SH_Reload_105", ms = 1000, delayMs = 250 } }
+local reloadUntil = {}
+local function reloadSound(kind)
+    local r = RELOAD[kind]
+    if not r or not soundDefined(r.sound) then return end
+    local now = S.combatMs()
+    if now < (reloadUntil[kind] or 0) then return end
+    reloadUntil[kind] = now + r.delayMs + r.ms
+    after(r.delayMs, function()
+        local p = getSpecificPlayer(0); if not p then return end
+        pcall(function()
+            local e = IsoWorld.instance:getFreeEmitter()
+            e:setPos(p:getX(), p:getY(), p:getZ())
+            local id = e:playSoundImpl(r.sound, false, nil)
+            if not id or id == 0 or id == -1 then return end
+            e:setVolume(id, math.max(0, math.min(1, (S.opt("voiceVolume") or 0.8) * 0.8)))
+            e:tick(); e:set3D(id, false); e:tick()
+        end)
+    end, "ac130")
+end
+
 -- ---------------------------------------------------------------- rounds in the air
 -- A 105 round or a bomb, once fired, is written into the save with where and when (combat
 -- clock) it lands, and crossed off when it does. A reload schedules whatever is still in the
@@ -1151,7 +1203,10 @@ local function heFire(cx, cy, z, n, mission)
             local p = getSpecificPlayer(0)
             if p then soundAt(gunshipSquare(p), "SH_105_Report", 650) end
             muzzleFlash()
-            after(HE.flightMs - WHISTLE_LEAD_MS, function() soundAt(square(pt[1], pt[2], z), "SH_Incoming", 200) end)
+            reloadSound("he")
+            -- as long as WHISTLE_LEAD_MS and ending at the impact
+            local incoming = incomingSound("SH_Incoming_105")
+            after(HE.flightMs - WHISTLE_LEAD_MS, function() soundAt(square(pt[1], pt[2], z), incoming, 200) end)
             launch("he", pt[1], pt[2], z, HE.flightMs)
         end, "ac130")
     end
@@ -1568,16 +1623,14 @@ end
 -- ---------------------------------------------------------------- engine drone
 -- A looping aircraft sound kept on the player (not 3D: the aircraft is all around), faded in
 -- and out over three seconds. tick(want, dtMs, gain) each slow tick; gain scales the volume
--- option (volumeId, the AC-130's "engineVolume" unless given; muteId: a tick box that silences it).
-local function engineLoop(sound, volumeId, muteId)
+-- option (volumeId, the AC-130's "engineVolume" unless given; at 0 nothing plays).
+local function engineLoop(sound, volumeId)
     volumeId = volumeId or "engineVolume"
-    if muteId == nil and volumeId == "engineVolume" then muteId = "engineMute" end
     local loop = { emitter = nil, id = nil, vol = 0, checkMs = 0 }
     return function(want, dtMs, gain, followGain)
-        local muted = muteId and S.opt(muteId)
         -- AC-130 departure attenuates the existing volume ramp; other callers keep the old mix.
         local spatial = followGain and math.max(0, math.min(1, gain or 1)) or 1
-        local target = (want and not muted) and S.opt(volumeId) * (followGain and 1 or (gain or 1)) or 0
+        local target = want and S.opt(volumeId) * (followGain and 1 or (gain or 1)) or 0
         local p = getSpecificPlayer(0); if not p then return end
         if target > 0 and not loop.id then
             pcall(function()

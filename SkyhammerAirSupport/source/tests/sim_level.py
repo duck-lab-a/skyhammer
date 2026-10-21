@@ -119,6 +119,29 @@ def levels_within_the_radius():
 
 
 @test
+def chunk_by_chunk_and_old_saves():
+    # (2026-10-20) a chunk's columns are levelled together: each chunk is finished before the next
+    L = world()
+    L.execute("ground(70, 130, 70, 130); ORDER = {}")
+    L.execute("""local f = SQ['100,100,0'].RecalcAllWithNeighbours
+        for k, s in pairs(SQ) do s.RecalcAllWithNeighbours = function(self) ORDER[#ORDER + 1] = math.floor(self.x / 8) .. ',' .. math.floor(self.y / 8); self.recalc = self.recalc + 1 end end""")
+    L.execute("LV.Add(100.5, 100.5, 0, 20); tick(200)")
+    order = [L.eval(f"ORDER[{i}]") for i in range(1, L.eval("#ORDER") + 1)]
+    runs = [c for i, c in enumerate(order) if i == 0 or order[i - 1] != c]
+    eq(len(runs), len(set(runs)), "every chunk's columns in one go, never come back to")
+    ok(len(order) > 1200, "the whole circle (about 1250 columns)")
+    eq(L.eval("kinds(100, 120, 0)"), "floor,IsoWorldInventoryObject|floors_burnt_01_0", "the circle's edge reached")
+    eq(L.eval("kinds(100, 122, 0)"), "floor,wall,IsoWorldInventoryObject|grass", "beyond it untouched")
+    # a job saved with the old row cursor carries on from that chunk row
+    L2 = world()
+    L2.execute("ground(90, 112, 90, 110); STORE.level = { jobs = { { x = 100.5, y = 100.5, z = 0, r = 5, cx = 95, cy = 99 } }, pending = {} }")
+    L2.execute("fire('OnGameStart'); tick(50)")
+    eq(L2.eval("kinds(100, 104, 0)"), "floor,IsoWorldInventoryObject|floors_burnt_01_0", "rows after the old cursor done")
+    eq(L2.eval("kinds(100, 96, 0)"), "floor,IsoWorldInventoryObject|floors_burnt_01_0", "the chunk row of the old cursor done (again)")
+    eq(L2.eval("#STORE.level.jobs"), 0, "the job finished")
+
+
+@test
 def off_without_the_craters_option_and_online():
     L = world()
     L.execute("ground(95, 105, 95, 105); OPTS.craters = false")

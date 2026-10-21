@@ -26,6 +26,7 @@ public final class AircraftRenderer {
     /** Every frame Viewpoint draws: keep its camera for Lua, then draw the aircraft (AC-130, Apache). */
     public static void frame(FrameContext frame) {
         NukeRenderer.allow(frame);
+        AngelFlareRenderer.allow(frame);
         if (Main.supported && !cameraFailed) {
             try { Projection.capture(frame); }
             catch (Throwable e) {

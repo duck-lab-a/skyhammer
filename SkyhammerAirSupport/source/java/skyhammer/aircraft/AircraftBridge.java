@@ -6,6 +6,7 @@ import me.zed_0xff.zombie_buddy.Exposer;
 public final class AircraftBridge {
     public static volatile boolean drawsBombs;
     private static final Flight flight = new Flight();
+    static final AngelFlares flares = new AngelFlares();
     public record Sample(Flight.Pose pose, long at, double scale, long flashUntil) {}
     public static volatile Sample sample;
     public static volatile String fault = "";
@@ -24,9 +25,19 @@ public final class AircraftBridge {
         sample = new Sample(pose, System.nanoTime(), scale, flashUntil);
     }
     public static void reset() {
+        flares.reset();
         flight.reset(); sample = null; flashUntil = 0; BombPayloads.clear();
         hover.reset(); apache = null; ferryHover.reset(); ferry = null; bomber = null; strafer = null; nuke = null;
     }
+
+    /** Visual-only; Lua supplies combat seconds, exact phase, sortie and existing FX quality. */
+    public static void ac130FlaresTick(double combatSeconds,double phase,double sortie,double quality){
+        Sample s=sample;
+        if(s==null||!Double.isFinite(phase+sortie+quality)){flares.reset();return;}
+        flares.tick(combatSeconds,phase==2,(long)sortie,(int)quality,s.pose(),s.scale());
+    }
+    /** The next flare release (combat seconds), NaN while none is due: Lua's radio call. */
+    public static double ac130FlaresNext(){return flares.nextRelease();}
 
     // ---- Hellhound (Apache)
     private static final Hover hover = new Hover();

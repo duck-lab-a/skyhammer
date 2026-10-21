@@ -36,6 +36,15 @@ function ISPanel:initialise() end
 function ISPanel:addToUIManager() UIS = UIS + 1 end
 function ISPanel:removeFromUIManager() UIS = UIS - 1 end
 getCore = function() return { getScreenWidth = function() return 1920 end } end
+getTextManager = function() return { getFontHeight = function() return 16 end } end
+UIFont = { Small = 1 }
+getText = function(k, a) return k .. ":" .. tostring(a) end
+function ISPanel:setX(x) self.x = x end
+function ISPanel:setY(y) self.y = y end
+MoodlesUI = { getInstance = function() return { getX = function() return 1860 end, getY = function() return 100 end } end }
+LASTPANEL = nil
+local _new = ISPanel.new
+function ISPanel:new(x, y, w, h) local o = _new(self, x, y, w, h); LASTPANEL = o; return o end
 getTexture = function() return {} end
 -- the player
 WORN, ROOM, ROOF = {}, nil, false
@@ -164,11 +173,15 @@ def leaving_and_the_all_clear():
     minutes(L, 5)
     L.execute("ME.x = 400")
     minutes(L, 1)
-    eq(L.eval("UIS"), 0, "out of the zone: the icon goes")
+    eq(L.eval("UIS"), 1, "out of the zone with a dose: the icon stays")
+    eq(L.eval("LASTPANEL.pulse"), False, "steady outside")
     L.execute("HOURS = 80")
     minutes(L, 1)
     ok("RadClear" in list(L.eval("SAID").values()), "the last zone gone: all clear")
-    L.execute("ME.md.SkyhammerRadDose = 0")
+    L.execute("ME.md.SkyhammerRadDose = 0.4")
+    minutes(L, 1)
+    eq(L.eval("ME.md.SkyhammerRadDose"), None, "below GONE: cleared")
+    eq(L.eval("UIS"), 0, "at 0 the icon goes")
     minutes(L, 1)
     eq(L.eval("count('EveryOneMinute')"), 0, "nothing left: the hook goes")
 
@@ -223,7 +236,10 @@ def dose_bands():
     near(f(80), 90.5, 1e-9, "80: the last level")
     near(f(100), 100, 1e-9, "100: the top")
     L.execute("ME.md.SkyhammerRadDose = 50; RAD.client.tick()")
-    near(L.eval("STATS.FOOD_SICKNESS"), L.eval("RAD.body.floorOf(ME.md.SkyhammerRadDose)"), 1e-6, "sickness at the floor")
+    # (2026-10-20) set a little above the floor, by the game's own decay over a minute, at most to
+    # the edge of the level above (so it stays at the floor's moodle level the whole minute)
+    s, fl = L.eval("STATS.FOOD_SICKNESS"), L.eval("RAD.body.floorOf(ME.md.SkyhammerRadDose)")
+    ok(fl <= s <= fl + 0.5 and s < 75, f"sickness just above the floor, same level: {s} for {fl}")
 
 @test
 def food_does_nothing_for_radiation():
@@ -259,9 +275,16 @@ def prussian_blue():
     near(L.eval("STATS.FOOD_SICKNESS"), 100, 0.05, "a capsule undoes nothing at once")
     eq(L.eval("ME.md.SkyhammerRadBlueUntil"), 8, "8 hours of it")
     L.execute("D0 = ME.md.SkyhammerRadDose; for i = 1, 60 do RAD.client.tick() end")
-    near(L.eval("ME.md.SkyhammerRadDose / D0"), 0.5 ** (1 / 8), 1e-6, "an hour: the dose halving every 8 h, not 24")
+    near(L.eval("D0 - ME.md.SkyhammerRadDose"), 7.5, 1e-6, "an hour: 7.5 off, three times the steady 2.5")
     L.execute("HOURS = 9; D0 = ME.md.SkyhammerRadDose; RAD.client.tick()")
-    near(L.eval("ME.md.SkyhammerRadDose / D0"), 0.5 ** (1 / (24 * 60)), 1e-9, "after 8 h: back to 24")
+    near(L.eval("D0 - ME.md.SkyhammerRadDose"), 2.5 / 60, 1e-9, "after 8 h: back to 2.5 an hour")
+    # (2026-10-20, the user: "it must go down steadily") the same amount every hour, big or small
+    L4 = world()
+    L4.execute("ME.x = 900; ME.md.SkyhammerRadDose = 5; RAD.client.tick(); D0 = ME.md.SkyhammerRadDose")
+    L4.execute("for i = 1, 60 do HOURS = HOURS + 1/60; fire('EveryOneMinute') end")
+    near(L4.eval("D0 - ME.md.SkyhammerRadDose"), 2.5, 1e-6, "5: 2.5 off in an hour, as at 100")
+    L4.execute("for i = 1, 60 do HOURS = HOURS + 1/60; fire('EveryOneMinute') end")
+    eq(L4.eval("ME.md.SkyhammerRadDose"), None, "and gone in the second hour")
     L2 = world()
     L2.execute("STATS.FOOD_SICKNESS = 70; ME.md.SkyhammerRadDose = 20; RAD.client.tick(); SkyhammerRad_TakeBlue(nil, ME)")
     eq(L2.eval("STATS.FOOD_SICKNESS"), 70, "food poisoning: untouched")
@@ -295,6 +318,16 @@ def online_the_server_does_the_body():
     # the zone gone and the dose worn off: the minute stops
     L2.execute("HOURS = 500; RAD.Prune(500); ME.md.SkyhammerRadDose = 0; fire('EveryOneMinute')")
     eq(L2.eval("count('EveryOneMinute')"), 0, "nothing left: the server's minute goes")
+    # nothing passes between players: a second one outside the zone, next to the first, takes none
+    L4 = world()
+    L4.execute("""SERVER = true; ONLINE = true
+        OTHER = setmetatable({ x = 180, y = 100, z = 0, md = {} }, { __index = ME })
+        OSTATS = { FOOD_SICKNESS = 0 }
+        function OTHER:getStats() return { get = function(_, k) return OSTATS[k] end, set = function(_, k, v) OSTATS[k] = v end } end
+        ONLINEP = { ME, OTHER }; RAD.Add(100, 100, 0, 50); RAD.ServerHook()
+        for i = 1, 60 do fire('EveryOneMinute') end""")
+    ok(L4.eval("ME.md.SkyhammerRadDose") > 80, "the one inside: dosed")
+    eq((L4.eval("OTHER.md.SkyhammerRadDose"), L4.eval("OSTATS.FOOD_SICKNESS")), (None, 0), "the one outside: nothing")
     # single player: the server file does nothing
     L3 = world()
     L3.execute("RAD.Add(100, 100, 0, 50); RAD.ServerHook()")
@@ -321,6 +354,78 @@ def online_people_on_the_server():
     # the zone gone, nobody dosed: the server's minute stops
     L.execute("HOURS = 500; RAD.Prune(500); DOG.dead = true; for i = 1, 3 do fire('EveryOneMinute') end")
     eq(L.eval("count('EveryOneMinute')"), 0, "nothing left: the minute goes")
+
+@test
+def the_sign_and_the_dose():
+    L = world()
+    L.execute("RAD.Detonated(100, 100, 0, 50)")
+    minutes(L, 10)
+    eq(L.eval("UIS"), 1, "in fallout: the sign")
+    eq(L.eval("LASTPANEL.pulse"), True, "pulsing inside")
+    ok(L.eval("LASTPANEL.x") + L.eval("LASTPANEL.width") <= 1860, "left of the moodle column, not on it")
+    L.execute("ME.md.SkyhammerRadDose = 30; ME.x = 900")
+    minutes(L, 1)
+    eq(L.eval("UIS"), 1, "outside with a dose: still shown")
+    eq(L.eval("LASTPANEL.pulse"), False, "steady outside")
+    L.execute("ME.md.SkyhammerRadDose = 5")
+    minutes(L, 1)
+    eq(L.eval("UIS"), 1, "a small dose: still shown until 0")
+    L.execute("ME.md.SkyhammerRadDose = 0.3")
+    minutes(L, 1)
+    eq(L.eval("UIS"), 0, "worn off: gone")
+    # online: the server's number drives it
+    L2 = world()
+    L2.execute("CLIENT = true; ONLINE = true; fire('OnServerCommand', 'SkyhammerAirSupport', 'raddose', { d = 42 })")
+    eq(L2.eval("UIS"), 1, "the server says 42: shown")
+    L2.execute("fire('OnServerCommand', 'SkyhammerAirSupport', 'raddose', { d = 3 })")
+    eq(L2.eval("UIS"), 1, "the server says 3: still shown")
+    L2.execute("fire('OnServerCommand', 'SkyhammerAirSupport', 'raddose', { d = 0 })")
+    eq(L2.eval("UIS"), 0, "the server says 0: gone")
+    # died with a dose: the new character starts clean (online the old number is dropped)
+    L2.execute("fire('OnServerCommand', 'SkyhammerAirSupport', 'raddose', { d = 60 }); fire('OnPlayerDeath', ME)")
+    eq(L2.eval("UIS"), 0, "dead: the sign goes")
+    L2.execute("fire('OnCreatePlayer', 0, ME); RAD.client.tick()")
+    eq(L2.eval("UIS"), 0, "a new character: no sign from the dead one")
+    L4 = world()
+    L4.execute("ME.md.SkyhammerRadDose = 70; RAD.client.tick(); ME.md = {}; fire('OnCreatePlayer', 0, ME); RAD.client.tick()")
+    eq(L4.eval("UIS"), 0, "single player: the new character's own (empty) dose")
+    # the number's colour: white under 10, yellow, orange, red; blue while Prussian Blue works
+    L5 = world()
+    L5.execute("""TXT = {}; getTexture = function() return nil end
+        getTimestampMs = getTimestampMs or function() return 0 end
+        function colourAt(dose, blue)
+            ME.md.SkyhammerRadDose = dose; ME.md.SkyhammerRadBlueUntil = blue and 1e9 or nil; ME.x = 900
+            RAD.client.tick()
+            LASTPANEL.drawTextCentre = function(self, t, x, y, r, g, b) TXT = { r, g, b } end
+            LASTPANEL.drawTextureScaled = function() end
+            LASTPANEL:render()
+            return string.format('%.2f,%.2f,%.2f', TXT[1], TXT[2], TXT[3])
+        end""")
+    eq(L5.eval("colourAt(5)"), "0.90,0.90,0.90", "under 10: white (does nothing yet)")
+    eq(L5.eval("colourAt(20)"), "1.00,0.85,0.30", "10+: yellow")
+    eq(L5.eval("colourAt(60)"), "1.00,0.60,0.20", "40+: orange")
+    eq(L5.eval("colourAt(90)"), "1.00,0.30,0.25", "80+: red")
+    eq(L5.eval("colourAt(60, true)"), "0.45,0.75,1.00", "Prussian Blue working: blue")
+    L6 = world()
+    L6.execute("CLIENT = true; ONLINE = true; getTexture = function() return nil end; fire('OnServerCommand', 'SkyhammerAirSupport', 'raddose', { d = 30, b = true })")
+    L6.execute("LASTPANEL.drawTextCentre = function(self, t, x, y, r, g, b) TXT = { r, g, b } end; LASTPANEL.drawTextureScaled = function() end; LASTPANEL:render()")
+    eq(L6.eval("TXT[3]"), 1, "online: the server's word on the capsule")
+    # online: the server's list empties before this side's minute saw the zone fade; the sign must
+    # still go once the dose is 0 (it stayed up for good before the fix)
+    L7 = world()
+    L7.execute("CLIENT = true; ONLINE = true; getTexture = function() return nil end")
+    L7.execute("fire('OnReceiveGlobalModData', RAD.KEY, { list = { { id = 1, x = 100, y = 100, z = 0, r = 75, born = 0, life = 72 } }, seq = 1 })")
+    L7.execute("ME.x, ME.y = 100, 100; RAD.client.tick()")
+    eq(L7.eval("LASTPANEL.pulse"), True, "inside: pulsing")
+    L7.execute("fire('OnReceiveGlobalModData', RAD.KEY, { list = {}, seq = 2 })")
+    L7.execute("fire('OnServerCommand', 'SkyhammerAirSupport', 'raddose', { d = 12 })")
+    eq((L7.eval("UIS"), L7.eval("LASTPANEL.pulse")), (1, False), "list gone: a dose left, steady")
+    L7.execute("fire('OnServerCommand', 'SkyhammerAirSupport', 'raddose', { d = 0 })")
+    eq(L7.eval("UIS"), 0, "dose 0: the sign goes")
+    # the server sends it
+    L3 = world()
+    L3.execute("SERVER = true; ONLINE = true; ONLINEP = { ME }; RAD.Add(100, 100, 0, 50); RAD.ServerHook(); for i = 1, 5 do fire('EveryOneMinute') end")
+    ok("raddose" in list(L3.eval("SENT").values()), "the server sends the dose")
 
 @test
 def escape_survival_report():
@@ -367,10 +472,10 @@ def people_and_dogs():
     ok(hp <= 1, "health only goes down")
     # they leave: the dose wears off by the hours they were away
     eq(L.eval("DOG.dead"), True, "the dog as well")
-    L.execute("PUP = npc(900, 900); PUP.md.SkyhammerRadDose = 60; PUP.md.SkyhammerRadAt = HOURS; HOURS = HOURS + 24")
+    L.execute("PUP = npc(900, 900); PUP.md.SkyhammerRadDose = 60; PUP.md.SkyhammerRadAt = HOURS; HOURS = HOURS + 12")
     L.execute("CompanionDogs.regCompanions = function() return { PUP } end")
     minutes(L, 1)
-    near(L.eval("PUP.md.SkyhammerRadDose"), 30, 0.1, "a day away: half")
+    near(L.eval("PUP.md.SkyhammerRadDose"), 30, 0.1, "12 hours away: 30 off at the steady 2.5 an hour")
     # online: the server's job (not done yet)
     L2 = world()
     L2.execute("""ONLINE = true; B = npc(100, 100)
@@ -378,6 +483,27 @@ def people_and_dogs():
         fire('OnReceiveGlobalModData', RAD.KEY, { list = { { id = 1, x = 100, y = 100, z = 0, r = 75, born = 0, life = 72 } }, seq = 1 })""")
     minutes(L2, 10)
     eq(L2.eval("B.md.SkyhammerRadDose"), None, "online: people untouched for now")
+
+@test
+def moodle_does_not_flicker():
+    # (2026-10-20, the user: "the moodles flicker") the game lowers food sickness every frame; the
+    # sick moodle must still go down one level at a time as the dose falls, never back and forth
+    def level(s): return 4 if s > 90 else 3 if s > 75 else 2 if s > 50 else 1 if s > 25 else 0
+    for drop in (0.1, 0.5, 1.0):
+        L = world()
+        L.execute("RAD.Detonated(100, 100, 0, 50); ME.x = 900; ME.md.SkyhammerRadDose = 85; RAD.client.tick()")
+        seen, prev, changes, top = [], None, 0, 0
+        for m in range(40 * 60):
+            L.execute(f"STATS.FOOD_SICKNESS = math.max(0, STATS.FOOD_SICKNESS - {drop})")
+            low = level(L.eval("STATS.FOOD_SICKNESS"))
+            L.execute("HOURS = HOURS + 1/60; fire('EveryOneMinute')")
+            s = L.eval("STATS.FOOD_SICKNESS")
+            if L.eval("(ME.md.SkyhammerRadDose or 0) < 80"): top = max(top, s)
+            for lv in (low, level(s)):
+                if prev is not None and lv != prev: changes += 1
+                prev = lv
+        eq(changes, 4, f"decay {drop} a minute: 4 level changes, 4 -> 0")
+        ok(top <= 90, f"decay {drop}: under 80 the sickness never passes 90 (no health lost): {top}")
 
 @test
 def lua_ascii_and_no_next():

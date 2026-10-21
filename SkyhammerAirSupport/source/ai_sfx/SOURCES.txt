@@ -1,0 +1,34 @@
+AC-130 reload V2 — 2026-10-21
+
+New source recordings: actual metal bolt locks, metal sliding, and gate locking.
+No Kenney punches/wood thumps, no synthetic friction, no pistol cocking,
+no cartridge-case/steel-bar drops, no Activision audio used in this build.
+The user-supplied impact timing is used only as a structural reference.
+
+CC0 1.0 sources (public HQ MP3 versions from Freesound):
+LordForklift — Bolt Lock 1
+https://freesound.org/people/LordForklift/sounds/448412/
+LordForklift — Bolt Lock 3
+https://freesound.org/people/LordForklift/sounds/448410/
+LordForklift — Bolt Lock 5
+https://freesound.org/people/LordForklift/sounds/448416/
+LordForklift — Metal Slide 1
+https://freesound.org/people/LordForklift/sounds/448413/
+qubodup — Epic Metal Gate.flac
+https://freesound.org/people/qubodup/sounds/184935/
+Licence for all five: https://creativecommons.org/publicdomain/zero/1.0/
+Additional low-level metal body: Kenney Impact Sounds 1.0,
+impactMetal_heavy_000/001/002. CC0 1.0.
+https://kenney.nl/assets/impact-sounds
+These real metal impacts are used only as subordinate mass layers, not as
+the principal latch sound. Original local licence accompanies the source pack.
+
+Edits: cut and layered contacts/slides, modest playback-rate changes, late-tail
+damping, gentle per-action saturation, minimal early reflections, offline
+look-ahead peak limiting. No reference audio copied, mixed or resampled.
+Input hashes, downloads and all source edit ranges: sources.json.
+
+Outputs: reload_105.wav 4.400 s; reload_40.wav 2.400 s.
+44,100 Hz / mono / PCM 16-bit. Technical measurements: validation.json.
+This is a revised audition, not a listening-approved or in-game-tested mix.
+No mod Lua, scripts or media modified.
